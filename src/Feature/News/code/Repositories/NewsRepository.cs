@@ -46,8 +46,6 @@ namespace Sitecore.HabitatHome.Feature.News.Repositories
                     return null;
                 }
             }
-
-
             catch (Exception e)
             {
                 Log.Error("An error occured in NewsRepository ResolveNewsItemByUrl", e.InnerException, typeof(NewsRepository));
@@ -57,9 +55,9 @@ namespace Sitecore.HabitatHome.Feature.News.Repositories
             return null;
         }
 
-        public NewsOverviewViewModel GetNewsItems(int page = 1, int numberOfItems = 10)
+        public NewsItemsViewModel GetNewsItems(int page = 1, int numberOfItems = 10)
         {
-            var model = new NewsOverviewViewModel();
+            var model = new NewsItemsViewModel();
 
             var list = new List<Models.News>();
             var item = Context.Site.Database.GetItem($"{Context.Site.ContentStartPath}/Data/News");
