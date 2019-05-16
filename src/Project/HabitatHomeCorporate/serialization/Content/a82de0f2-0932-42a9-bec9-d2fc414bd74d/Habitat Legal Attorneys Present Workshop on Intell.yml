@@ -1,0 +1,48 @@
+﻿---
+ID: "57dfad68-b820-4678-a481-7874e15c2eb2"
+Parent: "a82de0f2-0932-42a9-bec9-d2fc414bd74d"
+Template: "b9718ae9-0113-43ae-8c86-e29830b6cdb7"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Data/News/2019/05/16/07/52/Habitat Legal Attorneys Present Workshop on Intellectual Property Considerations
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03f0061a-309d-4732-a722-2f2a1488ac60"
+      Hint: NavigationTitle
+      Value: Habitat Legal Attorneys Present Workshop on Intellectual Property Considerations for Designers and Artists
+    - ID: "0ec002c0-abf8-4595-8b24-58079a01325d"
+      Hint: NewsDate
+      Value: 20190312T085200Z
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190516T075248Z
+    - ID: "313ca749-6abf-4368-9bd1-7c5ccd465d46"
+      Hint: NewsSummary
+      Value: Habitat Legal attorneys Dale Kent, Shane Nevins, and Lorie Mackie presented an intellectual property workshop in conjunction with FAB Authority.
+    - ID: "60a36bf8-cb0e-40f6-8b5a-834105136988"
+      Hint: MetadataTitle
+      Value: Habitat Legal Attorneys Present Workshop on Intellectual Property Considerations for Designers and Artists
+    - ID: "72cb911a-89fb-4845-bf8a-e6b844685113"
+      Hint: NewsContent
+      Value: <p>San Francisco, California&mdash;Habitat Legal attorneys Dale Kent, Shane Nevins, and Lorie Mackie presented an intellectual property workshop in conjunction with FAB Authority on Thursday, July 16. Attendees learned how to use IP legal tools to help protect their brands, including copyrights and how to best protect designs and ideas. Below is a recap video of the workshop.</p>
+    - ID: "94195268-29fe-4bdb-8666-dbb6277bca30"
+      Hint: NewsSlug
+      Value: "Habitat-Legal-Attorneys-Present-Workshop-on-Intellectual-Property-Considerations"
+    - ID: "b8fb4f54-6a50-4ece-b6df-cb74563c8fb9"
+      Hint: NewsTitle
+      Value: Habitat Legal Attorneys Present Workshop on Intellectual Property Considerations for Designers and Artists
+    - ID: "c2d93d35-a2c4-48c6-9f78-f5d2c070bc5c"
+      Hint: MetadataDescription
+      Value: Habitat Legal attorneys Dale Kent, Shane Nevins, and Lorie Mackie presented an intellectual property workshop in conjunction with FAB Authority.
+    - ID: "c9293739-c797-4c8c-8200-5f3f365de1e6"
+      Hint: NewsImage
+      Value: |
+        <image mediaid="{9C16726C-01DA-4A14-9529-CA88380248D3}" />
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: Habitat Legal attorneys Dale Kent, Shane Nevins, and Lorie Mackie presented an intellectual property workshop in conjunction with FAB Authority.
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Habitat Legal Attorneys Present Workshop on Intellectual Property Considerations for Designers and Artists
