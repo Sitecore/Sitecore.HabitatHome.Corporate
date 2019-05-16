@@ -166,6 +166,13 @@ Languages:
               s:id="{C06A32CD-E7F7-491E-99AC-85E843DE00C0}"
               s:par=""
               s:ph="hh-content-main" />
+            <r
+              uid="{C2746694-F08D-4ACA-B1B3-D8EED6B33667}"
+              p:after="r[@uid='{70E0FE32-36C4-458B-80D4-54CFAC61FEFC}']"
+              s:ds=""
+              s:id="{F8B4056C-725A-4765-AF0C-CDFAEEE363A8}"
+              s:par="NumberOfNewsItems=3"
+              s:ph="hh-content-main" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
