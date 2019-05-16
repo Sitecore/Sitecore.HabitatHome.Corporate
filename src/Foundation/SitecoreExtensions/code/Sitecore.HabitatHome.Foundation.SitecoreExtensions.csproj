@@ -143,6 +143,7 @@
     <Compile Include="Extensions\FieldExtensions.cs" />
     <Compile Include="Extensions\HtmlHelperExtensions.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
+    <Compile Include="Extensions\RenderingExtensions.cs" />
     <Compile Include="Extensions\SessionExtensions.cs" />
     <Compile Include="Extensions\SitecoreHelperExtensions.cs" />
     <Compile Include="Extensions\SiteExtensions.cs" />
