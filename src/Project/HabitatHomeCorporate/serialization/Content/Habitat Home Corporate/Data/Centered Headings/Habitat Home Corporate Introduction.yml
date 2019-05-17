@@ -18,3 +18,20 @@ Languages:
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Welcome to Habitat Home Corporate
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: Habitat Home Corporate Demo et ses outils et processus constituent un exemple de solution Sitecore&reg; construite &agrave; l'aide de Sitecore MVC standard sur Sitecore Experience Platform (XP) conform&eacute;ment aux principes d'architecture Helix.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190517T084153Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Bienvenue chez Habitat Home Corporate
