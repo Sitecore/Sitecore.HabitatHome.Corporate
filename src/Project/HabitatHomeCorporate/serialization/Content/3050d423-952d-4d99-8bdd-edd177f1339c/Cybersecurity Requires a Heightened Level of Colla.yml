@@ -52,3 +52,40 @@ Languages:
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Cybersecurity Requires a Heightened Level of Collaboration
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03f0061a-309d-4732-a722-2f2a1488ac60"
+      Hint: NavigationTitle
+      Value: La cybersécurité nécessite un niveau de collaboration accru
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190517T191827Z
+    - ID: "313ca749-6abf-4368-9bd1-7c5ccd465d46"
+      Hint: NewsSummary
+      Value: Les banques Fortune 500 collaborent avec les cabinets d'avocats sur un programme qui permettrait au secteur juridique de partager des informations, de manière anonyme, sur les menaces à la cybersécurité.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "60a36bf8-cb0e-40f6-8b5a-834105136988"
+      Hint: MetadataTitle
+      Value: La cybersécurité nécessite un niveau de collaboration accru
+    - ID: "72cb911a-89fb-4845-bf8a-e6b844685113"
+      Hint: NewsContent
+      Value: |
+        <p>In the first wave of many to follow, a number of Fortune 500 banks are collaborating with law firms on a program that would allow the legal industry to share information, anonymously, about cybersecurity threats they may be experiencing. The program go its start because the banks were individually talking to their law firms about security information and someone finally admitted, &ldquo;That the current approach was painfully inefficient. &rdquo; This man was Joe Parker, a managing director at American Express who serves as chairman of the Financial Services Information Sharing and Analysis Center, an established group that facilitates transmission of such information to the financial industry.</p>
+        <p>Law firms can now apply to participate as an adjunct to these participating Fortune 500 banks. In addition to major law firms such as Horvath Smithe &amp; Tate and Sullivan &amp; Comstock, representatives of the International Legal Technology Association are also now able to participate in discussions about sharing cybersecurity information between the financial and legal industry.</p>
+    - ID: "b8fb4f54-6a50-4ece-b6df-cb74563c8fb9"
+      Hint: NewsTitle
+      Value: La cybersécurité nécessite un niveau de collaboration accru
+    - ID: "c2d93d35-a2c4-48c6-9f78-f5d2c070bc5c"
+      Hint: MetadataDescription
+      Value: Les banques Fortune 500 collaborent avec les cabinets d'avocats sur un programme qui permettrait au secteur juridique de partager des informations, de manière anonyme, sur les menaces à la cybersécurité.
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: Les banques Fortune 500 collaborent avec les cabinets d'avocats sur un programme qui permettrait au secteur juridique de partager des informations, de manière anonyme, sur les menaces à la cybersécurité.
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: La cybersécurité nécessite un niveau de collaboration accru
