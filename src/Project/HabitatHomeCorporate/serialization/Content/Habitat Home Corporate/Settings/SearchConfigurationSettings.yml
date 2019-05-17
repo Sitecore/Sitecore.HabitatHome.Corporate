@@ -29,3 +29,27 @@ Languages:
         {B9718AE9-0113-43AE-8C86-E29830B6CDB7}
         {E427E2C2-F0E1-490F-81EC-4F968837B8C5}
         {992448E3-8087-4F10-9834-CFB6145BECA6}
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19332ed7-dc93-42d0-a79a-5c535d8641b4"
+      Hint: SearchPage
+      Value: "{3FA55F01-B64A-4880-B75D-1ED96849AC7C}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190517T095245Z
+    - ID: "4b148b2f-2aef-45be-9eee-2fbd672a43ad"
+      Hint: SearchPageDefaultNumberOfItems
+      Value: 12
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "9174b34b-9f4b-4d5c-88f3-c6a4eb4364a8"
+      Hint: SearchPageSupportedTemplates
+      Type: Treelist
+      Value: |
+        {B9718AE9-0113-43AE-8C86-E29830B6CDB7}
+        {E427E2C2-F0E1-490F-81EC-4F968837B8C5}
+        {992448E3-8087-4F10-9834-CFB6145BECA6}

@@ -29,10 +29,16 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180611T212527Z
+    - ID: "2f0fd1ae-4dbd-4448-be5c-0470819e11a4"
+      Hint: FacetValue
+      Value: FristName
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         extranet\Anonymous
+    - ID: "a9258cff-e39c-4c69-8a69-9e35d9a853d4"
+      Hint: FacetKey
+      Value: FirstName
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

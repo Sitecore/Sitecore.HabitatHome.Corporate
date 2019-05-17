@@ -25,3 +25,23 @@ Languages:
     - ID: "c6b8eb78-8193-4728-b1d6-5a9185463af1"
       Hint: NewsWildcardItem
       Value: "{3384C17B-C75B-4C41-826A-013DA05D446C}"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1c3cd945-0297-4609-9d65-ee26b74d4a4e"
+      Hint: NewsOverviewDefaultNumberOfItems
+      Value: 10
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190517T095409Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "88c6f83c-41f7-46a2-801c-09d136bf562a"
+      Hint: NewsSlugNotFoundPage
+      Value: "{286665EC-AEB3-4CDD-9C1A-8FDD1BA80CF4}"
+    - ID: "c6b8eb78-8193-4728-b1d6-5a9185463af1"
+      Hint: NewsWildcardItem
+      Value: "{3384C17B-C75B-4C41-826A-013DA05D446C}"
