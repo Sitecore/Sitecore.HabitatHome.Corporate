@@ -84,3 +84,9 @@ Languages:
       Hint: __Created by
       Value: |
         extranet\Anonymous
+    - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
+      Hint: Title
+      Value: Nom de famille
+    - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
+      Hint: Placeholder Text
+      Value: Nom de famille
