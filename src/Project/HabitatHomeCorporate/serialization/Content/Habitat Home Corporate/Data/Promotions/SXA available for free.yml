@@ -23,3 +23,20 @@ Languages:
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Available for free
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: Nous avons cr&eacute;&eacute; pour vous un site SXA de d&eacute;monstration incroyable. Tout ce que vous avez &agrave; faire est de faire l&rsquo;installation en utilisant nos scripts automatis&eacute;s bien pens&eacute;s. Et tout cela est gratuit ...
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T065210Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Disponible gratuitement

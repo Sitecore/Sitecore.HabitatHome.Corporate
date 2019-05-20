@@ -8,7 +8,7 @@ SharedFields:
 - ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
   Hint: Image
   Value: |
-    <image mediaid="{6C4543B4-9D21-41F6-91DF-21FE17980588}" />
+    <image mediaid="{6C4543B4-9D21-41F6-91DF-21FE17980588}" ></image>
 Languages:
 - Language: en
   Versions:
@@ -24,3 +24,20 @@ Languages:
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Introducing the Habitat Fitness App
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: "L’application Habitat Fitness est une démonstration de Sitecore JSS PWA et peut être exécutée complètement déconnectée (sans l’installation de Sitecore), également appelée «Code-First»."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T065434Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Présentation de l'appli Habitat Fitness
