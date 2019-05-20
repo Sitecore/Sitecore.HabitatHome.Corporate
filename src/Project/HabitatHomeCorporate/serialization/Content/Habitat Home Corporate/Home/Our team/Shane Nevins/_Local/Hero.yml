@@ -1,0 +1,43 @@
+﻿---
+ID: "2f521402-7f30-429b-9695-bffbea6e5fc7"
+Parent: "7a7f5664-7617-4e9d-bc1b-9f15ba12f9a5"
+Template: "9bcd885b-8b18-4ea5-aea1-bc5f918d5b90"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team/Shane Nevins/_Local/Hero
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190423T131108Z
+    - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
+      Hint: Subtitle
+      Value: Shareholder
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: "Shane Nevins is a shareholder at Habitat Legal. Shane was originally a trial lawyer, but is now focused on counseling production companies, direct response companies and multi-level marketing organizations."
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Shane Nevins
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T074726Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
+      Hint: Subtitle
+      Value: Actionnaire
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: Shane Nevins est actionnaire chez Habitat Legal. Shane était à l'origine un avocat plaidant, mais se concentre maintenant sur les sociétés de production, les sociétés à réponse directe et les organisations de marketing à plusieurs niveaux.
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Shane Nevins
