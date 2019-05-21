@@ -5,6 +5,15 @@ Template: "992448e3-8087-4f10-9834-cfb6145beca6"
 Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team/Brenda Barkley
 DB: master
 SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <event
+        id="{BF27ED36-21F3-48A6-8AC9-D2551FB54563}"
+        name="Brenda Barkley team member visit" />
+    </tracking>
 - ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
   Hint: Image
   Value: |
