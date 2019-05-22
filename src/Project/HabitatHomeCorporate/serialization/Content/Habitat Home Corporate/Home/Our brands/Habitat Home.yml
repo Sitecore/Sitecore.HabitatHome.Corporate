@@ -12,10 +12,11 @@ SharedFields:
     <tracking>
       <profile
         id="8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9"
-        name="Habitat Home Corporate Persona">
+        name="Habitat Home Corporate"
+        presets="entrepreneur|100||">
         <key
           name="Entrepeneur"
-          value="4" />
+          value="10" />
         <key
           name="Executive"
           value="0" />
