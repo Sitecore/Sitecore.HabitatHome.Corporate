@@ -1,0 +1,22 @@
+﻿---
+ID: "b4935dbc-6d4a-40d5-9792-12808aca23e3"
+Parent: "18a9b23a-075d-4cc2-b92e-1287b5c04ba9"
+Template: "3a5161bc-db66-4f7f-8dd0-8b5e505123c7"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team/Jenna Ridley/_Local
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{9BCD885B-8B18-4EA5-AEA1-BC5F918D5B90}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-1000"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T073549Z

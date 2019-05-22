@@ -1,0 +1,22 @@
+﻿---
+ID: "93ce54f1-334f-462d-83c9-6855dc37f994"
+Parent: "187ccb52-c88d-45da-86ae-b3c32214adfe"
+Template: "3a5161bc-db66-4f7f-8dd0-8b5e505123c7"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team/Brenda Barkley/_Local
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{9BCD885B-8B18-4EA5-AEA1-BC5F918D5B90}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-1000"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T071851Z

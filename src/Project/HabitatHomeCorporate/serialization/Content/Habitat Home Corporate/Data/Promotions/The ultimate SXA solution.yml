@@ -8,7 +8,7 @@ SharedFields:
 - ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
   Hint: Image
   Value: |
-    <image mediaid="{346287B6-AB8F-44FB-89DB-4956328492E4}" />
+    <image mediaid="{346287B6-AB8F-44FB-89DB-4956328492E4}" ></image>
 Languages:
 - Language: en
   Versions:
@@ -23,3 +23,20 @@ Languages:
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: The ultimate SXA solution
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: Utilisez Sitecore Experience Accelerator (SXA) pour acc&eacute;l&eacute;rer la production de sites Web et pour r&eacute;utiliser des composants, des mises en page et des mod&egrave;les sur plusieurs sites.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T065058Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: La solution SXA ultime

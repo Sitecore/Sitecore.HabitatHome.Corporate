@@ -59,6 +59,29 @@ Languages:
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Business
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03f0061a-309d-4732-a722-2f2a1488ac60"
+      Hint: NavigationTitle
+      Value: Affaires
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190517T075131Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "60a36bf8-cb0e-40f6-8b5a-834105136988"
+      Hint: MetadataTitle
+      Value: Affaires
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: "Nos clients en financement des entreprises vont de grandes sociétés privées à des sociétés cotées en bourse, des entreprises familiales et des start-ups, en passant par de nombreux secteurs. Pour ce large éventail de clients, nos avocats effectuent un large éventail d’opérations de financement public et privé, à la fois en fonds propres et en dettes, adaptées aux besoins de leur secteur d’activité et de la situation particulière de chaque entreprise."
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Affaires
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

@@ -4,6 +4,17 @@ Parent: "495beea8-a08a-48e4-8bf9-94893432bddd"
 Template: "b9718ae9-0113-43ae-8c86-e29830b6cdb7"
 Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Data/News/2019/05/16/07/37/Nancy McRoberts 2015 Tax Trial Lawyer of the Year
 DB: master
+SharedFields:
+- ID: "0ec002c0-abf8-4595-8b24-58079a01325d"
+  Hint: NewsDate
+  Value: 20190506T073700Z
+- ID: "94195268-29fe-4bdb-8666-dbb6277bca30"
+  Hint: NewsSlug
+  Value: "Nancy-McRoberts-2015-Tax-Trial-Lawyer-of-the-Year"
+- ID: "c9293739-c797-4c8c-8200-5f3f365de1e6"
+  Hint: NewsImage
+  Value: |
+    <image mediaid="{0518D659-7762-4D88-9C2E-C3E90155B3D9}" />
 Languages:
 - Language: en
   Versions:
@@ -12,9 +23,6 @@ Languages:
     - ID: "03f0061a-309d-4732-a722-2f2a1488ac60"
       Hint: NavigationTitle
       Value: Nancy McRoberts, 2015 Tax Trial Lawyer of the Year
-    - ID: "0ec002c0-abf8-4595-8b24-58079a01325d"
-      Hint: NewsDate
-      Value: 20190506T073700Z
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190516T073759Z
@@ -29,22 +37,52 @@ Languages:
       Value: |
         <p>San Francisco, California&mdash;We are very pleased to announce that Nancy was named as the 2015 Tax Trial Lawyer of the Year by the San Francisco Chapter of the American Board of Trial Advocates. ABOTA is a national peer-reviewed organization of trial lawyers dedicated to the preservation of the right to trial by jury. Nancy is the second Habitat Legal partner to be named the Trial Lawyer of the Year (Ryan Jacobs was the recipient in 2014) and the first woman in the Chapter to receive this esteemed award. Being first is nothing new for Nancy. She was also the first woman partner in the firm, and continues to lead by example in demonstrating the respect and courtesy towards others that led to her receiving the ABOTA Civility Award in 2010.</p>
         <p>The presentation of the accolade was made at the Chapter&rsquo;s annual dinner on September 28th. ABOTA member Michael Ferrard entertained the group with stories about Nancy&rsquo;s career, including her cross examination during her first tax law trial. &ldquo;It is a wonderful honor to receive this award from a group of people who are not only the best litigators in this region, but also my professional peers and most importantly, my friends,&rdquo; Nancy said.</p>
-    - ID: "94195268-29fe-4bdb-8666-dbb6277bca30"
-      Hint: NewsSlug
-      Value: "Nancy-McRoberts-2015-Tax-Trial-Lawyer-of-the-Year"
     - ID: "b8fb4f54-6a50-4ece-b6df-cb74563c8fb9"
       Hint: NewsTitle
       Value: Nancy McRoberts, 2015 Tax Trial Lawyer of the Year
     - ID: "c2d93d35-a2c4-48c6-9f78-f5d2c070bc5c"
       Hint: MetadataDescription
       Value: We are very pleased to announce that Nancy was named as the 2015 Tax Trial Lawyer of the Year by the San Francisco Chapter of the American Board of Trial Advocates.
-    - ID: "c9293739-c797-4c8c-8200-5f3f365de1e6"
-      Hint: NewsImage
-      Value: |
-        <image mediaid="{0518D659-7762-4D88-9C2E-C3E90155B3D9}" />
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
       Value: We are very pleased to announce that Nancy was named as the 2015 Tax Trial Lawyer of the Year by the San Francisco Chapter of the American Board of Trial Advocates.
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Nancy McRoberts, 2015 Tax Trial Lawyer of the Year
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03f0061a-309d-4732-a722-2f2a1488ac60"
+      Hint: NavigationTitle
+      Value: Nancy McRoberts, avocate au procès en fiscalité 2015
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190517T200529Z
+    - ID: "313ca749-6abf-4368-9bd1-7c5ccd465d46"
+      Hint: NewsSummary
+      Value: Nous sommes très heureux d'annoncer que Nancy a été nommée avocat de l'année en matière de fiscalité 2015 par la section de San Francisco de l'American Board of Trial Advocates.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "60a36bf8-cb0e-40f6-8b5a-834105136988"
+      Hint: MetadataTitle
+      Value: Nancy McRoberts, avocate au procès en fiscalité 2015
+    - ID: "72cb911a-89fb-4845-bf8a-e6b844685113"
+      Hint: NewsContent
+      Value: |
+        <p>San Francisco, Californie - Nous sommes tr&egrave;s heureux d'annoncer que Nancy a &eacute;t&eacute; nomm&eacute;e avocat de l'ann&eacute;e en mati&egrave;re de fiscalit&eacute; 2015 par la section de San Francisco de l'American Board of Trial Advocates. ABOTA est une organisation nationale d&rsquo;avocats sp&eacute;cialis&eacute;s en proc&egrave;s qui se consacre &agrave; la pr&eacute;servation du droit &agrave; un proc&egrave;s avec jury. Nancy est la deuxi&egrave;me partenaire juridique d&rsquo;Habitat &agrave; &ecirc;tre nomm&eacute;e avocate de premi&egrave;re instance de l&rsquo;ann&eacute;e (Ryan Jacobs en a &eacute;t&eacute; la r&eacute;cipiendaire en 2014) et la premi&egrave;re femme de la section &agrave; recevoir ce prix prestigieux. &Ecirc;tre le premier n&rsquo;a rien de nouveau pour Nancy. Elle a &eacute;galement &eacute;t&eacute; la premi&egrave;re femme associ&eacute;e du cabinet et continue de montrer l'exemple en faisant preuve du respect et de la courtoisie envers les autres qui lui ont valu de recevoir le prix ABOTA Civility en 2010.</p>
+        <p>La c&eacute;r&eacute;monie a eu lieu lors du d&icirc;ner annuel du Chapitre, le 28 septembre. Michael Ferrard, membre d&rsquo;ABOTA, a anim&eacute; le groupe en racontant des histoires sur la carri&egrave;re de Nancy, y compris son contre-interrogatoire lors de son premier proc&egrave;s en droit fiscal. &laquo;C&rsquo;est un grand honneur de recevoir ce prix de la part d&rsquo;un groupe de personnes qui sont non seulement les meilleurs plaideurs de la r&eacute;gion, mais &eacute;galement mes coll&egrave;gues professionnels et surtout mes amis&raquo;, a d&eacute;clar&eacute; Nancy.</p>
+    - ID: "b8fb4f54-6a50-4ece-b6df-cb74563c8fb9"
+      Hint: NewsTitle
+      Value: Nancy McRoberts, avocate au procès en fiscalité 2015
+    - ID: "c2d93d35-a2c4-48c6-9f78-f5d2c070bc5c"
+      Hint: MetadataDescription
+      Value: Nous sommes très heureux d'annoncer que Nancy a été nommée avocat de l'année en matière de fiscalité 2015 par la section de San Francisco de l'American Board of Trial Advocates.
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: Nous sommes très heureux d'annoncer que Nancy a été nommée avocat de l'année en matière de fiscalité 2015 par la section de San Francisco de l'American Board of Trial Advocates.
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Nancy McRoberts, avocate au procès en fiscalité 2015

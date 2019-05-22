@@ -26,6 +26,26 @@ Languages:
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: The cards are stacked in your favor
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: "Que vous souhaitiez consolider une dette &agrave; taux d'int&eacute;r&ecirc;t &eacute;lev&eacute;, financer un achat important ou payer des d&eacute;penses impr&eacute;vues, Habitat peut personnaliser un pr&ecirc;t pour vous. Vous trouverez ci-dessous quelques avantages d'un pr&ecirc;t personnel ou d'une marge de cr&eacute;dit personnelle."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190517T083209Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
+      Hint: Subtitle
+      Value: "De meilleures récompenses? APR inférieur? Peu importe le type de carte que vous recherchez, nous avons la carte qui vous convient."
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Les cartes sont empilées en votre faveur
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

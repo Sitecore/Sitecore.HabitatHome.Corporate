@@ -1,8 +1,8 @@
 ﻿---
 ID: "b73db21e-5102-401b-bbbf-b9ddb9c0b16e"
-Parent: "50ff3785-6f5b-4bde-a7c5-e4dd87215d42"
+Parent: "7a7f5664-7617-4e9d-bc1b-9f15ba12f9a5"
 Template: "9bcd885b-8b18-4ea5-aea1-bc5f918d5b90"
-Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team/Shane Nevins/Local Content/Promo left
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team/Shane Nevins/_Local/Promo left
 DB: master
 SharedFields:
 - ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
@@ -29,6 +29,26 @@ Languages:
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
       Value: 
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Contact
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: |
+        T: <a href="mailto:+1-912-555-5561">+1-912-555-5561</a><br />
+        M: <a href="mailto:+1-912-555-5578">+1-912-555-5578</a><br />
+        E: <a href="mailto:s.nevins@chaseridley.com">s.nevins@chaseridley.com</a>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T074807Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Contact

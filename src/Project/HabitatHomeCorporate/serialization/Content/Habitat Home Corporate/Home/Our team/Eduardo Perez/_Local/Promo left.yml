@@ -1,8 +1,8 @@
 ﻿---
 ID: "010bd1c6-e443-4616-a21e-2d627fa50c8f"
-Parent: "a8be6891-f809-431b-9390-b0e4ec273500"
+Parent: "4d492fb8-c12d-4a69-b48d-a6bae4ff0f5d"
 Template: "9bcd885b-8b18-4ea5-aea1-bc5f918d5b90"
-Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team/Eduardo Perez/Local Content/Promo left
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team/Eduardo Perez/_Local/Promo left
 DB: master
 SharedFields:
 - ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
@@ -29,6 +29,26 @@ Languages:
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
       Value: 
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Contact
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: |
+        T: <a href="tel:+1-923-555-4295">+1-923-555-4295</a><br />
+        M: <a href="tel:+1-923-555-5943">+1-923-555-5943</a><br />
+        E: <a href="mailto:ed.perez@chaseridley.com">ed.perez@chaseridley.com</a>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T073340Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Contact
