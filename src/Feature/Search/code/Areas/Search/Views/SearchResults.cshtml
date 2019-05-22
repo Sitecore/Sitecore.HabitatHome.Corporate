@@ -36,7 +36,11 @@
                     @foreach (var item in Model.SearchResultItems)
                     {
                         var url = LinkManager.GetItemUrl(item.Item);
-
+                        if (item.Item.TemplateName == "NewsPage")
+                        {
+                            var newsSlug = url.Split(new[] { "/" }, StringSplitOptions.RemoveEmptyEntries).Last();
+                            url = string.Format("/News/{0}", newsSlug);
+                        }
                         <div class="col-12">
                             <div class="card mb-4 shadow-sm">
                                 <div class="card-body">
