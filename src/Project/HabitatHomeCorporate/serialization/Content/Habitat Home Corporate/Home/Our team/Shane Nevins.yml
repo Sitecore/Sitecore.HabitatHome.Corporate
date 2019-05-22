@@ -13,6 +13,23 @@ SharedFields:
       <event
         id="{4211E96D-3E06-4EB8-A9C1-5C19DAA7BB5E}"
         name="Shane Nevins team member visit" />
+      <profile
+        id="8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9"
+        name="Habitat Home Corporate"
+        presets="lawyer|100||">
+        <key
+          name="Entrepeneur"
+          value="0" />
+        <key
+          name="Executive"
+          value="0" />
+        <key
+          name="Lawyer"
+          value="10" />
+        <key
+          name="Marketer"
+          value="0" />
+      </profile>
     </tracking>
 Languages:
 - Language: en

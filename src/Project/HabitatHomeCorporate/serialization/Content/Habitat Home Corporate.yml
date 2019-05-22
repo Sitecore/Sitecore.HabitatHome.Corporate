@@ -20,12 +20,17 @@ SharedFields:
   Value: Data
 Languages:
 - Language: en
+  Fields:
+  - ID: "2a84eca4-68bb-4451-b4ac-98ea71a5a3dc"
+    Hint: SiteProfiles
+    Type: Multilist
+    Value: "{8FA7FDBD-00A3-4BD0-9321-3B6A57E1A8B9}"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: "20181108T162219:636772909398132552Z"
+      Value: 20181108T162219Z
 - Language: "fr-CA"
   Versions:
   - Version: 1

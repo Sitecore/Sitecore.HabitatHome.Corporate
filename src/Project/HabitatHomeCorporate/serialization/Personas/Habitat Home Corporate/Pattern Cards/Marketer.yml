@@ -1,0 +1,34 @@
+﻿---
+ID: "37e8ac37-0a7d-46ca-a7c2-1cf7553960b3"
+Parent: "8cbe63cf-5094-4b86-b53d-951917932f33"
+Template: "4a6a7e36-2481-438f-a9ba-0453ecc638fa"
+Path: /sitecore/system/Marketing Control Panel/Profiles/Habitat Home Corporate/Pattern Cards/Marketer
+DB: master
+SharedFields:
+- ID: "6da71ad3-5849-4482-9317-d21390e5a348"
+  Hint: Pattern
+  Value: |
+    <tracking>
+      <profile id="8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9" name="Habitat Home Corporate">
+        <key name="Entrepeneur" value="0" />
+        <key name="Executive" value="0" />
+        <key name="Lawyer" value="0" />
+        <key name="Marketer" value="10" />
+      </profile>
+    </tracking>
+Languages:
+- Language: en
+  Fields:
+  - ID: "98535f26-6c9d-4fd7-a7e2-392c7cb82d65"
+    Hint: Image
+    Value: |
+      <image mediaid="{F929B83C-28A5-45D3-8085-A6A0238F5FE7}" />
+  - ID: "fe732790-2ddb-4657-a882-c2fce1fbf0c9"
+    Hint: Name
+    Value: Marketer
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190522T112034Z

@@ -14,6 +14,29 @@ SharedFields:
 - ID: "9dafca1d-d618-4616-86b8-a8acd6b28a63"
   Hint: __Bucket Parent Reference
   Value: "{61FE960E-5760-4A22-8AA5-ECE6968A0CBC}"
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <profile
+        id="8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9"
+        name="Habitat Home Corporate"
+        presets="marketer|100||">
+        <key
+          name="Entrepeneur"
+          value="0" />
+        <key
+          name="Executive"
+          value="0" />
+        <key
+          name="Lawyer"
+          value="0" />
+        <key
+          name="Marketer"
+          value="10" />
+      </profile>
+    </tracking>
 - ID: "c9293739-c797-4c8c-8200-5f3f365de1e6"
   Hint: NewsImage
   Value: |

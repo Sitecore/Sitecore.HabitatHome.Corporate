@@ -564,6 +564,7 @@ html.show-sidebar-right {
     font-weight: bold;
     text-align: left;
     padding: 5px;
+    background-color: #62A87C;
 }
 
 .off-canvas-sidebar .tab-pane {
@@ -703,7 +704,7 @@ html.show-sidebar-right {
 }
 
 .sidebar .nav li.active > a {
-    color: #c8244f;
+    color: #fe2911;
     font-weight: 800;
 }
 
@@ -983,4 +984,8 @@ html.show-sidebar-right {
 
 #onsiteBehaviorPanel .media {
     padding-top: 15px;
+}
+
+#onSiteBehaviorProfileCurrent .progress-bar {
+    background-color: #19a5a2;
 }
