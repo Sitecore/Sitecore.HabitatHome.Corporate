@@ -1,0 +1,43 @@
+﻿---
+ID: "f929b83c-28a5-45d3-8085-a6a0238f5fe7"
+Parent: "617de382-aa92-4c7f-8b7b-fc64f56c320e"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/Habitat Standard Sites/Habitat Home Corporate/Profile Icons/habitathomecorporate-multichannel"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/F929B83C28A545D38085A6A0238F5FE7.ashx?h=16&thn=1&w=16"
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 100
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "5a38c48a-7150-4348-b981-56db0e5c85dc"
+  Value: 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
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1915
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 100 x 100
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190522T091652Z
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Marketing
