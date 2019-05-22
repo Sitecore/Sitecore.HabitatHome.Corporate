@@ -1,0 +1,19 @@
+﻿---
+ID: "152bdef9-558e-46ef-be35-ba4c50ff0070"
+Parent: "8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9"
+Template: "1ad02405-7207-4962-ba96-6d6c3ba30ba7"
+Path: /sitecore/system/Marketing Control Panel/Profiles/Habitat Home Corporate Persona/Profile Cards
+DB: master
+BranchID: "07624a03-bb2f-45d8-abe1-15e2b1705ff3"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{8F66D1E0-DEBA-4D68-8713-DD982C1ABDE4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190522T064148Z
