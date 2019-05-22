@@ -980,3 +980,7 @@ html.show-sidebar-right {
 .media-body li {
     padding-right: 10px;
 }
+
+#onsiteBehaviorPanel .media {
+    padding-top: 15px;
+}
