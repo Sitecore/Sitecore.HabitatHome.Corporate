@@ -4,6 +4,29 @@ Parent: "631b341f-28f5-4350-8985-cf9b7c5fe7bc"
 Template: "e427e2c2-f0e1-490f-81ec-4f968837b8c5"
 Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our brands/Habitat Home
 DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <profile
+        id="8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9"
+        name="Habitat Home Corporate Persona">
+        <key
+          name="Entrepeneur"
+          value="4" />
+        <key
+          name="Executive"
+          value="0" />
+        <key
+          name="Lawyer"
+          value="0" />
+        <key
+          name="Marketer"
+          value="0" />
+      </profile>
+    </tracking>
 Languages:
 - Language: en
   Versions:
