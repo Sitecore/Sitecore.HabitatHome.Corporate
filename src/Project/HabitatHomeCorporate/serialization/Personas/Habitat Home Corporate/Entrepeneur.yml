@@ -2,7 +2,7 @@
 ID: "d90a9711-4dbd-408c-9afa-71bf7f5963ea"
 Parent: "8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9"
 Template: "44ab5107-3c73-42f0-a427-bec549f944b9"
-Path: /sitecore/system/Marketing Control Panel/Profiles/Habitat Home Corporate Persona/Entrepeneur
+Path: /sitecore/system/Marketing Control Panel/Profiles/Habitat Home Corporate/Entrepeneur
 DB: master
 SharedFields:
 - ID: "12e2c64a-5f08-4948-86c8-55ae06afeef8"
