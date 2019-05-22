@@ -13,6 +13,23 @@ SharedFields:
       <event
         id="{71E277EC-AD8D-4E38-9520-A7E568AC6B91}"
         name="Eduardo Perez team member visit" />
+      <profile
+        id="8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9"
+        name="Habitat Home Corporate"
+        presets="lawyer|100||">
+        <key
+          name="Entrepeneur"
+          value="0" />
+        <key
+          name="Executive"
+          value="0" />
+        <key
+          name="Lawyer"
+          value="10" />
+        <key
+          name="Marketer"
+          value="0" />
+      </profile>
     </tracking>
 Languages:
 - Language: en

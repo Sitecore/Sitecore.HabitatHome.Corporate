@@ -13,6 +13,23 @@ SharedFields:
       <event
         id="{3B94404A-1F13-4EF1-B2B4-326CDC26B5A7}"
         name="Mark Chase team member visit" />
+      <profile
+        id="8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9"
+        name="Habitat Home Corporate"
+        presets="lawyer|100||">
+        <key
+          name="Entrepeneur"
+          value="0" />
+        <key
+          name="Executive"
+          value="0" />
+        <key
+          name="Lawyer"
+          value="10" />
+        <key
+          name="Marketer"
+          value="0" />
+      </profile>
     </tracking>
 Languages:
 - Language: en
