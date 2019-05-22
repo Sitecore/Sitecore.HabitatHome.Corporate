@@ -4,6 +4,11 @@ Parent: "e0384234-365d-4004-854c-bfd216d1883c"
 Template: "e427e2c2-f0e1-490f-81ec-4f968837b8c5"
 Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Download our whitepaper/Thank you
 DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: <tracking />
 Languages:
 - Language: en
   Versions:

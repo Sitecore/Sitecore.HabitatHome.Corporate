@@ -60,7 +60,7 @@
                         @Html.Sitecore().DictionaryField("//Demo/Onsite Behavior/Goals Triggered", "Triggered goals")
                         @if (Model.Goals.Any())
                         {
-                            <strong class="pull-right">@Model.Goals.Count()</strong>
+                            <strong class="pull-right">(@Model.Goals.Count())</strong>
                         }
                     </h4>
                     <div class="media-body">
@@ -146,14 +146,14 @@
             </div>
             <div class="media">
                 <div class="media-left">
-                    <span class="fa fa-money"></span>
+                    <span class="fa fa-money-check-alt"></span>
                 </div>
                 <div class="media-body ">
                     <h4 class="media-title">
                         @Html.Sitecore().DictionaryField("//Demo/Onsite Behavior/Outcomes", "Outcomes")
                         @if (Model.Outcomes.Any())
             {
-                            <strong class="pull-right">@Model.Outcomes.Count()</strong>
+                            <strong class="pull-right">(@Model.Outcomes.Count())</strong>
                         }
                     </h4>
                     @if (!Model.Outcomes.Any())
