@@ -1,0 +1,57 @@
+﻿---
+ID: "589e0e1c-91a8-4f40-bfe7-c66cbc4d79d4"
+Parent: "b05e9cc8-8873-4376-9545-51baa237915d"
+Template: "b9718ae9-0113-43ae-8c86-e29830b6cdb7"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Data/News/2019/05/16/07/34/Intellectual Property is Not Just a Concern for Big Companies
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03f0061a-309d-4732-a722-2f2a1488ac60"
+      Hint: NavigationTitle
+      Value: Intellectual Property is Not Just a Concern for Big Companies
+    - ID: "0ec002c0-abf8-4595-8b24-58079a01325d"
+      Hint: NewsDate
+      Value: 20190516T073429Z
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190516T073429Z
+    - ID: "313ca749-6abf-4368-9bd1-7c5ccd465d46"
+      Hint: NewsSummary
+      Value: "With the rise of competition through the Internet, understanding intellectual property is more critical than ever for small-business owners."
+    - ID: "60a36bf8-cb0e-40f6-8b5a-834105136988"
+      Hint: MetadataTitle
+      Value: Intellectual Property is Not Just a Concern for Big Companies
+    - ID: "72cb911a-89fb-4845-bf8a-e6b844685113"
+      Hint: NewsContent
+      Value: |
+        <p>For most small businesses, when the subject of intellectual property comes up, many owners run in the other direction. They envision expensive lawyers and use that as an excuse think that it is a problem for big companies to worry about. The trouble is, with the rise of competition through the internet, understanding intellectual property is more critical than ever for small-business owners. In this article, we&rsquo;ll explore three of the most common fallacies:</p>
+        <p>1. For small-business owners, it&rsquo;s not worth the time and effort to secure intellectual property rights.</p>
+        <p>Don Plemons, CEO of Tahoe City-based Boca Bars, had high hopes when he and his company attended the Fancy Foods show in San Francisco, CA. His Boca Bars had just been named the best new product at the Natural Products Expo East last year? However, it didn&rsquo;t take long before Mr. Plemons knew there was something awry: He kept hearing how one of his competitors had copied his packaging and the shape of his bars.</p>
+        <p>Fortunately for Mr. Plemons, he had secured crucial components of intellectual property like trademarks, trade dress (the look and feel of a product) and web addresses after founding his company. Unlike a patent, which can cost up to $25,000 to secure, trademarks and URLs can be obtained relatively cheaply and without the aid of a lawyer. With the legal documentation to back up his intellectual property rights, Mr. Plemons sent the offending company a cease-and-desist letter, which achieved the desired result. According to Mr. Plemons, &ldquo;Too many entrepreneurs forget there is more to IP than just patents.&rdquo; By the way, Mr. Plemons also happens to be a lawyer.</p>
+        <p>2. Once I get a trademark, my brand is safe.</p>
+        <p>Perhaps, but consider what happened to Lacey Starkweather, who runs a bakery in Seattle, WA. When Ms. Starkweather opened her business in 2009, she secured trademarks on her business name and logo and on the name of her signature item, &ldquo;Baby Cakes,&rdquo; which are mini frosted cupcakes. The problem, she says, was that even though she had obtained the trademarks, someone else had spotted her trademark application (public record) and secured the babycakes.com domain before she could. &ldquo;I had no idea that even though I have a trademark, someone else could just go register the URL,&rdquo; she said. &ldquo;I wish I had planned ahead and bought the site before I did that.&rdquo;</p>
+        <p>3. Having a patent gives me the right to produce something.</p>
+        <p>This is a very fundamental misunderstanding. Actually, what a patent does is give you the right to prevent someone else from producing what your patent covers. But even if you do have a patent, there&rsquo;s no guarantee that someone won&rsquo;t try to get around it. There&rsquo;s also no guarantee that you will win if you fight that person. But if you have your IP ducks in a row and a commitment to do whatever you can to defend those rights, you do have a fighting chance &mdash; even in a fight against a much larger company.</p>
+        <p>Consider the example of ScanChip, a 30-employee technology firm in Silicon Valley that specializes in credit card data security. Beginning in 2008, the company made the decision to pursue litigation against the credit card giant Visa, which ScanChip asserted was infringing on its patents covering their EMV chip technology. To pursue the case against Visa, ScanChip&rsquo;s founder knew he needed to seek legal advice to understand what Visa couldn&rsquo;t produce based on their patent coverage. In the end, the gamble paid off, as the two companies settled out of court, with Visa&rsquo;s agreeing to license the technology from ScanChip.</p>
+    - ID: "94195268-29fe-4bdb-8666-dbb6277bca30"
+      Hint: NewsSlug
+      Value: "Intellectual-Property-is-Not-Just-a-Concern-for-Big-Companies"
+    - ID: "b8fb4f54-6a50-4ece-b6df-cb74563c8fb9"
+      Hint: NewsTitle
+      Value: Intellectual Property is Not Just a Concern for Big Companies
+    - ID: "c2d93d35-a2c4-48c6-9f78-f5d2c070bc5c"
+      Hint: MetadataDescription
+      Value: "With the rise of competition through the Internet, understanding intellectual property is more critical than ever for small-business owners."
+    - ID: "c9293739-c797-4c8c-8200-5f3f365de1e6"
+      Hint: NewsImage
+      Value: |
+        <image mediaid="{653667AA-462F-4717-809C-E007A2095F75}" />
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: "With the rise of competition through the Internet, understanding intellectual property is more critical than ever for small-business owners."
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Intellectual Property is Not Just a Concern for Big Companies

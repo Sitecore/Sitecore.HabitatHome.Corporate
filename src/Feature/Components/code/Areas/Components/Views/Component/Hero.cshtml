@@ -1,4 +1,5 @@
 ﻿@using Sitecore.HabitatHome.Feature.Components.Models
+@using Sitecore.HabitatHome.Foundation.Dictionary.Extensions
 @using Sitecore.HabitatHome.Foundation.SitecoreExtensions.Extensions
 
 @model Component
@@ -24,11 +25,11 @@
 
         @if (Model.TargetPage != null)
         {
-            <a href="@Model.TargetPage.Url" class="btn btn-info">Read More</a>
+            <a href="@Model.TargetPage.Url" class="btn btn-info">@Html.Sitecore().Dictionary("/Buttons/Read More", "Read more")</a>
         }
         else  if (Model.TargetUrl != null && !string.IsNullOrEmpty(Model.TargetUrl.GetFriendlyUrl()))
         {
-            <a href="@Model.TargetUrl.GetFriendlyUrl()" class="btn btn-info">Read More</a>
+            <a href="@Model.TargetUrl.GetFriendlyUrl()" class="btn btn-info">@Html.Sitecore().Dictionary("/Buttons/Read More", "Read more")</a>
         }
     </div>
 </div>

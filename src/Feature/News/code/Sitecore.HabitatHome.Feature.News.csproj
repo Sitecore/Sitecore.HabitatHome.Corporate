@@ -101,6 +101,7 @@
     <Content Include="Areas\News\Views\NewsDetailHeading.cshtml" />
     <Content Include="Areas\News\Views\NewsDetailArticle.cshtml" />
     <Content Include="App_Config\Include\Feature\Feature.News.config" />
+    <Content Include="Areas\News\Views\LatestNews.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -108,7 +109,7 @@
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\NewsSearchResultItem.cs" />
-    <Compile Include="Models\NewsOverviewViewModel.cs" />
+    <Compile Include="Models\NewsItemsViewModel.cs" />
     <Compile Include="Repositories\NewsRepository.cs" />
     <Compile Include="Pipelines\HttpRequestBegin\NewsWildCardItemResolver.cs" />
     <Compile Include="Pipelines\MvcGetPageItem\CheckNewsItemResolved.cs" />
@@ -127,11 +128,17 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\News\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\Sitecore.HabitatHome.Foundation.DependencyInjection.csproj">
       <Project>{FA1EEE78-E6D6-4B63-A126-5F470624EFEE}</Project>
       <Name>Sitecore.HabitatHome.Foundation.DependencyInjection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Dictionary\code\Sitecore.HabitatHome.Foundation.Dictionary.csproj">
+      <Project>{0d6ba4d8-c469-4ae9-9ebb-93bdf7d7e78f}</Project>
+      <Name>Sitecore.HabitatHome.Foundation.Dictionary</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Sitecore.HabitatHome.Foundation.SitecoreExtensions.csproj">
       <Project>{1c7b40c7-aea6-4038-9d45-0f5440908929}</Project>

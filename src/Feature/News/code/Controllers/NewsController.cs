@@ -1,14 +1,16 @@
 ﻿using System.Web.Mvc;
 using Sitecore.HabitatHome.Feature.News.Repositories;
 using Sitecore.HabitatHome.Feature.News.Services;
+using Sitecore.HabitatHome.Foundation.SitecoreExtensions.Extensions;
+using Sitecore.Mvc.Presentation;
 using Sitecore.Web;
 
 namespace Sitecore.HabitatHome.Feature.News.Controllers
 {
     public class NewsController : Controller
     {
-        private readonly INewsSettingsService _newsSettingsService;
         private readonly INewsRepository _newsRepository;
+        private readonly INewsSettingsService _newsSettingsService;
         private Models.News news;
 
         public NewsController(INewsSettingsService newsSettingsService, INewsRepository newsRepository)
@@ -42,6 +44,13 @@ namespace Sitecore.HabitatHome.Feature.News.Controllers
 
             var list = _newsRepository.GetNewsItems(page, NewsOverviewDefaultNumberOfItems);
             return View("~/Areas/News/Views/NewsOverview.cshtml", list);
+        }
+
+        public ViewResult LatestNews()
+        {
+            var numberOfNewsItems = RenderingContext.Current.Rendering.GetIntegerParameter(Templates.RenderingParameters.NumberOfNewsItems.NumberOfNewsItemsFieldName, 4);
+            var newsItems = _newsRepository.GetNewsItems(1, numberOfNewsItems);
+            return View("~/Areas/News/Views/LatestNews.cshtml", newsItems);
         }
 
         public ViewResult NewsDetailHeading()

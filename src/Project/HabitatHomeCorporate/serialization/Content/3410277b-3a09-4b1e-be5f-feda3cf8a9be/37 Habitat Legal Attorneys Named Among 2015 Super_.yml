@@ -1,0 +1,54 @@
+﻿---
+ID: "b1796598-f21c-4550-8e70-8aa89ab6e372"
+Parent: "3410277b-3a09-4b1e-be5f-feda3cf8a9be"
+Template: "b9718ae9-0113-43ae-8c86-e29830b6cdb7"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Data/News/2019/05/16/07/48/37 Habitat Legal Attorneys Named Among 2015 Super Lawyers and Rising Stars
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03f0061a-309d-4732-a722-2f2a1488ac60"
+      Hint: NavigationTitle
+      Value: 37 Habitat Legal Attorneys Named Among 2015 Super Lawyers and Rising Stars
+    - ID: "0ec002c0-abf8-4595-8b24-58079a01325d"
+      Hint: NewsDate
+      Value: 20190516T074856Z
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190516T074856Z
+    - ID: "313ca749-6abf-4368-9bd1-7c5ccd465d46"
+      Hint: NewsSummary
+      Value: Super Lawyers has released its Northern California, Southern California, and San Diego lists of outstanding attorneys for 2015, on which 37 Habitat Legal attorneys have been included.
+    - ID: "60a36bf8-cb0e-40f6-8b5a-834105136988"
+      Hint: MetadataTitle
+      Value: 37 Habitat Legal Attorneys Named Among 2015 Super Lawyers and Rising Stars
+    - ID: "72cb911a-89fb-4845-bf8a-e6b844685113"
+      Hint: NewsContent
+      Value: |
+        <p>San Francisco, California&mdash;Super Lawyers has released its Northern California, Southern California, and San Diego lists of outstanding attorneys for 2015, on which 37 Habitat Legal attorneys have been included.</p>
+        <p>Habitat Legal attorneys named to the 2015 Southern California and San Diego Super Lawyers include Roberto Nevins and Sam Harvey in the firm&rsquo;s Beverly Hills office; Wallace Olafsen in the firm&rsquo;s Newport Beach office; and Joseph K. Denney in the firm&rsquo;s San Diego office.</p>
+        <p>Attorneys listed as 2015 Northern California Super Lawyers include Mark Chase, Brenda Barkley, Jenna Ridley, Kayla Beeks, Dale Kent, Eduardotoph Cheedle, Susanne Quisette, James Clark, Eduardo Perez, Jr., Kristy Sparks, Louis Belmont, Shawn Cain, Dave Hanson, Michael Pe&ntilde;a, Tricia Marcs, Alden Tanaka, Dale Crean, Charlie Spieth, Kenneth Silva, and Liz Claynor in the firm&rsquo;s Sacramento office; and Paul Marketi, Hillary Bainer, and H. Ryan Jeon in the firm&rsquo;s San Francisco office.</p>
+        <p>Attorneys listed as 2015 Northern California Rising Stars include Megan Shelley, Caroline Schaeffer, Mark Taylor, Brandon Hahn, and Julie Steinkemp in the firm&rsquo;s Sacramento office; Shauna Tonellie and Jeffrey Boatwright in the firm&rsquo;s San Francisco office.</p>
+        <h2>About Super Lawyers</h2>
+        <p>Super Lawyers is a rating service of outstanding lawyers from more than 70 practice areas who have attained a high degree of peer recognition and professional achievement. The annual selections are made using a patented multiphase process that includes a statewide survey of lawyers, an independent research evaluation of candidates, and peer reviews by practice area. The result is a credible, comprehensive, and diverse listing of exceptional attorneys. The Super Lawyers lists are published nationwide in Super Lawyers Magazine and in leading city and regional magazines and newspapers across the country.</p>
+    - ID: "94195268-29fe-4bdb-8666-dbb6277bca30"
+      Hint: NewsSlug
+      Value: "37-Habitat-Legal-Attorneys-Named-Among-2015-Super-Lawyers-and-Rising Stars"
+    - ID: "b8fb4f54-6a50-4ece-b6df-cb74563c8fb9"
+      Hint: NewsTitle
+      Value: 37 Habitat Legal Attorneys Named Among 2015 Super Lawyers and Rising Stars
+    - ID: "c2d93d35-a2c4-48c6-9f78-f5d2c070bc5c"
+      Hint: MetadataDescription
+      Value: Super Lawyers has released its Northern California, Southern California, and San Diego lists of outstanding attorneys for 2015, on which 37 Habitat Legal attorneys have been included.
+    - ID: "c9293739-c797-4c8c-8200-5f3f365de1e6"
+      Hint: NewsImage
+      Value: |
+        <image mediaid="{2E3320D7-B1C0-4994-AD21-B200AD925F04}" />
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: Super Lawyers has released its Northern California, Southern California, and San Diego lists of outstanding attorneys for 2015, on which 37 Habitat Legal attorneys have been included.
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: 37 Habitat Legal Attorneys Named Among 2015 Super Lawyers and Rising Stars

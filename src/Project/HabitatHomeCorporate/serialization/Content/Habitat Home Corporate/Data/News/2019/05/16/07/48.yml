@@ -1,0 +1,14 @@
+﻿---
+ID: "3410277b-3a09-4b1e-be5f-feda3cf8a9be"
+Parent: "d24c63bc-be28-4a3d-94a7-1264b15386ab"
+Template: "adb6ca4f-03ef-4f47-b9ac-9ce2ba53ff97"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Data/News/2019/05/16/07/48
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190516T074856Z

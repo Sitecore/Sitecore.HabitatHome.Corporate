@@ -7,6 +7,6 @@ namespace Sitecore.HabitatHome.Feature.News.Repositories
     {
         Item ResolveNewsItemByUrl(string urlPath);
 
-        NewsOverviewViewModel GetNewsItems(int page = 1, int numberOfItems = 10);
+        NewsItemsViewModel GetNewsItems(int page = 1, int numberOfItems = 10);
     }
 }

@@ -20,5 +20,13 @@ namespace Sitecore.HabitatHome.Feature.News
                 public static readonly ID NewsSlugNotFoundPage = new ID("{88C6F83C-41F7-46A2-801C-09D136BF562A}");
             }
         }
+
+        public struct RenderingParameters
+        {
+            public struct NumberOfNewsItems
+            {
+                public static string NumberOfNewsItemsFieldName = "NumberOfNewsItems";
+            }
+        }
     }
 }

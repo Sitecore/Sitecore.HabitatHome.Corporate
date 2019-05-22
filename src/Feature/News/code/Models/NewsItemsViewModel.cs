@@ -2,7 +2,7 @@
 
 namespace Sitecore.HabitatHome.Feature.News.Models
 {
-    public class NewsOverviewViewModel
+    public class NewsItemsViewModel
     {
         public List<News> NewsItems { get; set; }
 
