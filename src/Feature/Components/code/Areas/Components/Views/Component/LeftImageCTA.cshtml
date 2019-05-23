@@ -8,7 +8,7 @@
 <div class="container">
     <div class="row image-cta">
         <div class="col-sm-6 order-sm-1 no-padding-left">
-            @Html.Sitecore().Edit(Model, m => m.Image, new { mw = 500 })
+            @Html.Sitecore().Edit(Model, m => m.Image, new { mw = 500, @class = "img-fluid" })
         </div>
         <div class="col-sm-6 order-sm-2 py-5">
             <h2>
