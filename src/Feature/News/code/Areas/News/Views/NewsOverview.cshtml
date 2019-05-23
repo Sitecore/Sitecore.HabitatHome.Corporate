@@ -10,7 +10,7 @@
         @foreach (var news in Model.NewsItems)
         {
             <div class="col-lg-6 mb-4">
-                <div class="card h-100">
+                <div class="card h-100 shadow">
                     <a href="@news.NewsUrl">
                         @Html.Sitecore().Edit(news, m => m.NewsImage, new
                         {
