@@ -10,15 +10,19 @@ SharedFields:
   Value: |
     <tracking>
       <profile id="8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9" name="Habitat Home Corporate">
-        <key name="Entrepeneur" value="0" />
         <key name="Executive" value="0" />
         <key name="Lawyer" value="10" />
         <key name="Marketer" value="0" />
+        <key name="Entrepreneur" value="0" />
       </profile>
     </tracking>
 Languages:
 - Language: en
   Fields:
+  - ID: "98535f26-6c9d-4fd7-a7e2-392c7cb82d65"
+    Hint: Image
+    Value: |
+      <image mediaid="{0B8A7598-A5B3-42BF-A2B2-AD95894C4F27}" />
   - ID: "fe732790-2ddb-4657-a882-c2fce1fbf0c9"
     Hint: Name
     Value: Lawyer
@@ -28,3 +32,22 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190522T111921Z
+- Language: "fr-CA"
+  Fields:
+  - ID: "98535f26-6c9d-4fd7-a7e2-392c7cb82d65"
+    Hint: Image
+    Value: |
+      <image mediaid="{0B8A7598-A5B3-42BF-A2B2-AD95894C4F27}" />
+  - ID: "fe732790-2ddb-4657-a882-c2fce1fbf0c9"
+    Hint: Name
+    Value: Avocat
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190523T064201Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
