@@ -299,10 +299,10 @@ Task("Publish-Transforms").Does(() => {
 });
 
 Task("Modify-Unicorn-Source-Folder").Does(() => {
-    var zzzDevSettingsFile = File($"{configuration.WebsiteRoot}/App_config/Include/Project/z.DevSettings.config");
+    var zzzDevSettingsFile = File($"{configuration.WebsiteRoot}/App_config/Include/Project/z.Corporate.DevSettings.config");
     
 	var rootXPath = "configuration/sitecore/sc.variable[@name='{0}']/@value";
-    var sourceFolderXPath = string.Format(rootXPath, "sourceFolder");
+    var sourceFolderXPath = string.Format(rootXPath, "corporateSourceFolder");
     var directoryPath = MakeAbsolute(new DirectoryPath(configuration.SourceFolder)).FullPath;
 
     var xmlSetting = new XmlPokeSettings {

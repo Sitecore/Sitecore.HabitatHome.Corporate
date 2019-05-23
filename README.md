@@ -1,20 +1,39 @@
+# *Habitat Home Corporate* #
+
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+Habitat Home Corporate Site and the tools and processes in it, is a Sitecore&reg; solution **example built using standard Sitecore MVC** on the Sitecore Experience Platform&trade; (XP)  following the Helix architecture principles.
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+- [Important notice](#important-notice)
+- [Getting Started](#getting-started)
+- [Contribute or issues](#contribute-or-issues)
+ 
+# Important Notice #
+## Is Habitat Home Corporate a starter kit or template solution?
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+No. You should not clone this repository for the purposes of starting a new Sitecore project. There are other community solutions which can be used as a starter for Helix-based Sitecore implementations. Habitat Home Corporate is intended as a **demo site demonstrating the basic Sitecore platform capabilities**.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Is Habitat Home Corporate supported by Sitecore?
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Sitecore maintains the Habitat Home Corporate example, but Habitat Home Corporate code is not supported by Sitecore Product Support Services. ***Please do not submit support tickets regarding Habitat Home Corporate***.
+
+## Warranty ##
+The code, samples and/or solutions provided in this repository are for example purposes only and without warranty (expressed or implied). The code has not been extensively tested and is not guaranteed to be bug free.
+
+# Getting started #
+
+## Prerequisites ##
+The latest Habitat Home Corporate site is built to support the following version of the Sitecore Experience Platform:
+
+- ***Sitecore Experience Platform 9.2***
+
+In order to install the latest version of Sitecore that works with the Habitat Home Corporate site, **[you need to  head over to the Sitecore.HabitatHome.Utilities repo](https://github.com/Sitecore/Sitecore.HabitatHome.Utilities)** and follow the instructions there. The Sitecore.HabitatHome.Utilities repository is a collection of useful utilities and script examples to help in the context of the Habitat Home Demos, of which one is this Habitat Home Corporate site.
+
+## Clone the repository ##
+
+
+
+
+# Contribute or Issues #
+Please **post any issues on the Slack Community #habitathome channel** or **create an issue on GitHub**. 
+
+Contributions are always welcome!
