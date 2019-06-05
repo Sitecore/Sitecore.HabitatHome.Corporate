@@ -194,6 +194,10 @@ form .field-group { margin-bottom: 20px; }
 
 form label { font-weight: 600; }
 
+#SearchTerm {
+    width: auto;
+}
+
 .btn-primary {
     background-color: #19a5a2;
     border-color: #19a5a2;

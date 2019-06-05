@@ -10,10 +10,10 @@ SharedFields:
   Value: |
     <tracking>
       <profile id="8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9" name="Habitat Home Corporate">
-        <key name="Entrepeneur" value="0" />
         <key name="Executive" value="0" />
         <key name="Lawyer" value="10" />
         <key name="Marketer" value="0" />
+        <key name="Entrepreneur" value="0" />
       </profile>
     </tracking>
 Languages:
@@ -35,3 +35,25 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190522T090332Z
+- Language: "fr-CA"
+  Fields:
+  - ID: "709b879b-7264-49c7-8864-e254d9129302"
+    Hint: Image
+    Value: |
+      <image mediaid="{0B8A7598-A5B3-42BF-A2B2-AD95894C4F27}" />
+  - ID: "823bfc0a-3e62-40a5-8882-1a622882c45b"
+    Hint: Description
+    Value: <p>Un avocat est un professionnel qualifi&eacute; pour donner des conseils sur le droit ou repr&eacute;senter une personne en mati&egrave;re juridique. Un avocat peut &eacute;galement &ecirc;tre appel&eacute; un avocat, un avocat, un avocat, un avocat ou, p&eacute;jorativement, un chasseur d'ambulances.</p>
+  - ID: "a26fc256-1db0-44aa-ba3d-1c830bf882a2"
+    Hint: Name
+    Value: Avocat
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190523T064202Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

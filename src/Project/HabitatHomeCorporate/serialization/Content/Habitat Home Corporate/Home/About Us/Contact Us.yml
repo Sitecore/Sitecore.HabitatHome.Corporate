@@ -15,7 +15,7 @@ SharedFields:
         name="Habitat Home Corporate"
         presets="executive|100||">
         <key
-          name="Entrepeneur"
+          name="Entrepreneur"
           value="0" />
         <key
           name="Executive"

@@ -18,19 +18,19 @@ Languages:
         sitecore\Admin
     - ID: "81b370b0-9ea6-435d-be15-fcffb1cec57f"
       Hint: Register Page
-      Value: /sitecore/content/Habitat Home Corporate/Home/Register
+      Value: 
     - ID: "927f708e-ab61-44ab-ab09-2a1a23e07e05"
       Hint: Forgot Password Page
-      Value: /sitecore/content/Habitat Home Corporate/Home
+      Value: 
     - ID: "a98f8b72-64aa-4a9c-90db-92f7aead55ad"
       Hint: Accounts Details Page
-      Value: /sitecore/content/Habitat Home Corporate/Home
+      Value: 
     - ID: "b8937bfd-64c0-4abe-8e64-b328ea3f1ea1"
       Hint: After Login Page
-      Value: /sitecore/content/Habitat Home Corporate/Home
+      Value: 
     - ID: "e90c6342-5bc9-4011-a3c5-eed1fca7eb7c"
       Hint: Login Page
-      Value: /sitecore/content/Habitat Home Corporate/Home/Login
+      Value: 
     - ID: "f48206df-d2eb-4df2-9ac0-18a2e9c31f29"
       Hint: Register Outcome
       Value: "{52054874-4767-47DC-8099-8C08BFA307AA}"
@@ -47,19 +47,19 @@ Languages:
         sitecore\admin
     - ID: "81b370b0-9ea6-435d-be15-fcffb1cec57f"
       Hint: Register Page
-      Value: /sitecore/content/Habitat Home Corporate/Home/Register
+      Value: 
     - ID: "927f708e-ab61-44ab-ab09-2a1a23e07e05"
       Hint: Forgot Password Page
-      Value: /sitecore/content/Habitat Home Corporate/Home
+      Value: 
     - ID: "a98f8b72-64aa-4a9c-90db-92f7aead55ad"
       Hint: Accounts Details Page
-      Value: /sitecore/content/Habitat Home Corporate/Home
+      Value: 
     - ID: "b8937bfd-64c0-4abe-8e64-b328ea3f1ea1"
       Hint: After Login Page
-      Value: /sitecore/content/Habitat Home Corporate/Home
+      Value: 
     - ID: "e90c6342-5bc9-4011-a3c5-eed1fca7eb7c"
       Hint: Login Page
-      Value: /sitecore/content/Habitat Home Corporate/Home/Login
+      Value: 
     - ID: "f48206df-d2eb-4df2-9ac0-18a2e9c31f29"
       Hint: Register Outcome
       Value: "{52054874-4767-47DC-8099-8C08BFA307AA}"

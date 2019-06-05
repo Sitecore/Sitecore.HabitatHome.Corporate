@@ -18,7 +18,7 @@ SharedFields:
         name="Habitat Home Corporate"
         presets="lawyer|100||">
         <key
-          name="Entrepeneur"
+          name="Entrepreneur"
           value="0" />
         <key
           name="Executive"
@@ -96,6 +96,12 @@ Languages:
     - ID: "60a36bf8-cb0e-40f6-8b5a-834105136988"
       Hint: MetadataTitle
       Value: Eduardo Perez
+    - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
+      Hint: Subtitle
+      Value: Managing Partner
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: "Eduardo is a senior shareholder in the firm’s Corporate and Intellectual Property groups, and is a respected and top-ranked corporate litigation attorney in the region."
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Eduardo Perez

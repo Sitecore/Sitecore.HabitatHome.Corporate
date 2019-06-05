@@ -12,13 +12,13 @@ SharedFields:
     <tracking>
       <event
         id="{E3E8C7A1-3674-4239-933A-63EFF94CF829}"
-        name="Copy of Dale Kent team member visit" />
+        name="Dale Kent team member visit" />
       <profile
         id="8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9"
         name="Habitat Home Corporate"
         presets="lawyer|100||">
         <key
-          name="Entrepeneur"
+          name="Entrepreneur"
           value="0" />
         <key
           name="Executive"
@@ -92,6 +92,12 @@ Languages:
     - ID: "60a36bf8-cb0e-40f6-8b5a-834105136988"
       Hint: MetadataTitle
       Value: Dale Kent
+    - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
+      Hint: Subtitle
+      Value: Shareholder
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: Dale Kent is an entertainment, intellectual property and corporate business attorney who works with companies in a variety of industries.
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Dale Kent
