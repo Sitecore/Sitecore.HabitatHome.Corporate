@@ -30,3 +30,4 @@ tools/*
 /Azure/tools
 **/azure-user.config
 Azure/**/azureuser-config.json
+/publish

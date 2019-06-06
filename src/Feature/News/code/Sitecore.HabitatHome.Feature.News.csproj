@@ -71,6 +71,8 @@
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" />
     <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.4" />
     <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.4" />
+    <PackageReference Include="Sitecore.Demo.Foundation.SitecoreExtensions" Version="9.2.0.3" />
+    <PackageReference Include="Sitecore.Demo.Foundation.Dictionary" Version="9.2.0.3" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -135,14 +137,6 @@
     <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\Sitecore.HabitatHome.Foundation.DependencyInjection.csproj">
       <Project>{FA1EEE78-E6D6-4B63-A126-5F470624EFEE}</Project>
       <Name>Sitecore.HabitatHome.Foundation.DependencyInjection</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\Dictionary\code\Sitecore.HabitatHome.Foundation.Dictionary.csproj">
-      <Project>{0d6ba4d8-c469-4ae9-9ebb-93bdf7d7e78f}</Project>
-      <Name>Sitecore.HabitatHome.Foundation.Dictionary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Sitecore.HabitatHome.Foundation.SitecoreExtensions.csproj">
-      <Project>{1c7b40c7-aea6-4038-9d45-0f5440908929}</Project>
-      <Name>Sitecore.HabitatHome.Foundation.SitecoreExtensions</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
