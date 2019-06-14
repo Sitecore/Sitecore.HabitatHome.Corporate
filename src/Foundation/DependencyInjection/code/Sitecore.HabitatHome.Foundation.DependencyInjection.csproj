@@ -83,7 +83,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Foundation.DependencyInjection.config" />
+    <Content Include="App_Config\Include\Foundation\HabitatHome.Foundation.DependencyInjection.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
