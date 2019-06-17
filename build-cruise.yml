@@ -11,15 +11,29 @@ steps:
     checkLatest: true
 
 - task: NuGetCommand@2
-  displayName: 'NuGet restore'
+  displayName: 'NuGet restore Solution'
+  inputs:
+    restoreSolution: HabitatHome.Corporate.sln
+    feedsToUse: config
+    nugetConfigPath: 'nuget-sc-internal.config'
+
+- task: MSBuild@1
+  displayName: 'HabitatHome.Corporate Build Solution'
+  inputs:
+    solution: HabitatHome.Corporate.sln
+    configuration: 'Debug'
+    msbuildArguments: '/m'
+
+- task: NuGetCommand@2
+  displayName: 'NuGet Restore TDS Solution'
   inputs:
     restoreSolution: HabitatHome.Corporate.TDS.sln
     feedsToUse: config
     nugetConfigPath: 'nuget-sc-internal.config'
 
 - task: MSBuild@1
-  displayName: 'HabitatHome.Corporate - CM'
+  displayName: 'HabitatHome.Corporate - Build TDS Solution'
   inputs:
     solution: HabitatHome.Corporate.TDS.sln
-    configuration: 'Debug'
+    configuration: 'Release'
     msbuildArguments: '/m'
