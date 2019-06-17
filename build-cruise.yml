@@ -1,0 +1,25 @@
+pool:
+  name: DEVDEMO1US1
+  demands:
+  - msbuild
+steps:
+
+- task: NuGetToolInstaller@1
+  displayName: 'Use NuGet 4.4.1'
+  inputs:
+    versionSpec: 4.4.1
+    checkLatest: true
+
+- task: NuGetCommand@2
+  displayName: 'NuGet restore'
+  inputs:
+    restoreSolution: HabitatHome.Corporate.TDS.sln
+    feedsToUse: config
+    nugetConfigPath: 'nuget-sc-internal.config'
+
+- task: MSBuild@1
+  displayName: 'HabitatHome.Corporate - CM'
+  inputs:
+    solution: HabitatHome.Corporate.TDS.sln
+    configuration: 'Debug'
+    msbuildArguments: '/m'
