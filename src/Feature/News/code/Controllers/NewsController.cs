@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using Sitecore.HabitatHome.Feature.News.Repositories;
 using Sitecore.HabitatHome.Feature.News.Services;
-using Sitecore.HabitatHome.Foundation.SitecoreExtensions.Extensions;
+using Sitecore.Demo.Foundation.SitecoreExtensions.Extensions;
 using Sitecore.Mvc.Presentation;
 using Sitecore.Web;
 

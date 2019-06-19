@@ -1,4 +1,4 @@
-﻿using Sitecore.HabitatHome.Foundation.SitecoreExtensions.Models;
+﻿using Sitecore.Demo.Foundation.SitecoreExtensions.Models;
 
 namespace Sitecore.HabitatHome.Feature.Components.Models
 {
