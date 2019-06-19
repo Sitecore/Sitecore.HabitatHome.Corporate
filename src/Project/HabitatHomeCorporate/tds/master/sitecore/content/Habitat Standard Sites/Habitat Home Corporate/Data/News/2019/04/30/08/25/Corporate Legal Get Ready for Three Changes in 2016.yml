@@ -1,0 +1,143 @@
+---
+ID: "f6bd53bc-1773-426f-b384-98f46493085a"
+Parent: "b503b035-3038-47ee-8f3c-0793c2f622c9"
+Template: "b9718ae9-0113-43ae-8c86-e29830b6cdb7"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Data/News/2019/04/30/08/25/Corporate Legal Get Ready for Three Changes in 2016
+DB: master
+SharedFields:
+- ID: "0ec002c0-abf8-4595-8b24-58079a01325d"
+  Hint: NewsDate
+  Value: 20160103T092500Z
+- ID: "94195268-29fe-4bdb-8666-dbb6277bca30"
+  Hint: NewsSlug
+  Value: "corporate-legal-get-ready-for-three-changes-in-2016"
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <profile
+        id="8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9"
+        name="Habitat Home Corporate"
+        presets="marketer|100||">
+        <key
+          name="Entrepreneur"
+          value="0" />
+        <key
+          name="Executive"
+          value="0" />
+        <key
+          name="Lawyer"
+          value="0" />
+        <key
+          name="Marketer"
+          value="10" />
+      </profile>
+    </tracking>
+- ID: "c9293739-c797-4c8c-8200-5f3f365de1e6"
+  Hint: NewsImage
+  Value: |
+    <image mediaid="{F9222D41-1EE7-49B5-B660-E30746AE5F0E}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03f0061a-309d-4732-a722-2f2a1488ac60"
+      Hint: NavigationTitle
+      Value: "Corporate Legal: Get Ready for Three Changes in 2016"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190430T082557Z
+    - ID: "313ca749-6abf-4368-9bd1-7c5ccd465d46"
+      Hint: NewsSummary
+      Value: In 2016, a number of legal and economic developments will change how companies assess and manage legal risks. We take a closer look at three.
+    - ID: "60a36bf8-cb0e-40f6-8b5a-834105136988"
+      Hint: MetadataTitle
+      Value: "Corporate Legal: Get Ready for Three Changes in 2016"
+    - ID: "72cb911a-89fb-4845-bf8a-e6b844685113"
+      Hint: NewsContent
+      Value: |
+        <p>In 2016, a number of legal and economic developments will change how companies assess and manage legal risks. Habitat Legal researchers interviewed and surveyed more than 100 general counsel of Fortune 500 companies. The goal was to map future developments in the law, and assess the skills needed to address them. The result was a list of three trends that will change the legal world in 2016.</p>
+        <h2>1. Issues will converge; regulations will fragment.</h2>
+        <p>There is current global interest in issues like privacy, corruption, governance, transparency, and intellectual property. These issues have converged in recent years, both in developing and developed nations, but the regulations relating to those issues have not. In fact, they have diverged and will continue to diverge, driven by public and media outrage of a perceived regulatory gap, protection of national interests or key domestic companies, revenue generation in an era of significant government budget shortfalls, and a preservation of regulators&rsquo; and enforcers&rsquo; power and influence.</p>
+        <h2>2. Information will grow exponentially.</h2>
+        <p>This has been true for a decade or more, but a different kind of information is rapidly growing now. Thanks to smart phones and sophisticated GPS systems built into our devices, our every move is tracked globally, telling others where we are and what we do. That is fundamentally different from the information explosion of the 1990s and 2000s. Corporate, consumer, and private data will become ubiquitous, which will drive disputes over the ownership and use of information.</p>
+        <h2>3. Corporate transparency and privacy concerns will collide.</h2>
+        <p>Companies don&rsquo;t just have more information; they also have more obligations with respect to that information than ever before. Transparency and disclosure obligations have grown in nearly all jurisdictions (e.g., Dodd Frank, and similar legislation in Europe, South Africa, and beyond). But privacy and data protection issues (for example, the EU Data Protection Directive) make it often illegal for companies to disclose information. In short, transparency and privacy will increasingly be at odds with each other.</p>
+        <p>To address these trends, general counsel and legal departments build local legal support to address risk in emerging markets, invest in new capabilities beyond pure legal skills, and close competency gaps by focusing on experiential learning and development rather than traditional training activities.</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3f9e5c72-0130-4aaf-8fc3-0bc627dfe4af"
+    - ID: "b8fb4f54-6a50-4ece-b6df-cb74563c8fb9"
+      Hint: NewsTitle
+      Value: "Corporate Legal: Get Ready for Three Changes in 2016"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        extranet\Anonymous
+    - ID: "c2d93d35-a2c4-48c6-9f78-f5d2c070bc5c"
+      Hint: MetadataDescription
+      Value: In 2016, a number of legal and economic developments will change how companies assess and manage legal risks. We take a closer look at three.
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: In 2016, a number of legal and economic developments will change how companies assess and manage legal risks. We take a closer look at three.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142132Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: "Corporate Legal: Get Ready for Three Changes in 2016"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03f0061a-309d-4732-a722-2f2a1488ac60"
+      Hint: NavigationTitle
+      Value: "Juridique d'entreprise: préparez-vous à trois changements en 2016"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190517T193529Z
+    - ID: "313ca749-6abf-4368-9bd1-7c5ccd465d46"
+      Hint: NewsSummary
+      Value: En 2016, un certain nombre de développements juridiques et économiques vont changer la manière dont les entreprises évaluent et gèrent les risques juridiques. Nous regardons de plus près à trois.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "60a36bf8-cb0e-40f6-8b5a-834105136988"
+      Hint: MetadataTitle
+      Value: "Juridique d'entreprise: préparez-vous à trois changements en 2016"
+    - ID: "72cb911a-89fb-4845-bf8a-e6b844685113"
+      Hint: NewsContent
+      Value: |
+        <p>In 2016, a number of legal and economic developments will change how companies assess and manage legal risks. Habitat Legal researchers interviewed and surveyed more than 100 general counsel of Fortune 500 companies. The goal was to map future developments in the law, and assess the skills needed to address them. The result was a list of three trends that will change the legal world in 2016.</p>
+        <h2>1. Issues will converge; regulations will fragment.</h2>
+        <p>There is current global interest in issues like privacy, corruption, governance, transparency, and intellectual property. These issues have converged in recent years, both in developing and developed nations, but the regulations relating to those issues have not. In fact, they have diverged and will continue to diverge, driven by public and media outrage of a perceived regulatory gap, protection of national interests or key domestic companies, revenue generation in an era of significant government budget shortfalls, and a preservation of regulators&rsquo; and enforcers&rsquo; power and influence.</p>
+        <h2>2. Information will grow exponentially.</h2>
+        <p>This has been true for a decade or more, but a different kind of information is rapidly growing now. Thanks to smart phones and sophisticated GPS systems built into our devices, our every move is tracked globally, telling others where we are and what we do. That is fundamentally different from the information explosion of the 1990s and 2000s. Corporate, consumer, and private data will become ubiquitous, which will drive disputes over the ownership and use of information.</p>
+        <h2>3. Corporate transparency and privacy concerns will collide.</h2>
+        <p>Companies don&rsquo;t just have more information; they also have more obligations with respect to that information than ever before. Transparency and disclosure obligations have grown in nearly all jurisdictions (e.g., Dodd Frank, and similar legislation in Europe, South Africa, and beyond). But privacy and data protection issues (for example, the EU Data Protection Directive) make it often illegal for companies to disclose information. In short, transparency and privacy will increasingly be at odds with each other.</p>
+        <p>To address these trends, general counsel and legal departments build local legal support to address risk in emerging markets, invest in new capabilities beyond pure legal skills, and close competency gaps by focusing on experiential learning and development rather than traditional training activities.</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "713f3385-a736-4e8d-8848-43d036d8fcc7"
+    - ID: "b8fb4f54-6a50-4ece-b6df-cb74563c8fb9"
+      Hint: NewsTitle
+      Value: "Juridique d'entreprise: préparez-vous à trois changements en 2016"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "c2d93d35-a2c4-48c6-9f78-f5d2c070bc5c"
+      Hint: MetadataDescription
+      Value: En 2016, un certain nombre de développements juridiques et économiques vont changer la manière dont les entreprises évaluent et gèrent les risques juridiques. Nous regardons de plus près à trois.
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: En 2016, un certain nombre de développements juridiques et économiques vont changer la manière dont les entreprises évaluent et gèrent les risques juridiques. Nous regardons de plus près à trois.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142132Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: "Juridique d'entreprise: préparez-vous à trois changements en 2016"

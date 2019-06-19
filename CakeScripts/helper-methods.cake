@@ -10,7 +10,8 @@ public class Configuration
 
     public string WebsiteRoot {get;set;}
     public string XConnectRoot {get;set;}
-    public string InstanceUrl {get;set;}
+	public string InstanceHostname {get;set;}
+	public string InstanceProtocol {get;set;}
     public string SolutionName {get;set;}
     public string ProjectFolder {get;set;}
     public string BuildConfiguration {get;set;}
@@ -43,6 +44,8 @@ public class Configuration
     public string SolutionFile => $"{ProjectFolder}\\{SolutionName}";
     public MSBuildToolVersion MSBuildToolVersion => this._msBuildToolVersion;
     public string BuildTargets => this.RunCleanBuilds ? "Clean;Build" : "Build";
+	
+    public string InstanceUrl => $"{InstanceProtocol}://{InstanceHostname}/";
 }
 
 public void PrintHeader(ConsoleColor foregroundColor)
@@ -83,7 +86,7 @@ public void PublishProjects(string rootFolder, string publishRoot)
     Information("Publishing " + rootFolder + " to " + publishRoot);
     foreach (var project in projects)
     {
-        MSBuild(project, cfg => InitializeMSBuildSettings(cfg)
+        MSBuild(project, cfg => InitializeMSBuildSettingsInternal(cfg)
                                    .WithTarget(configuration.BuildTargets)
                                    .WithProperty("DeployOnBuild", "true")
                                    .WithProperty("DeployDefaultTarget", "WebPublish")
@@ -144,12 +147,21 @@ public void DeployExmCampaigns()
 
 public MSBuildSettings InitializeMSBuildSettings(MSBuildSettings settings)
 {
+    InitializeMSBuildSettingsInternal(settings)
+        .WithRestore();
+
+    return settings;
+}
+
+private MSBuildSettings InitializeMSBuildSettingsInternal(MSBuildSettings settings)
+{
     settings.SetConfiguration(configuration.BuildConfiguration)
             .SetVerbosity(Verbosity.Minimal)
             .SetMSBuildPlatform(MSBuildPlatform.Automatic)
             .SetPlatformTarget(PlatformTarget.MSIL)
             .UseToolVersion(configuration.MSBuildToolVersion)
-            .WithRestore();
+            .SetMaxCpuCount(8);
+
     return settings;
 }
 

@@ -1,5 +1,5 @@
 ﻿using Sitecore.Data.Fields;
-using Sitecore.HabitatHome.Foundation.SitecoreExtensions.Models;
+using Sitecore.Demo.Foundation.SitecoreExtensions.Models;
 
 namespace Sitecore.HabitatHome.Feature.Media.Models
 {

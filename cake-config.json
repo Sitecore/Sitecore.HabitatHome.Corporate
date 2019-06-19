@@ -1,7 +1,8 @@
 {
   "WebsiteRoot": "C:\\Inetpub\\wwwroot\\habitathomecorporate.dev.local",
   "XConnectRoot": "C:\\Inetpub\\wwwroot\\habitathomecorporate_xconnect.dev.local\\",
-  "InstanceUrl": "https://habitathomecorporate.dev.local/",
+  "InstanceHostname": "habitathomecorporate.dev.local",
+  "InstanceProtocol": "https",
   "SolutionName": "HabitatHome.Corporate.sln",
   "ProjectFolder": "C:\\projects\\Sitecore.HabitatHome.Corporate",
   "BuildConfiguration": "Local",
@@ -11,8 +12,6 @@
   "MarketingDefinitionsApiKey": "DF7D20E837254C6FBFA2B854C295CB61",
   "DeployExmTimeout": 60,
   "DeploymentTarget": "Local",
-  "DeployFolder": "c:\\Deploy",
   "version": "9.2.0",
-  "Topology": "single",
   "CDN": "false"
 }
