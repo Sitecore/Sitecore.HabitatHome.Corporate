@@ -390,6 +390,13 @@
   <ItemGroup>
     <ExcludedAssemblies Include="Sitecore.Demo.%2a" />
     <ExcludedAssemblies Include="Sitecore.HabitatHome.%2a" />
+    <ExcludedAssemblies Include="Configy.%2a" />
+    <ExcludedAssemblies Include="Kamsar.%2a" />
+    <ExcludedAssemblies Include="MicroCHAP.dll" />
+    <ExcludedAssemblies Include="Microsoft.Owin.Security.Facebook.dll" />
+    <ExcludedAssemblies Include="Microsoft.Owin.Security.MicrosoftAccount.dll" />
+    <ExcludedAssemblies Include="Rainbow.%2a" />
+    <ExcludedAssemblies Include="Unicorn.%2a" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
   <Import Project="..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.12\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.12\build\HedgehogDevelopment.TDS.targets')" />
