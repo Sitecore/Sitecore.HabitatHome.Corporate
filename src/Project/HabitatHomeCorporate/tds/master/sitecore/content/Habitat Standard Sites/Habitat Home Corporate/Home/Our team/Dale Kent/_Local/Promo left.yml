@@ -1,0 +1,74 @@
+---
+ID: "943a8baf-0209-41c5-869a-0366c7b20acb"
+Parent: "f0942d68-a2df-463a-8ca9-15f0d31b4482"
+Template: "9bcd885b-8b18-4ea5-aea1-bc5f918d5b90"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team/Dale Kent/_Local/Promo left
+DB: master
+SharedFields:
+- ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
+  Hint: Image
+  Value: |
+    <image mediaid="{A821B865-B5EF-4478-A929-2BDC267B1E9B}" ></image>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: |
+        T: <a href="tel:+1-912-555-2223">+1-912-555-2223</a><br />
+        M: <a href="tel:+1-912-555-5544">+1-912-555-5544</a><br />
+        E: <a href="mailto:d.kent@chaseridley.com">d.kent@chaseridley.com</a>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190423T131108Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0f5313e5-6410-455c-8d9a-2fec110b64f7"
+    - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
+      Hint: Subtitle
+      Value: 
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142131Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Contact
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: |
+        T: <a href="tel:+1-912-555-2223">+1-912-555-2223</a><br />
+        M: <a href="tel:+1-912-555-5544">+1-912-555-5544</a><br />
+        E: <a href="mailto:d.kent@chaseridley.com">d.kent@chaseridley.com</a>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T072856Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "930f1436-09c5-46d8-b607-f175fb0d1dc2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142131Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Contact

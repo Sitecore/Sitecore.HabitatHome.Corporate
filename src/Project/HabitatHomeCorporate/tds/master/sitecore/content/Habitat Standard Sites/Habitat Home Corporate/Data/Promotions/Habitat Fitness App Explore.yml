@@ -1,0 +1,62 @@
+---
+ID: "a1b3e890-9b68-4839-b726-449d30788b17"
+Parent: "4843c43e-4985-455e-8779-f18f9cccc716"
+Template: "9bcd885b-8b18-4ea5-aea1-bc5f918d5b90"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Data/Promotions/Habitat Fitness App Explore
+DB: master
+SharedFields:
+- ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
+  Hint: Image
+  Value: |
+    <image mediaid="{3DAC20C1-8690-45A6-94F7-D08DEA1D49AD}" ></image>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: "We've got the source-code of the Habitat Fitness App available for you, and all for free. It's build with the React JavaScript Framework, and shows the capabilities of Sitecore Omni."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190507T130255Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2e67785a-93e2-4803-b588-a261e0a98797"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142124Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Explore the code
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: Nous avons le code source de l'application Habitat Fitness disponible pour vous, et tout cela gratuitement. Construit avec le framework JavaScript React, il montre les fonctionnalités de Sitecore Omni.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T065513Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "33284dcd-ba2d-43ba-8659-4e264ccfbde0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142124Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Explorez le code

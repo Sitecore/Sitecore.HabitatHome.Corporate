@@ -1,0 +1,141 @@
+pool:
+  name: DEVDEMO1US1
+  demands:
+  - msbuild
+  - azureps
+steps:
+- task: 4tecture.BuildVersioning.BuildVersioning.BuildVersioning@0
+  displayName: 'Set Version Number'
+  inputs:
+    versionSource: variable
+    customNumberVariable: sitecore.version
+    paramOverwriteFourthDigitWithBuildCounter: true
+    buildNumberAction: replace
+
+- task: NuGetToolInstaller@1
+  displayName: 'Use NuGet 4.4.1'
+  inputs:
+    versionSpec: 4.4.1
+    checkLatest: true
+
+- task: NuGetCommand@2
+  displayName: 'NuGet restore'
+  inputs:
+    restoreSolution: HabitatHome.Corporate.TDS.sln
+    feedsToUse: config
+    nugetConfigPath: 'nuget-sc-internal.config'
+
+- task: MSBuild@1
+  displayName: 'HabitatHome.Corporate - CM'
+  inputs:
+    solution: HabitatHome.Corporate.TDS.sln
+    configuration: 'Package-CM'
+    msbuildArguments: '/m /p:WebDeployPackageName=HabitatHome.Corporate-CM-$(BuildVersion.Version) /p:PackageName=HabitatHome.Corporate-CM-$(BuildVersion.Version)'
+
+- task: MSBuild@1
+  displayName: 'HabitatHome.Corporate - CD'
+  inputs:
+    solution: HabitatHome.Corporate.TDS.sln
+    configuration: 'Package-CD'
+    msbuildArguments: '/m /p:WebDeployPackageName=HabitatHome.Corporate-CD-$(BuildVersion.Version) /p:PackageName=HabitatHome.Corporate-CD-$(BuildVersion.Version)'
+
+- task: ExtractFiles@1
+  displayName: 'Extract CM WDP'
+  inputs:
+    archiveFilePatterns: '$(Build.SourcesDirectory)\src\Build\Build.Website\tds\master\bin\**\HabitatHome.Corporate-CM*.wdp.zip'
+    destinationFolder: '$(Build.ArtifactStagingDirectory)\CM-temp'
+    cleanDestinationFolder: true
+
+- task: ExtractFiles@1
+  displayName: 'Extract CD WDP'
+  inputs:
+    archiveFilePatterns: '$(Build.SourcesDirectory)\src\Build\Build.Website\tds\master\bin\**\HabitatHome.Corporate-CD*.wdp.zip'
+    destinationFolder: '$(Build.ArtifactStagingDirectory)\CD-temp'
+    cleanDestinationFolder: true
+
+- task: CopyFiles@2
+  displayName: 'Copy Transforms to CM'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)\src\Build\Build.Website\tds\master\bin\'
+    Contents: '**\HabitatHome.Corporate-CM*.sccpl'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)\CM-temp\Content\Website\App_Data\Transforms'
+    flattenFolders: true
+
+- task: CopyFiles@2
+  displayName: 'Copy Transforms to CD'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)\src\Build\Build.Website\tds\master\bin\'
+    Contents: '**\HabitatHome.Corporate-CD*.sccpl'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)\CD-temp\Content\Website\App_Data\Transforms'
+    flattenFolders: true
+
+- task: ArchiveFiles@2
+  displayName: 'Create defaults scwdp for CM'
+  inputs:
+    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)\CM-temp'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/HabitatHome.Corporate-CM-$(BuildVersion.Version)-defaults.scwdp.zip'
+    replaceExistingArchive: true
+
+- task: ArchiveFiles@2
+  displayName: 'Create defaults scwdp for CD'
+  inputs:
+    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)\CD-temp'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/HabitatHome.Corporate-CD-$(BuildVersion.Version)-defaults.scwdp.zip'
+    replaceExistingArchive: true
+
+- task: DeleteFiles@1
+  displayName: 'Delete temporary CM work folder'
+  inputs:
+    SourceFolder: '$(Build.ArtifactStagingDirectory)'
+    Contents: 'CM-Temp'
+
+- task: DeleteFiles@1
+  displayName: 'Delete temporary CD work folder'
+  inputs:
+    SourceFolder: '$(Build.ArtifactStagingDirectory)'
+    Contents: 'CD-Temp'
+
+- task: CopyFiles@2
+  displayName: 'Copy CM Files to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)\src\Build\Build.Website\tds\master\bin\'
+    Contents: |
+      **/HabitatHome.Corporate-CM*.scwdp.zip
+      **/HabitatHome.Corporate-CM*.wdp.zip
+      **/HabitatHome.Corporate-CM*.update
+      **/HabitatHome.Corporate-CM*.sccpl
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    flattenFolders: true
+
+- task: CopyFiles@2
+  displayName: 'Copy CD Files to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)\src\Build\Build.Website\tds\master\bin\'
+    Contents: |
+      **/HabitatHome.Corporate-CD*.scwdp.zip
+      **/HabitatHome.Corporate-CD*.wdp.zip
+      **/HabitatHome.Corporate-CD*.files.update
+      **/HabitatHome.Corporate-CD*.sccpl
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    flattenFolders: true
+
+- task: PublishPipelineArtifact@0
+  displayName: 'Publish Pipeline Artifact'
+  inputs:
+    artifactName: WDPs
+    targetPath: '$(Build.ArtifactStagingDirectory)'
+
+- task: AzureFileCopy@2
+  displayName: 'AzureBlob File Copy'
+  inputs:
+    SourcePath: '$(Build.ArtifactStagingDirectory)'
+    azureSubscription: AzureSubscription
+    Destination: AzureBlob
+    storage: sitecoredemopackages
+    ContainerName: habitathomecorporate
+    BlobPrefix: 'HabitatHome.Corporate-$(BuildVersion.Version)'
+

@@ -1,0 +1,32 @@
+---
+ID: "fe24e75d-d490-45f6-aed9-8184ae6b68c0"
+Parent: "653d7987-65c0-4ddc-a68f-e86e033878f0"
+Template: "3a5161bc-db66-4f7f-8dd0-8b5e505123c7"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team/Mark Chase/_Local
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{9BCD885B-8B18-4EA5-AEA1-BC5F918D5B90}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-1000"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T073907Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "df308e8e-96f4-4312-988c-533a1ddad49d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142126Z

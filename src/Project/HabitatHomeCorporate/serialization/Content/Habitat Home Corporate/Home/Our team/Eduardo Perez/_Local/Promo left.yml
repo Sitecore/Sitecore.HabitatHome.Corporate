@@ -1,0 +1,74 @@
+---
+ID: "010bd1c6-e443-4616-a21e-2d627fa50c8f"
+Parent: "4d492fb8-c12d-4a69-b48d-a6bae4ff0f5d"
+Template: "9bcd885b-8b18-4ea5-aea1-bc5f918d5b90"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team/Eduardo Perez/_Local/Promo left
+DB: master
+SharedFields:
+- ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
+  Hint: Image
+  Value: |
+    <image mediaid="{C722136B-32B9-46E4-B7B0-83F88B1CD629}"></image>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: |
+        T: <a href="tel:+1-923-555-4295">+1-923-555-4295</a><br />
+        M: <a href="tel:+1-923-555-5943">+1-923-555-5943</a><br />
+        E: <a href="mailto:ed.perez@chaseridley.com">ed.perez@chaseridley.com</a>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190423T131108Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5fe69a99-0f14-4b5f-89f1-62be148560a5"
+    - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
+      Hint: Subtitle
+      Value: 
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
+      Hint: Lead
+      Value: 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142131Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Contact
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: |
+        T: <a href="tel:+1-923-555-4295">+1-923-555-4295</a><br />
+        M: <a href="tel:+1-923-555-5943">+1-923-555-5943</a><br />
+        E: <a href="mailto:ed.perez@chaseridley.com">ed.perez@chaseridley.com</a>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T073340Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "566f4372-844f-4d54-b5f8-d8b37e33da27"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142131Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Contact

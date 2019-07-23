@@ -1,0 +1,63 @@
+---
+ID: "4bbe954c-6c26-4e49-a6d4-62662679f53c"
+Parent: "4843c43e-4985-455e-8779-f18f9cccc716"
+Template: "9bcd885b-8b18-4ea5-aea1-bc5f918d5b90"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Data/Promotions/Habitat Fitness App
+DB: master
+SharedFields:
+- ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
+  Hint: Image
+  Value: |
+    <image mediaid="{6C4543B4-9D21-41F6-91DF-21FE17980588}" ></image>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: |
+        The Habitat Fitness App is a Sitecore JSS PWA demo, and can be run completely disconnected (without Sitecore install) which is also known as "Code-First".&nbsp;
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190507T124255Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "345feb6f-8e25-4555-a27f-3db4d674cf8a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142124Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Introducing the Habitat Fitness App
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: "L’application Habitat Fitness est une démonstration de Sitecore JSS PWA et peut être exécutée complètement déconnectée (sans l’installation de Sitecore), également appelée «Code-First»."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T065434Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "90e56d5a-a7b8-4154-83d9-be4c70130c71"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142124Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Présentation de l'appli Habitat Fitness

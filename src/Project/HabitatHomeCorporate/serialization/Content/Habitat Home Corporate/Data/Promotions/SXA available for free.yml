@@ -1,0 +1,62 @@
+---
+ID: "fd65085c-d917-4d46-965c-28e191453a9e"
+Parent: "4843c43e-4985-455e-8779-f18f9cccc716"
+Template: "9bcd885b-8b18-4ea5-aea1-bc5f918d5b90"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Data/Promotions/SXA available for free
+DB: master
+SharedFields:
+- ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
+  Hint: Image
+  Value: |
+    <image mediaid="{8A133162-5A66-4E09-8BC8-705500BA50A4}" ></image>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: "We've build an amazing demo SXA site for you. All you need to do is do the install by using our well-thought out automated scripts. And it's all for free..."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190506T145759Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "884807bb-92d5-472d-9687-c52d89de2573"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142124Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Available for free
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: Nous avons cr&eacute;&eacute; pour vous un site SXA de d&eacute;monstration incroyable. Tout ce que vous avez &agrave; faire est de faire l&rsquo;installation en utilisant nos scripts automatis&eacute;s bien pens&eacute;s. Et tout cela est gratuit ...
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T065210Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d7c015a2-389a-45b8-99e5-941c9470b5ac"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142124Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Disponible gratuitement

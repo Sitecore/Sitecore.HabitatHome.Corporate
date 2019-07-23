@@ -1,0 +1,69 @@
+---
+ID: "52d5e8a9-b07b-4d69-9fab-93103d044acd"
+Parent: "9e567f84-e16f-4399-9152-f86d79287dc6"
+Template: "9bcd885b-8b18-4ea5-aea1-bc5f918d5b90"
+Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Data/Callouts/Contact Us
+DB: master
+SharedFields:
+- ID: "72b2b95a-730b-4333-8869-982711f41d7a"
+  Hint: TargetUrl
+  Value: |
+    <link text="Contact Us" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{31C4B0D5-717A-492E-A3A0-A85933001E39}" />
+- ID: "805d01db-3c84-4181-9025-1c0a0c0fd4c9"
+  Hint: TargetPage
+  Value: 
+- ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
+  Hint: Image
+  Value: |
+    <image mediaid="{D8A5AF25-F7CB-4103-864F-2130EF1CCAE3}" ></image>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: If you've got a question or comment to our site or corporation, please do feel free to contact us...
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190425T192033Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1b188712-d7ce-4d91-b106-02ac07fa62f5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142123Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Contact Us
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
+      Hint: Content
+      Value: Si vous avez une question ou un commentaire sur notre site ou notre entreprise, n'h&eacute;sitez pas &agrave; nous contacter ...
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190516T143809Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bb01f14a-7769-43c6-b1bb-19d2c26a3eb0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142123Z
+    - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
+      Hint: Title
+      Value: Contactez nous

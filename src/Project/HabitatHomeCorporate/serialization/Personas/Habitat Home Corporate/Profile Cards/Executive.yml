@@ -1,0 +1,79 @@
+---
+ID: "34a18553-f439-4dd1-b037-47c88da3a928"
+Parent: "152bdef9-558e-46ef-be35-ba4c50ff0070"
+Template: "0fc09ea4-8d87-4b0e-a5c9-8076ae863d9c"
+Path: /sitecore/system/Marketing Control Panel/Profiles/Habitat Home Corporate/Profile Cards/Executive
+DB: master
+SharedFields:
+- ID: "85970ab7-22ea-4206-be86-c0167178860b"
+  Hint: Profile Card Value
+  Value: |
+    <tracking>
+      <profile id="8fa7fdbd-00a3-4bd0-9321-3b6a57e1a8b9" name="Habitat Home Corporate">
+        <key name="Executive" value="10" />
+        <key name="Lawyer" value="0" />
+        <key name="Marketer" value="0" />
+        <key name="Entrepreneur" value="0" />
+      </profile>
+    </tracking>
+Languages:
+- Language: en
+  Fields:
+  - ID: "709b879b-7264-49c7-8864-e254d9129302"
+    Hint: Image
+    Value: |
+      <image mediaid="{DC6BBBAF-310D-49FF-BBC8-99DD1EA771E2}" />
+  - ID: "823bfc0a-3e62-40a5-8882-1a622882c45b"
+    Hint: Description
+    Value: <p>A person with senior managerial responsibility in a business</p>
+  - ID: "a26fc256-1db0-44aa-ba3d-1c830bf882a2"
+    Hint: Name
+    Value: Executive
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190522T085930Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5caef4c0-a328-4022-9c06-6957ed9e39f9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142138Z
+- Language: "fr-CA"
+  Fields:
+  - ID: "709b879b-7264-49c7-8864-e254d9129302"
+    Hint: Image
+    Value: |
+      <image mediaid="{DC6BBBAF-310D-49FF-BBC8-99DD1EA771E2}" />
+  - ID: "823bfc0a-3e62-40a5-8882-1a622882c45b"
+    Hint: Description
+    Value: <p>Une personne ayant des responsabilit&eacute;s de direction dans une entreprise</p>
+  - ID: "a26fc256-1db0-44aa-ba3d-1c830bf882a2"
+    Hint: Name
+    Value: Exécutif
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190523T064201Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "da7ca2d0-9321-49d2-a8ab-f5d0fd54e5c2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190613T142139Z
