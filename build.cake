@@ -64,10 +64,27 @@ Task("Quick-Deploy")
 .IsDependentOn("Modify-Corporate-Website-Binding")
 .IsDependentOn("Publish-xConnect-Project");
 
+Task("Docker-Deploy")
+.WithCriteria(configuration != null)
+.IsDependentOn("CleanBuildFolders")
+.IsDependentOn("Copy-Sitecore-Lib")
+.IsDependentOn("Modify-PublishSettings")
+.IsDependentOn("Build-Solution")
+.IsDependentOn("Publish-Core-Project")
+.IsDependentOn("Publish-Foundation-Projects")
+.IsDependentOn("Publish-Feature-Projects")
+.IsDependentOn("Publish-Project-Projects");
+.IsDependentOn("Publish-xConnect-Project")
+.IsDependentOn("Merge-and-Copy-Xml-Transform")
+
+
 /*===============================================
 ================= SUB TASKS =====================
 ===============================================*/
 
+Task("Merge-and-Copy-Xml-Transform").Does(()=>{
+
+});
 Task("CleanAll")
 .IsDependentOn("CleanBuildFolders");
 
@@ -94,6 +111,7 @@ Task("Copy-Sitecore-Lib")
 Task("Publish-All-Projects")
 .IsDependentOn("Build-Solution")
 .IsDependentOn("Publish-Core-Project")
+.IsDependentOn("Apply-DotnetCoreTransforms")
 .IsDependentOn("Publish-Foundation-Projects")
 .IsDependentOn("Publish-Feature-Projects")
 .IsDependentOn("Publish-Project-Projects");
@@ -121,7 +139,7 @@ Task("Publish-Core-Project").Does(() => {
 	Information("Destination: " + destination);
 
 	var projectFile = $"{configuration.SourceFolder}\\Build\\Build.Website\\code\\Build.Website.csproj";
-	var publishFolder = $"{configuration.ProjectFolder}\\publish";
+	var publishFolder = $"{configuration.ProjectFolder}\\publish_temp";
 	
 	DotNetCoreRestore(projectFile);
 
@@ -136,6 +154,7 @@ Task("Publish-Core-Project").Does(() => {
 	// Copy assembly files to webroot
     var assemblyFilesFilter = $@"{publishFolder}\*.dll";
     var assemblyFiles = GetFiles(assemblyFilesFilter).Select(x=>x.FullPath).ToList();
+    EnsureDirectoryExists(destination+"\\bin");
     CopyFiles(assemblyFiles, (destination + "\\bin"), preserveFolderStructure: false);
 	
 	// Copy other output files to destination webroot
@@ -148,8 +167,12 @@ Task("Publish-Core-Project").Does(() => {
 
 	CopyFiles(contentFiles, destination, preserveFolderStructure: true);
    
+});
 
-	// Apply transforms    	 
+Task("Apply-DotnetCoreTransforms").Does(()=>{
+    var publishFolder = $"{configuration.ProjectFolder}\\publish_temp";
+
+    // Apply transforms    	 
     var xdtFiles = GetFiles($"{publishFolder}\\**\\*.xdt");
 
     foreach (var file in xdtFiles)
@@ -169,7 +192,6 @@ Task("Publish-Core-Project").Does(() => {
                             , sourceTransform);		                // Target File
     }
 });
-
 Task("Publish-Project-Projects").Does(() => {
     var global = $"{configuration.ProjectSrcFolder}\\Global";
     var habitatHomeCorporate = $"{configuration.ProjectSrcFolder}\\HabitatHomeCorporate";
