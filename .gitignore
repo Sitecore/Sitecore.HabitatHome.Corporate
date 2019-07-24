@@ -28,6 +28,9 @@ tools/*
 /Azure/tools/*
 !/Azure/tools/packages.config
 
+/data
+!/data/**/.gitkeep
+
 *metaproj*
 Publish
 !/Publish/.gitkeep
