@@ -1,6 +1,6 @@
 {
-  "WebsiteRoot": ".\\Publish\\Web\\",
-  "XConnectRoot": ".\\Publish\\xConnect\\",
+  "WebsiteRoot": "C:\\Inetpub\\wwwroot\\habitathomecorporate.dev.local",
+  "XConnectRoot": "C:\\Inetpub\\wwwroot\\habitathomecorporate_xconnect.dev.local\\",
   "InstanceHostname": "habitathomecorporate.dev.local",
   "InstanceProtocol": "https",
   "SolutionName": "HabitatHome.Corporate.sln",

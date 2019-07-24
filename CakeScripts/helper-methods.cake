@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 public class Configuration
 {
-    private MSBuildToolVersion _msBuildToolVersion;    
+    private MSBuildToolVersion _msBuildToolVersion;
 
     public string WebsiteRoot {get;set;}
     public string XConnectRoot {get;set;}
@@ -19,15 +19,15 @@ public class Configuration
     public string MarketingDefinitionsApiKey {get;set;}
     public bool RunCleanBuilds {get;set;}
 	public int DeployExmTimeout {get;set;}
-    public string DeployFolder {get;set;}      
+    public string DeployFolder {get;set;}
     public string Version {get;set;}
     public string Topology {get;set;}
     public bool CDN {get;set;}
     public string DeploymentTarget{get;set;}
-    
-    public string BuildToolVersions 
+
+    public string BuildToolVersions
     {
-        set 
+        set
         {
             if(!Enum.TryParse(value, out this._msBuildToolVersion))
             {
@@ -40,21 +40,25 @@ public class Configuration
     public string FoundationSrcFolder => $"{SourceFolder}\\Foundation";
     public string FeatureSrcFolder => $"{SourceFolder}\\Feature";
     public string ProjectSrcFolder => $"{SourceFolder}\\Project";
+    public string DockerPublishWebFolder => $"{ProjectFolder}\\Publish\\Web";
+    public string DockerPublishxConnectFolder => $"{ProjectFolder}\\Publish\\Web";
+    public string TempPublishFolder => $"{ProjectFolder}\\publish_temp";
+
 
     public string SolutionFile => $"{ProjectFolder}\\{SolutionName}";
     public MSBuildToolVersion MSBuildToolVersion => this._msBuildToolVersion;
     public string BuildTargets => this.RunCleanBuilds ? "Clean;Build" : "Build";
-	
+
     public string InstanceUrl => $"{InstanceProtocol}://{InstanceHostname}/";
 }
 
 public void PrintHeader(ConsoleColor foregroundColor)
 {
     cakeConsole.ForegroundColor = foregroundColor;
-    cakeConsole.WriteLine("     "); 
-    cakeConsole.WriteLine("     "); 
+    cakeConsole.WriteLine("     ");
+    cakeConsole.WriteLine("     ");
     cakeConsole.WriteLine(@"   ) )       /\                  ");
-    cakeConsole.WriteLine(@"  =====     /  \                 ");                     
+    cakeConsole.WriteLine(@"  =====     /  \                 ");
     cakeConsole.WriteLine(@" _|___|____/ __ \____________    ");
     cakeConsole.WriteLine(@"|:::::::::/ ==== \:::::::::::|   ");
     cakeConsole.WriteLine(@"|:::::::::/ ====  \::::::::::|   ");
@@ -68,18 +72,18 @@ public void PrintHeader(ConsoleColor foregroundColor)
     cakeConsole.WriteLine(@"(^^-^^^^^- |______|-^^^--^^^)            \_| |_/\__,_|_.__/|_|\__\__,_|\__| \_| |_/\___/|_| |_| |_|\___|");
     cakeConsole.WriteLine(@"(,, , ,, , |______|,,,, ,, ,)");
     cakeConsole.WriteLine(@"','',,,,'  |______|,,,',',;;");
-    cakeConsole.WriteLine(@"     "); 
-    cakeConsole.WriteLine(@"     "); 
+    cakeConsole.WriteLine(@"     ");
+    cakeConsole.WriteLine(@"     ");
     cakeConsole.WriteLine(@" --------------------  ------------------");
     cakeConsole.WriteLine("   " + "The Habitat Home source code, tools and processes are examples of Sitecore Features.");
     cakeConsole.WriteLine("   " + "Habitat Home is not supported by Sitecore and should be used at your own risk.");
-    cakeConsole.WriteLine("     "); 
+    cakeConsole.WriteLine("     ");
     cakeConsole.WriteLine("     ");
     cakeConsole.ResetColor();
 }
 
 public void PublishProjects(string rootFolder, string publishRoot)
-{ 
+{
 	Func<IFileSystemInfo, bool> excludes = fileSystemInfo => !fileSystemInfo.Path.FullPath.Contains("CRM");
 
     var projects = GetFiles($"{rootFolder}\\**\\code\\*.csproj", excludes);
@@ -116,12 +120,12 @@ public void Transform(string rootFolder) {
         {
             continue;
         }
-        
+
         Information($"Applying configuration transform:{file.FullPath}");
         var fileToTransform = Regex.Replace(file.FullPath, ".+code/(.+)/*.xdt", "$1");
         fileToTransform = Regex.Replace(fileToTransform, ".sc-internal", "");
         var sourceTransform = $"{configuration.WebsiteRoot}\\{fileToTransform}";
-        
+
         XdtTransformConfig(sourceTransform			                // Source File
                             , file.FullPath			                // Tranforms file (*.xdt)
                             , sourceTransform);		                // Target File
@@ -202,4 +206,42 @@ public void WriteError(string errorMessage)
     cakeConsole.ForegroundColor = ConsoleColor.Red;
     cakeConsole.WriteError(errorMessage);
     cakeConsole.ResetColor();
+}
+
+public void MergeTransforms(string source, string destination){
+    var xdtFiles = GetTransformFiles(source);
+
+    foreach (var file in xdtFiles)
+        {
+            if (file.FullPath.Contains(".azure"))
+            {
+                continue;
+            }
+
+            FilePath xdtFilePath =(FilePath)file;
+            Information($"Processing {xdtFilePath}");
+            FilePath fileToTransform = Regex.Replace(file.FullPath, "(.*.config).?(.*)", "$1.xdt");
+            //Information($"Processing {fileToTransform}");
+
+            fileToTransform = (FilePath)Regex.Replace(fileToTransform.FullPath, ".sc-internal", "");
+            fileToTransform = (FilePath)Regex.Replace(fileToTransform.FullPath, ".azure","");
+            fileToTransform = ((FilePath)$"{source}").GetRelativePath((FilePath)fileToTransform);
+            // Information($"Relative Path: {fileToTransform}");
+            FilePath sourceTransform = $"{(FilePath)fileToTransform}";
+
+            var targetTansformPath = ((DirectoryPath)destination).CombineWithFilePath((FilePath)sourceTransform);
+            // Information($"Target Transform Path {targetTansformPath}");
+
+            if (!FileExists(targetTansformPath)){
+                CreateFolder(targetTansformPath.GetDirectory().FullPath);
+                CopyFile(xdtFilePath.FullPath, targetTansformPath);
+            }
+            else {
+                // Information($"Transforming {xdtFilePath.FullPath} to {sourceTransform.FullPath}");
+
+                MergeFile(targetTansformPath.FullPath	    // Source File
+                        , xdtFilePath.FullPath			// Tranforms file (*.xdt)
+                        , targetTansformPath.FullPath);		// Target File
+            }
+        }
 }

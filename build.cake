@@ -22,12 +22,12 @@ Setup(context =>
 {
 	cakeConsole.ForegroundColor = ConsoleColor.Yellow;
 	PrintHeader(ConsoleColor.DarkGreen);
-	
+
     var configFile = new FilePath(configJsonFile);
     configuration = DeserializeJsonFromFile<Configuration>(configFile);
-    
+
 });
-   
+
 
 /*===============================================
 ============ Local Build - Main Tasks ===========
@@ -73,18 +73,15 @@ Task("Docker-Deploy")
 .IsDependentOn("Publish-Core-Project")
 .IsDependentOn("Publish-Foundation-Projects")
 .IsDependentOn("Publish-Feature-Projects")
-.IsDependentOn("Publish-Project-Projects");
+.IsDependentOn("Publish-Project-Projects")
 .IsDependentOn("Publish-xConnect-Project")
-.IsDependentOn("Merge-and-Copy-Xml-Transform")
+.IsDependentOn("Merge-and-Copy-Xml-Transform");
 
 
 /*===============================================
 ================= SUB TASKS =====================
 ===============================================*/
 
-Task("Merge-and-Copy-Xml-Transform").Does(()=>{
-
-});
 Task("CleanAll")
 .IsDependentOn("CleanBuildFolders");
 
@@ -92,7 +89,8 @@ Task("CleanBuildFolders").Does(() => {
     // Clean project build folders
     CleanDirectories($"{configuration.SourceFolder}/**/obj");
     CleanDirectories($"{configuration.SourceFolder}/**/bin");
-
+    CleanDirectories(configuration.DockerPublishWebFolder);
+    CleanDirectories(configuration.TempPublishFolder);
 });
 
 /*===============================================
@@ -106,7 +104,7 @@ Task("Copy-Sitecore-Lib")
         var destination = "./lib";
         EnsureDirectoryExists(destination);
         CopyFiles(files, destination);
-}); 
+});
 
 Task("Publish-All-Projects")
 .IsDependentOn("Build-Solution")
@@ -124,23 +122,33 @@ Task("Build-Solution")
 });
 
 Task("Publish-Foundation-Projects").Does(() => {
-    var destination = configuration.WebsiteRoot;    
+    var destination = configuration.WebsiteRoot;
+    if (configuration.DeploymentTarget == "Docker"){
+        destination = configuration.DockerPublishWebFolder;
+    }
+    Information($"Destination: {destination}");
     PublishProjects(configuration.FoundationSrcFolder, destination);
 });
 
 Task("Publish-Feature-Projects").Does(() => {
-     var destination = configuration.WebsiteRoot;
-     PublishProjects(configuration.FeatureSrcFolder, destination);
+    var destination = configuration.WebsiteRoot;
+    if (configuration.DeploymentTarget == "Docker"){
+        destination = configuration.DockerPublishWebFolder;
+    }
+    PublishProjects(configuration.FeatureSrcFolder, destination);
 });
 
-Task("Publish-Core-Project").Does(() => {	
+Task("Publish-Core-Project").Does(() => {
     var destination = configuration.WebsiteRoot;
 
+    if (configuration.DeploymentTarget == "Docker"){
+        destination = configuration.DockerPublishWebFolder;
+    }
 	Information("Destination: " + destination);
 
 	var projectFile = $"{configuration.SourceFolder}\\Build\\Build.Website\\code\\Build.Website.csproj";
-	var publishFolder = $"{configuration.ProjectFolder}\\publish_temp";
-	
+	var publishFolder = $"{configuration.TempPublishFolder}";
+
 	DotNetCoreRestore(projectFile);
 
 	var settings = new DotNetCorePublishSettings
@@ -148,7 +156,7 @@ Task("Publish-Core-Project").Does(() => {
             OutputDirectory = publishFolder,
 			Configuration = configuration.BuildConfiguration
         };
- 
+
     DotNetCorePublish(projectFile, settings);
 
 	// Copy assembly files to webroot
@@ -156,7 +164,7 @@ Task("Publish-Core-Project").Does(() => {
     var assemblyFiles = GetFiles(assemblyFilesFilter).Select(x=>x.FullPath).ToList();
     EnsureDirectoryExists(destination+"\\bin");
     CopyFiles(assemblyFiles, (destination + "\\bin"), preserveFolderStructure: false);
-	
+
 	// Copy other output files to destination webroot
 	var ignoredExtensions = new string[] { ".dll", ".exe", ".pdb", ".xdt" };
 	var ignoredFiles = new string[] { "web.config", "build.website.deps.json", "build.website.exe.config" };
@@ -166,13 +174,13 @@ Task("Publish-Core-Project").Does(() => {
 						.Where(file => !ignoredFiles.Contains(file.Segments.LastOrDefault().ToLower()));
 
 	CopyFiles(contentFiles, destination, preserveFolderStructure: true);
-   
+
 });
 
 Task("Apply-DotnetCoreTransforms").Does(()=>{
-    var publishFolder = $"{configuration.ProjectFolder}\\publish_temp";
+    var publishFolder = $"{configuration.TempPublishFolder}";
 
-    // Apply transforms    	 
+    // Apply transforms
     var xdtFiles = GetFiles($"{publishFolder}\\**\\*.xdt");
 
     foreach (var file in xdtFiles)
@@ -181,23 +189,26 @@ Task("Apply-DotnetCoreTransforms").Does(()=>{
         {
             continue;
         }
-        
+
         Information($"Applying configuration transform:{file.FullPath}");
         var fileToTransform = Regex.Replace(file.FullPath, ".+transforms/(.*.config).?(.*).xdt", "$1");
         fileToTransform = Regex.Replace(fileToTransform, ".sc-internal", "");
         var sourceTransform = $"{configuration.WebsiteRoot}\\{fileToTransform}";
-        
+
         XdtTransformConfig(sourceTransform			                // Source File
                             , file.FullPath			                // Tranforms file (*.xdt)
                             , sourceTransform);		                // Target File
     }
 });
+
 Task("Publish-Project-Projects").Does(() => {
     var global = $"{configuration.ProjectSrcFolder}\\Global";
     var habitatHomeCorporate = $"{configuration.ProjectSrcFolder}\\HabitatHomeCorporate";
-    
-    var destination = configuration.WebsiteRoot;
 
+    var destination = configuration.WebsiteRoot;
+    if (configuration.DeploymentTarget == "Docker"){
+        destination = configuration.DockerPublishWebFolder;
+    }
     PublishProjects(global, destination);
     PublishProjects(habitatHomeCorporate, destination);
 });
@@ -205,7 +216,7 @@ Task("Publish-Project-Projects").Does(() => {
 Task("Publish-xConnect-Project").Does(() => {
     var xConnectProject = $"{configuration.ProjectSrcFolder}\\xConnect";
     var destination = configuration.XConnectRoot;
-	
+
     PublishProjects(xConnectProject, destination);
 });
 
@@ -218,11 +229,34 @@ Task("Apply-Xml-Transform").Does(() => {
     }
 });
 
+Task("Merge-and-Copy-Xml-Transform").Does(()=>{
+
+    // Method will process all transforms from the temporary locations, merge them together and copy them to the temporary Publish\Web directory
+
+    var tempPublishFolder = $"{configuration.TempPublishFolder}";
+    var publishFolder = $"{configuration.DockerPublishWebFolder}";
+
+    Information($"Merging {tempPublishFolder}\\transforms to {publishFolder}");
+
+    // Processing dotnet core transforms from NuGet references
+    MergeTransforms($"{tempPublishFolder}\\transforms", $"{publishFolder}");
+
+    // Processing project transformations
+    var layers = new string[] { configuration.FoundationSrcFolder, configuration.FeatureSrcFolder, configuration.ProjectSrcFolder};
+
+    foreach(var layer in layers)
+    {
+        Information($"Merging {layer} to {publishFolder}");
+        MergeTransforms(layer,publishFolder);
+    }
+
+    });
+
 Task("Publish-Transforms").Does(() => {
 
     var layers = new string[] { configuration.FoundationSrcFolder, configuration.FeatureSrcFolder, configuration.ProjectSrcFolder};
     var destination =  $@"{configuration.WebsiteRoot}\temp\transforms";
-    
+
     CreateFolder(destination);
 
     try
@@ -232,7 +266,7 @@ Task("Publish-Transforms").Does(() => {
         {
             var xdtFiles = GetTransformFiles(layer).Select(x => x.FullPath).Where(x=>!x.Contains(".azure")).ToList();
             files.AddRange(xdtFiles);
-        }   
+        }
 
         CopyFiles(files, destination, preserveFolderStructure: true);
     }
@@ -249,10 +283,10 @@ Task("Modify-Unicorn-Source-Folder").Does(() => {
             {"patch", @"http://www.sitecore.net/xmlconfig/"}
         }
     };
-    
+
 	var rootXPath = "configuration/sitecore/sc.variable[@name='{0}']/@value";
     var directoryPath = MakeAbsolute(new DirectoryPath(configuration.SourceFolder)).FullPath;
-    
+
 	var sourceFolderXPath = string.Format(rootXPath, "sourceFolder");
     XmlPoke(zzzDevSettingsFile, sourceFolderXPath, directoryPath, xmlSetting);
 
@@ -260,9 +294,9 @@ Task("Modify-Unicorn-Source-Folder").Does(() => {
     XmlPoke(zzzDevSettingsFile, sourceFolderXPath, directoryPath, xmlSetting);
 });
 
-Task("Modify-Corporate-Website-Binding").Does(() => { 
+Task("Modify-Corporate-Website-Binding").Does(() => {
 	var targetFile = File($"{configuration.WebsiteRoot}/App_config/Include/Project/HabitatHome.Corporate.Website.config");
-    
+
 	var xPath = "configuration/sitecore/sites/site[@name='HabitatHomeCorporate']/@hostName";
 
     var xmlSetting = new XmlPokeSettings {
@@ -271,7 +305,7 @@ Task("Modify-Corporate-Website-Binding").Does(() => {
         }
     };
     XmlPoke(targetFile, xPath, configuration.InstanceHostname, xmlSetting);
-	
+
 });
 
 Task("Modify-PublishSettings").Does(() => {
@@ -302,7 +336,7 @@ Task("Sync-Unicorn").Does(() => {
 
     string sharedSecret = XmlPeek(authenticationFile, xPath);
 
-    
+
     StartPowershellFile(unicornSyncScript, new PowershellSettings()
                                                         .SetFormatOutput()
                                                         .SetLogOutput()

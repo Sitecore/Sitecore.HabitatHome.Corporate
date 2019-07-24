@@ -28,8 +28,8 @@ tools/*
 /Azure/tools/*
 !/Azure/tools/packages.config
 
-
-Publish/*
+*metaproj*
+Publish
 !/Publish/.gitkeep
 publish_temp
 
