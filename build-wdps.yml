@@ -144,4 +144,3 @@ steps:
     storage: sitecoredemopackages
     ContainerName: habitathomecorporate
     BlobPrefix: 'HabitatHome.Corporate-$(BuildVersion.Version)'
-
