@@ -13,5 +13,6 @@
   "DeployExmTimeout": 60,
   "DeploymentTarget": "Local",
   "version": "9.2.0",
-  "CDN": "false"
+  "CDN": "false",
+  "SitecoreAzureToolkitPath":"c:\\sat"
 }

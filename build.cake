@@ -13,6 +13,8 @@ var configuration = new Configuration();
 var cakeConsole = new CakeConsole();
 var configJsonFile = "cake-config.json";
 var unicornSyncScript = $"./scripts/Unicorn/Sync.ps1";
+var packagingScript = $"./scripts/Packaging/generate-update-package.ps1";
+var dacpacScript = $"./scripts/Packaging/generate-dacpac.ps1";
 
 /*===============================================
 ================ MAIN TASKS =====================
@@ -75,7 +77,8 @@ Task("Docker-Deploy")
 .IsDependentOn("Publish-Feature-Projects")
 .IsDependentOn("Publish-Project-Projects")
 .IsDependentOn("Publish-xConnect-Project")
-.IsDependentOn("Merge-and-Copy-Xml-Transform");
+.IsDependentOn("Merge-and-Copy-Xml-Transform")
+.IsDependentOn("Generate-Dacpacs");
 
 
 /*===============================================
@@ -90,6 +93,8 @@ Task("CleanBuildFolders").Does(() => {
     CleanDirectories($"{configuration.SourceFolder}/**/obj");
     CleanDirectories($"{configuration.SourceFolder}/**/bin");
     CleanDirectories(configuration.DockerPublishWebFolder);
+    CleanDirectories(configuration.DockerPublishxConnectFolder);
+    CleanDirectories(configuration.DockerPublishDataFolder);
     CleanDirectories(configuration.TempPublishFolder);
 });
 
@@ -201,23 +206,76 @@ Task("Apply-DotnetCoreTransforms").Does(()=>{
     }
 });
 
-Task("Publish-Project-Projects").Does(() => {
-    var global = $"{configuration.ProjectSrcFolder}\\Global";
-    var habitatHomeCorporate = $"{configuration.ProjectSrcFolder}\\HabitatHomeCorporate";
+Task("Publish-YML").Does(() => {
 
-    var destination = configuration.WebsiteRoot;
-    if (configuration.DeploymentTarget == "Docker"){
-        destination = configuration.DockerPublishWebFolder;
-    }
-    PublishProjects(global, destination);
-    PublishProjects(habitatHomeCorporate, destination);
+	var serializationFilesFilter = $@"{configuration.ProjectFolder}\src\**\*.yml";
+  var destination = $@"{configuration.TempPublishFolder}\yml";
+
+Func<IFileSystemInfo, bool> exclude_build_folder =
+     fileSystemInfo => !fileSystemInfo.Path.FullPath.Contains(
+         "Build");
+
+  if (!DirectoryExists(destination)){
+      CreateFolder(destination);
+  }
+  try
+  {
+      var files = GetFiles(serializationFilesFilter,new GlobberSettings{Predicate = exclude_build_folder})
+        .Select(x=>x.FullPath).ToList();
+
+      CopyFiles(files , destination, preserveFolderStructure: true);
+  }
+  catch (System.Exception ex)
+  {
+      WriteError(ex.Message);
+  }
+});
+
+Task("Create-UpdatePackage")
+  .IsDependentOn("Publish-YML")
+  .Does(()=>{
+    StartPowershellFile(packagingScript, new PowershellSettings()
+        .SetFormatOutput()
+        .SetLogOutput()
+        .WithArguments(args => {
+            args.Append("target", $"{configuration.TempPublishFolder}\\yml")
+                .Append("output", $"{configuration.TempPublishFolder}\\update\\package.update");
+    }));
+});
+
+Task("Generate-Dacpacs")
+  .IsDependentOn("Create-UpdatePackage")
+  .Does(() =>
+  {
+    StartPowershellFile(dacpacScript, new PowershellSettings()
+      .SetFormatOutput()
+      .SetLogOutput()
+      .WithArguments(args => {
+          args.Append("SitecoreAzureToolkitPath", $"{configuration.SitecoreAzureToolkitPath}")
+              .Append("updatePackagePath", $"{configuration.TempPublishFolder}\\update\\package.update")
+              .Append("destinationPath", $"{configuration.DockerPublishDataFolder}");
+      }));
+  });
+
+Task("Publish-Project-Projects").Does(() => {
+  var global = $"{configuration.ProjectSrcFolder}\\Global";
+  var habitatHomeCorporate = $"{configuration.ProjectSrcFolder}\\HabitatHomeCorporate";
+
+  var destination = configuration.WebsiteRoot;
+  if (configuration.DeploymentTarget == "Docker"){
+      destination = configuration.DockerPublishWebFolder;
+  }
+  PublishProjects(global, destination);
+  PublishProjects(habitatHomeCorporate, destination);
 });
 
 Task("Publish-xConnect-Project").Does(() => {
-    var xConnectProject = $"{configuration.ProjectSrcFolder}\\xConnect";
-    var destination = configuration.XConnectRoot;
-
-    PublishProjects(xConnectProject, destination);
+  var xConnectProject = $"{configuration.ProjectSrcFolder}\\xConnect";
+  var destination = configuration.XConnectRoot;
+  if (configuration.DeploymentTarget == "Docker"){
+    destination = configuration.DockerPublishxConnectFolder;
+  }
+  PublishProjects(xConnectProject, destination);
 });
 
 Task("Apply-Xml-Transform").Does(() => {
@@ -338,12 +396,12 @@ Task("Sync-Unicorn").Does(() => {
 
 
     StartPowershellFile(unicornSyncScript, new PowershellSettings()
-                                                        .SetFormatOutput()
-                                                        .SetLogOutput()
-                                                        .WithArguments(args => {
-                                                            args.Append("secret", sharedSecret)
-                                                                .Append("url", unicornUrl);
-                                                        }));
+      .SetFormatOutput()
+      .SetLogOutput()
+      .WithArguments(args => {
+          args.Append("secret", sharedSecret)
+              .Append("url", unicornUrl);
+      }));
 });
 
 Task("Deploy-EXM-Campaigns").Does(() => {
