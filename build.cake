@@ -362,7 +362,11 @@ Task("Modify-Corporate-Website-Binding").Does(() => {
             {"patch", @"http://www.sitecore.net/xmlconfig/"}
         }
     };
-    XmlPoke(targetFile, xPath, configuration.InstanceHostname, xmlSetting);
+    var url = configuration.InstanceUrl;
+    var pattern = @"^https://";
+    Regex regex = new Regex(pattern, RegexOptions.None);
+    url = regex.Replace(url, "");
+    XmlPoke(targetFile, xPath, url, xmlSetting);
 
 });
 
