@@ -10,7 +10,7 @@ public class Configuration
 
   public string WebsiteRoot {get;set;}
   public string XConnectRoot {get;set;}
-	public string InstancrUrl {get;set;}
+	public string InstanceUrl {get;set;}
   public string SolutionName {get;set;}
   public string ProjectFolder {get;set;}
   public string BuildConfiguration {get;set;}
