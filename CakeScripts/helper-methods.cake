@@ -41,10 +41,10 @@ public class Configuration
   public string FoundationSrcFolder => $"{SourceFolder}\\Foundation";
   public string FeatureSrcFolder => $"{SourceFolder}\\Feature";
   public string ProjectSrcFolder => $"{SourceFolder}\\Project";
-  public string DockerPublishWebFolder => $"{ProjectFolder}\\Publish\\Web";
-  public string DockerPublishxConnectFolder => $"{ProjectFolder}\\Publish\\xConnect";
-  public string DockerPublishDataFolder => $"{ProjectFolder}\\Publish\\Data";
-  public string TempPublishFolder => $"{ProjectFolder}\\publish_temp";
+  public string PublishWebFolder => $"{ProjectFolder}\\Publish\\Web";
+  public string PublishxConnectFolder => $"{ProjectFolder}\\Publish\\xConnect";
+  public string PublishDataFolder => $"{ProjectFolder}\\Publish\\Data";
+  public string PublishTempFolder => $"{ProjectFolder}\\publish_temp";
 
   public string SolutionFile => $"{ProjectFolder}\\{SolutionName}";
   public MSBuildToolVersion MSBuildToolVersion => this._msBuildToolVersion;

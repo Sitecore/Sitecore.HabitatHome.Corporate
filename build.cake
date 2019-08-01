@@ -92,10 +92,10 @@ Task("CleanBuildFolders").Does(() => {
     // Clean project build folders
     CleanDirectories($"{configuration.SourceFolder}/**/obj");
     CleanDirectories($"{configuration.SourceFolder}/**/bin");
-    CleanDirectories(configuration.DockerPublishWebFolder);
-    CleanDirectories(configuration.DockerPublishxConnectFolder);
-    CleanDirectories(configuration.DockerPublishDataFolder);
-    CleanDirectories(configuration.TempPublishFolder);
+    CleanDirectories(configuration.PublishWebFolder);
+    CleanDirectories(configuration.PublishxConnectFolder);
+    CleanDirectories(configuration.PublishDataFolder);
+    CleanDirectories(configuration.PublishTempFolder);
 });
 
 /*===============================================
@@ -129,7 +129,7 @@ Task("Build-Solution")
 Task("Publish-Foundation-Projects").Does(() => {
     var destination = configuration.WebsiteRoot;
     if (configuration.DeploymentTarget == "Docker"){
-        destination = configuration.DockerPublishWebFolder;
+        destination = configuration.PublishWebFolder;
     }
     Information($"Destination: {destination}");
     PublishProjects(configuration.FoundationSrcFolder, destination);
@@ -138,7 +138,7 @@ Task("Publish-Foundation-Projects").Does(() => {
 Task("Publish-Feature-Projects").Does(() => {
     var destination = configuration.WebsiteRoot;
     if (configuration.DeploymentTarget == "Docker"){
-        destination = configuration.DockerPublishWebFolder;
+        destination = configuration.PublishWebFolder;
     }
     PublishProjects(configuration.FeatureSrcFolder, destination);
 });
@@ -147,12 +147,12 @@ Task("Publish-Core-Project").Does(() => {
     var destination = configuration.WebsiteRoot;
 
     if (configuration.DeploymentTarget == "Docker"){
-        destination = configuration.DockerPublishWebFolder;
+        destination = configuration.PublishWebFolder;
     }
 	Information("Destination: " + destination);
 
 	var projectFile = $"{configuration.SourceFolder}\\Build\\Build.Website\\code\\Build.Website.csproj";
-	var publishFolder = $"{configuration.TempPublishFolder}";
+	var publishFolder = $"{configuration.PublishTempFolder}";
 
 	DotNetCoreRestore(projectFile);
 
@@ -183,7 +183,7 @@ Task("Publish-Core-Project").Does(() => {
 });
 
 Task("Apply-DotnetCoreTransforms").Does(()=>{
-    var publishFolder = $"{configuration.TempPublishFolder}";
+    var publishFolder = $"{configuration.PublishTempFolder}";
 
     // Apply transforms
     var xdtFiles = GetFiles($"{publishFolder}\\**\\*.xdt");
@@ -209,7 +209,7 @@ Task("Apply-DotnetCoreTransforms").Does(()=>{
 Task("Publish-YML").Does(() => {
 
 	var serializationFilesFilter = $@"{configuration.ProjectFolder}\src\**\*.yml";
-  var destination = $@"{configuration.TempPublishFolder}\yml";
+  var destination = $@"{configuration.PublishTempFolder}\yml";
 
 Func<IFileSystemInfo, bool> exclude_build_folder =
      fileSystemInfo => !fileSystemInfo.Path.FullPath.Contains(
@@ -238,8 +238,8 @@ Task("Create-UpdatePackage")
         .SetFormatOutput()
         .SetLogOutput()
         .WithArguments(args => {
-            args.Append("target", $"{configuration.TempPublishFolder}\\yml")
-                .Append("output", $"{configuration.TempPublishFolder}\\update\\package.update");
+            args.Append("target", $"{configuration.PublishTempFolder}\\yml")
+                .Append("output", $"{configuration.PublishTempFolder}\\update\\package.update");
     }));
 });
 
@@ -252,8 +252,8 @@ Task("Generate-Dacpacs")
       .SetLogOutput()
       .WithArguments(args => {
           args.Append("SitecoreAzureToolkitPath", $"{configuration.SitecoreAzureToolkitPath}")
-              .Append("updatePackagePath", $"{configuration.TempPublishFolder}\\update\\package.update")
-              .Append("destinationPath", $"{configuration.DockerPublishDataFolder}");
+              .Append("updatePackagePath", $"{configuration.PublishTempFolder}\\update\\package.update")
+              .Append("destinationPath", $"{configuration.PublishDataFolder}");
       }));
   });
 
@@ -263,7 +263,7 @@ Task("Publish-Project-Projects").Does(() => {
 
   var destination = configuration.WebsiteRoot;
   if (configuration.DeploymentTarget == "Docker"){
-      destination = configuration.DockerPublishWebFolder;
+      destination = configuration.PublishWebFolder;
   }
   PublishProjects(global, destination);
   PublishProjects(habitatHomeCorporate, destination);
@@ -273,7 +273,7 @@ Task("Publish-xConnect-Project").Does(() => {
   var xConnectProject = $"{configuration.ProjectSrcFolder}\\xConnect";
   var destination = configuration.XConnectRoot;
   if (configuration.DeploymentTarget == "Docker"){
-    destination = configuration.DockerPublishxConnectFolder;
+    destination = configuration.PublishxConnectFolder;
   }
   PublishProjects(xConnectProject, destination);
 });
@@ -291,13 +291,13 @@ Task("Merge-and-Copy-Xml-Transform").Does(()=>{
 
     // Method will process all transforms from the temporary locations, merge them together and copy them to the temporary Publish\Web directory
 
-    var tempPublishFolder = $"{configuration.TempPublishFolder}";
-    var publishFolder = $"{configuration.DockerPublishWebFolder}";
+    var PublishTempFolder = $"{configuration.PublishTempFolder}";
+    var publishFolder = $"{configuration.PublishWebFolder}";
 
-    Information($"Merging {tempPublishFolder}\\transforms to {publishFolder}");
+    Information($"Merging {PublishTempFolder}\\transforms to {publishFolder}");
 
     // Processing dotnet core transforms from NuGet references
-    MergeTransforms($"{tempPublishFolder}\\transforms", $"{publishFolder}");
+    MergeTransforms($"{PublishTempFolder}\\transforms", $"{publishFolder}");
 
     // Processing project transformations
     var layers = new string[] { configuration.FoundationSrcFolder, configuration.FeatureSrcFolder, configuration.ProjectSrcFolder};
