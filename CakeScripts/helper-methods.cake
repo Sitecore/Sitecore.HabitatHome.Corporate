@@ -10,8 +10,7 @@ public class Configuration
 
   public string WebsiteRoot {get;set;}
   public string XConnectRoot {get;set;}
-	public string InstanceHostname {get;set;}
-	public string InstanceProtocol {get;set;}
+	public string InstancrUrl {get;set;}
   public string SolutionName {get;set;}
   public string ProjectFolder {get;set;}
   public string BuildConfiguration {get;set;}
@@ -50,7 +49,6 @@ public class Configuration
   public MSBuildToolVersion MSBuildToolVersion => this._msBuildToolVersion;
   public string BuildTargets => this.RunCleanBuilds ? "Clean;Build" : "Build";
 
-  public string InstanceUrl => $"{InstanceProtocol}://{InstanceHostname}/";
 }
 
 public void PrintHeader(ConsoleColor foregroundColor)
