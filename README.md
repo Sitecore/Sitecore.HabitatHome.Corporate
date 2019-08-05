@@ -6,7 +6,7 @@ Habitat Home Corporate Site and the tools and processes in it, is a Sitecore&reg
 - [Important notice](#important-notice)
 - [Getting Started](#getting-started)
 - [Contribute or issues](#contribute-or-issues)
- 
+
 # Important Notice #
 ## Is Habitat Home Corporate a starter kit or template solution?
 
@@ -27,6 +27,8 @@ The latest Habitat Home Corporate site is built to support the following version
 - ***Sitecore Experience Platform 9.2***
 
 In order to install the latest version of Sitecore that works with the Habitat Home Corporate site, **[you need to  head over to the Sitecore.HabitatHome.Utilities repo](https://github.com/Sitecore/Sitecore.HabitatHome.Utilities)** and follow the instructions there. The Sitecore.HabitatHome.Utilities repository is a collection of useful utilities and script examples to help in the context of the Habitat Home Demos, of which one is this Habitat Home Corporate site.
+
+**Note:** You should skip the `.\install-modules` step in the Utilities repo. Habitat Home Corporate does not require the Sitecore Powershell Extensions or Sitecore Experience Accelerator modules. 
 
 ## Clone the repository ##
 
