@@ -6,7 +6,7 @@ Habitat Home Corporate Site and the tools and processes in it, is a Sitecore&reg
 - [Important notice](#important-notice)
 - [Getting Started](#getting-started)
 - [Contribute or issues](#contribute-or-issues)
-
+ 
 # Important Notice #
 ## Is Habitat Home Corporate a starter kit or template solution?
 
@@ -28,12 +28,9 @@ The latest Habitat Home Corporate site is built to support the following version
 
 In order to install the latest version of Sitecore that works with the Habitat Home Corporate site, **[you need to  head over to the Sitecore.HabitatHome.Utilities repo](https://github.com/Sitecore/Sitecore.HabitatHome.Utilities)** and follow the instructions there. The Sitecore.HabitatHome.Utilities repository is a collection of useful utilities and script examples to help in the context of the Habitat Home Demos, of which one is this Habitat Home Corporate site.
 
-**Note:** You should skip the `.\install-modules` step in the Utilities repo. Habitat Home Corporate does not require the Sitecore Powershell Extensions or Sitecore Experience Accelerator modules. 
+- ***URL Rewrite module***
 
-## Clone the repository ##
-
-
-
+As part of the Habitat Corporate installation, a IIS URL rewrite rule is added to the web.config file in order to enforce HTTPS requests on the website. Please ensure you have this module installed or you will receive a 500.19 error after deployment (https://www.iis.net/downloads/microsoft/url-rewrite).
 
 # Contribute or Issues #
 Please **post any issues on the Slack Community #habitathome channel** or **create an issue on GitHub**. 
