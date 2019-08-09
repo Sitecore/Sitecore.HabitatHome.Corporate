@@ -28,10 +28,11 @@ The latest Habitat Home Corporate site is built to support the following version
 
 In order to install the latest version of Sitecore that works with the Habitat Home Corporate site, **[you need to  head over to the Sitecore.HabitatHome.Utilities repo](https://github.com/Sitecore/Sitecore.HabitatHome.Utilities)** and follow the instructions there. The Sitecore.HabitatHome.Utilities repository is a collection of useful utilities and script examples to help in the context of the Habitat Home Demos, of which one is this Habitat Home Corporate site.
 
-## Clone the repository ##
+- ***Sitecore Experience Platform 9.2***
 
+## URL Rewrite module ##
 
-
+As part of the Habitat Corporate installation, a IIS URL rewrite rule is added to the web.config file in order to enforce HTTPS requests on the website. Please ensure you have this module installed or you will receive a 500.19 error after deployment.
 
 # Contribute or Issues #
 Please **post any issues on the Slack Community #habitathome channel** or **create an issue on GitHub**. 
