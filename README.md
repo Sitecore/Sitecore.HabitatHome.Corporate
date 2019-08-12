@@ -32,7 +32,7 @@ In order to install the latest version of Sitecore that works with the Habitat H
 
 - ***URL Rewrite module***
 
-As part of the Habitat Corporate installation, a IIS URL rewrite rule is added to the web.config file in order to enforce HTTPS requests on the website. Please ensure you have the [URL Rewrite module](https://www.iis.net/downloads/microsoft/url-rewrite) installed or you will receive a 500.19 error after deployment.
+As part of the Habitat Corporate installation, an IIS URL rewrite rule is added to the web.config file in order to enforce HTTPS requests on the website. Please ensure you have the [URL Rewrite module](https://www.iis.net/downloads/microsoft/url-rewrite) installed or you will receive a 500.19 error after deployment.
 
 # Contribute or Issues #
 Please **post any issues on the Slack Community #habitathome channel** or **create an issue on GitHub**. 
