@@ -215,14 +215,15 @@ Task("Publish-Core-Project").Does(() => {
 });
 
 Task("Apply-DotnetCoreTransforms").Does(()=>{
-var publishFolder = configuration.WebsiteRoot;
+var destination = configuration.WebsiteRoot;
+var publishTempFolder = configuration.PublishTempFolder;
 
 	if (publishLocal){
-		publishFolder = configuration.PublishTempFolder;
+		destination = configuration.PublishTempFolder;
 	}
 
 	// Apply transforms
-	var xdtFiles = GetFiles($"{publishFolder}\\**\\*.xdt");
+	var xdtFiles = GetFiles($"{publishTempFolder}\\**\\*.xdt");
 
 	foreach (var file in xdtFiles)
 	{
@@ -234,8 +235,8 @@ var publishFolder = configuration.WebsiteRoot;
 		Information($"Applying configuration transform:{file.FullPath}");
 		var fileToTransform = Regex.Replace(file.FullPath, "(.+transforms/)?(.*.config).?(.*).xdt", "$2");
 		fileToTransform = Regex.Replace(fileToTransform, ".sc-internal", "");
-		var sourceTransform = System.IO.Path.Combine(configuration.WebsiteRoot, fileToTransform);
-		Information($"Attempting to transform {fileToTransform}");
+		var sourceTransform = System.IO.Path.Combine(destination, fileToTransform);
+		Information($"Attempting to transform {sourceTransform}");
 		XdtTransformConfig(sourceTransform			                // Source File
 												, file.FullPath			                // Tranforms file (*.xdt)
 												, sourceTransform);		                // Target File
