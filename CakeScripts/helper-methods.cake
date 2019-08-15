@@ -25,7 +25,7 @@ public class Configuration
   public string DeploymentTarget{get;set;}
   public string SitecoreAzureToolkitPath{get;set;}
   public string PublishTempFolder {get;set;}
-
+	public string SolutionFile{get;set;}
   public string BuildToolVersions
     {
       set
@@ -44,8 +44,6 @@ public class Configuration
   public string PublishWebFolder => $"{ProjectFolder}\\Publish\\Web";
   public string PublishxConnectFolder => $"{ProjectFolder}\\Publish\\xConnect";
   public string PublishDataFolder => $"{ProjectFolder}\\Publish\\Data";
-
-  public string SolutionFile => $"{ProjectFolder}\\{SolutionName}";
   public MSBuildToolVersion MSBuildToolVersion => this._msBuildToolVersion;
   public string BuildTargets => this.RunCleanBuilds ? "Clean;Build" : "Build";
 
