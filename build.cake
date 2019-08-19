@@ -17,6 +17,7 @@ var packagingScript = $"./scripts/Packaging/generate-update-package.ps1";
 var dacpacScript = $"./scripts/Packaging/generate-dacpac.ps1";
 
 var publishLocal = false;
+
 /*===============================================
 ================ MAIN TASKS =====================
 ===============================================*/
@@ -41,6 +42,7 @@ Setup(context =>
 /*===============================================
 ============ Local Build - Main Tasks ===========
 ===============================================*/
+
 Task("Default")
 .WithCriteria(configuration != null)
 .IsDependentOn("CleanBuildFolders")
@@ -102,10 +104,10 @@ Task("Publish-Local")
 .IsDependentOn("Merge-and-Copy-Xml-Transform")
 .IsDependentOn("Generate-Dacpacs");
 
-
 /*===============================================
 ================= SUB TASKS =====================
 ===============================================*/
+
 Task("Restore-TDS-NuGetPackages").Does(()=>{
 	NuGetRestore(configuration.SolutionFile);
 });
@@ -126,6 +128,7 @@ Task("CleanPublishFolders").Does(()=> {
 	CleanDirectories(configuration.PublishDataFolder);
 	CleanDirectories(configuration.PublishTempFolder);
 });
+
 /*===============================================
 =============== Generic Tasks ===================
 ===============================================*/
@@ -416,7 +419,7 @@ Task("Modify-PublishSettings").Does(() => {
 Task("Sync-Unicorn")
 .WithCriteria(target != "Build-TDS")
 .Does(() => {
-	var unicornUrl = configuration.InstanceUrl + "unicorn.aspx";
+	var unicornUrl = configuration.InstanceUrl + "/unicorn.aspx";
 	Information("Sync Unicorn items from url: " + unicornUrl);
 
 	var authenticationFile = new FilePath($"{configuration.WebsiteRoot}/App_config/Include/Unicorn/Unicorn.zSharedSecret.config");
@@ -438,7 +441,7 @@ Task("Deploy-EXM-Campaigns").Does(() => {
 });
 
 Task("Deploy-Marketing-Definitions").Does(() => {
-	var url = $"{configuration.InstanceUrl}utilities/deploymarketingdefinitions.aspx?apiKey={configuration.MarketingDefinitionsApiKey}";
+	var url = $"{configuration.InstanceUrl}/utilities/deploymarketingdefinitions.aspx?apiKey={configuration.MarketingDefinitionsApiKey}";
 	var responseBody = HttpGet(url, settings =>
 	{
 		settings.AppendHeader("Connection", "keep-alive");
