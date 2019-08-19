@@ -148,8 +148,7 @@ public void DeployExmCampaigns()
 public MSBuildSettings InitializeMSBuildSettings(MSBuildSettings settings)
 {
 	InitializeMSBuildSettingsInternal(settings)
-		.WithRestore()
-		.WithProperty("nugetInteractive", "true");
+		.WithRestore();
 
 	return settings;
 }
@@ -161,7 +160,6 @@ private MSBuildSettings InitializeMSBuildSettingsInternal(MSBuildSettings settin
 			.SetMSBuildPlatform(MSBuildPlatform.Automatic)
 			.SetPlatformTarget(PlatformTarget.MSIL)
 			.UseToolVersion(configuration.MSBuildToolVersion)
-			.WithProperty("nugetInteractive", "true")
 			.SetMaxCpuCount(8);
 
 	return settings;

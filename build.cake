@@ -107,7 +107,7 @@ Task("Publish-Local")
 ================= SUB TASKS =====================
 ===============================================*/
 Task("Restore-TDS-NuGetPackages").Does(()=>{
-	NuGetRestore(configuration.SolutionFile, new NuGetRestoreSettings { NonInteractive = false });
+	NuGetRestore(configuration.SolutionFile);
 });
 
 Task("CleanAll")
