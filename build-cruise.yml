@@ -1,9 +1,19 @@
+trigger:
+  branches:
+    include:
+    - feature/*
+    - bug/*
+    exclude:
+    - master
+    - release/*
+    - integration/*
+
 pool:
   name: DEVDEMO1US1
   demands:
   - msbuild
-steps:
 
+steps:
 - task: NuGetToolInstaller@1
   displayName: 'Use NuGet 4.4.1'
   inputs:

@@ -1,3 +1,9 @@
+trigger:
+  branches:
+    include:
+    - master
+    - release/*
+
 pool:
   name: DEVDEMO1US1
   demands:
@@ -138,4 +144,3 @@ steps:
     storage: sitecoredemopackages
     ContainerName: habitathomecorporate
     BlobPrefix: 'HabitatHome.Corporate-$(BuildVersion.Version)'
-
