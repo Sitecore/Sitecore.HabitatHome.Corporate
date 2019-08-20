@@ -59,26 +59,58 @@ EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Build.Website.Master", "src\Build\Build.Website\tds\master\Build.Website.Master.scproj", "{C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61}"
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.HabitatHome.Feature.Components.Master", "src\Feature\Components\tds\master\Sitecore.HabitatHome.Feature.Components.Master.scproj", "{6B2516D4-5C82-4B1B-A802-86AD89357B7E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61} = {C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61}
+	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.HabitatHome.Feature.Media.Master", "src\Feature\Media\tds\master\Sitecore.HabitatHome.Feature.Media.Master.scproj", "{BAADDF30-95A5-4663-885C-9891C80AABBF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61} = {C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61}
+	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.HabitatHome.Feature.News.Master", "src\Feature\News\tds\master\Sitecore.HabitatHome.Feature.News.Master.scproj", "{926F30AD-3994-4715-88DB-649CE14D7522}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61} = {C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61}
+		{48282A82-EC89-4A6F-84F3-163E5E29A5C1} = {48282A82-EC89-4A6F-84F3-163E5E29A5C1}
+	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.HabitatHome.Feature.Search.Master", "src\Feature\Search\tds\master\Sitecore.HabitatHome.Feature.Search.Master.scproj", "{29FAEEC2-13D1-4955-825A-0F4D3B9A00E9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61} = {C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61}
+		{48282A82-EC89-4A6F-84F3-163E5E29A5C1} = {48282A82-EC89-4A6F-84F3-163E5E29A5C1}
+	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.HabitatHome.Foundation.LocalDatasource.Master", "src\Foundation\LocalDatasource\tds\master\Sitecore.HabitatHome.Foundation.LocalDatasource.Master.scproj", "{DB5F92B3-9F8B-4489-B929-08ECC4F271B2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61} = {C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61}
+	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.HabitatHome.Corporate.Website.Master", "src\Project\HabitatHomeCorporate\tds\master\Sitecore.HabitatHome.Corporate.Website.Master.scproj", "{E1EB0805-1F2E-472E-9B88-B1184AEE8BF4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61} = {C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61}
+	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.HabitatHome.Feature.Components.Core", "src\Feature\Components\tds\core\Sitecore.HabitatHome.Feature.Components.Core.scproj", "{3B9399AF-DCD9-4959-A679-9D9F08E85E93}"
+	ProjectSection(ProjectDependencies) = postProject
+		{06F87D63-5E89-481B-B256-141B7C2735F8} = {06F87D63-5E89-481B-B256-141B7C2735F8}
+	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.HabitatHome.Feature.Media.Core", "src\Feature\Media\tds\core\Sitecore.HabitatHome.Feature.Media.Core.scproj", "{9DF2B804-581D-4188-82DC-7DC4E6A6EFB2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{06F87D63-5E89-481B-B256-141B7C2735F8} = {06F87D63-5E89-481B-B256-141B7C2735F8}
+	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Build.Website.Core", "src\Build\Build.Website\tds\core\Build.Website.Core.scproj", "{06F87D63-5E89-481B-B256-141B7C2735F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.HabitatHomeCorporate.Website.Test", "src\Project\HabitatHomeCorporate\tests\Sitecore.HabitatHomeCorporate.Website.Test.csproj", "{DFB50A6E-CB59-45DD-8B4C-D8F218AA8E18}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EDBE2FC4-3D91-4B8F-AD00-990CF1A31118} = {EDBE2FC4-3D91-4B8F-AD00-990CF1A31118}
+	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.HabitatHome.Foundation.DependencyInjection.Master", "src\Foundation\DependencyInjection\tds\master\Sitecore.HabitatHome.Foundation.DependencyInjection.Master.scproj", "{48282A82-EC89-4A6F-84F3-163E5E29A5C1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61} = {C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

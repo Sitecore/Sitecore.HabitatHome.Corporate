@@ -100,33 +100,6 @@
     </AssemblyAttributes>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Feature\Components\tds\core\Sitecore.HabitatHome.Feature.Components.Core.scproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Feature\Components\tds\master\Sitecore.HabitatHome.Feature.Components.Master.scproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Feature\Media\tds\core\Sitecore.HabitatHome.Feature.Media.Core.scproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Feature\Media\tds\master\Sitecore.HabitatHome.Feature.Media.Master.scproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Feature\News\tds\master\Sitecore.HabitatHome.Feature.News.Master.scproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Feature\Search\tds\master\Sitecore.HabitatHome.Feature.Search.Master.scproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Foundation\DependencyInjection\tds\master\Sitecore.HabitatHome.Foundation.DependencyInjection.Master.scproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Foundation\LocalDatasource\tds\master\Sitecore.HabitatHome.Foundation.LocalDatasource.Master.scproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Project\HabitatHomeCorporate\tds\master\Sitecore.HabitatHome.Corporate.Website.Master.scproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
     <ProjectReference Include="..\..\code\Build.Website.csproj">
       <Project>{fdd77c41-e699-470e-916b-e73d20ca1ebc}</Project>
       <Name>Build.Website</Name>
@@ -366,33 +339,6 @@
     <SitecoreItem Include="sitecore\templates\Foundation\Habitat Home\Workflow\Submission Notification\Data\Subject.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
   </ItemGroup>
   <ItemGroup>
-    <BundledProject Include="..\..\..\..\Feature\Components\tds\core\Sitecore.HabitatHome.Feature.Components.Core.scproj">
-      <ProjectId>{3b9399af-dcd9-4959-a679-9d9f08e85e93}</ProjectId>
-    </BundledProject>
-    <BundledProject Include="..\..\..\..\Feature\Components\tds\master\Sitecore.HabitatHome.Feature.Components.Master.scproj">
-      <ProjectId>{6b2516d4-5c82-4b1b-a802-86ad89357b7e}</ProjectId>
-    </BundledProject>
-    <BundledProject Include="..\..\..\..\Feature\Media\tds\core\Sitecore.HabitatHome.Feature.Media.Core.scproj">
-      <ProjectId>{9df2b804-581d-4188-82dc-7dc4e6a6efb2}</ProjectId>
-    </BundledProject>
-    <BundledProject Include="..\..\..\..\Feature\Media\tds\master\Sitecore.HabitatHome.Feature.Media.Master.scproj">
-      <ProjectId>{baaddf30-95a5-4663-885c-9891c80aabbf}</ProjectId>
-    </BundledProject>
-    <BundledProject Include="..\..\..\..\Feature\News\tds\master\Sitecore.HabitatHome.Feature.News.Master.scproj">
-      <ProjectId>{926f30ad-3994-4715-88db-649ce14d7522}</ProjectId>
-    </BundledProject>
-    <BundledProject Include="..\..\..\..\Feature\Search\tds\master\Sitecore.HabitatHome.Feature.Search.Master.scproj">
-      <ProjectId>{29faeec2-13d1-4955-825a-0f4d3b9a00e9}</ProjectId>
-    </BundledProject>
-    <BundledProject Include="..\..\..\..\Foundation\DependencyInjection\tds\master\Sitecore.HabitatHome.Foundation.DependencyInjection.Master.scproj">
-      <ProjectId>{48282a82-ec89-4a6f-84f3-163e5e29a5c1}</ProjectId>
-    </BundledProject>
-    <BundledProject Include="..\..\..\..\Foundation\LocalDatasource\tds\master\Sitecore.HabitatHome.Foundation.LocalDatasource.Master.scproj">
-      <ProjectId>{db5f92b3-9f8b-4489-b929-08ecc4f271b2}</ProjectId>
-    </BundledProject>
-    <BundledProject Include="..\..\..\..\Project\HabitatHomeCorporate\tds\master\Sitecore.HabitatHome.Corporate.Website.Master.scproj">
-      <ProjectId>{e1eb0805-1f2e-472e-9b88-b1184aee8bf4}</ProjectId>
-    </BundledProject>
     <BundledProject Include="..\core\Build.Website.Core.scproj">
       <ProjectId>{06f87d63-5e89-481b-b256-141b7c2735f8}</ProjectId>
     </BundledProject>
