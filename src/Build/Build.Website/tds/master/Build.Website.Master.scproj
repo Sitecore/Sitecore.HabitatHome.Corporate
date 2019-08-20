@@ -118,6 +118,9 @@
     <ProjectReference Include="..\..\..\..\Feature\Search\tds\master\Sitecore.HabitatHome.Feature.Search.Master.scproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Foundation\DependencyInjection\tds\master\Sitecore.HabitatHome.Foundation.DependencyInjection.Master.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\..\Foundation\LocalDatasource\tds\master\Sitecore.HabitatHome.Foundation.LocalDatasource.Master.scproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
@@ -380,6 +383,9 @@
     </BundledProject>
     <BundledProject Include="..\..\..\..\Feature\Search\tds\master\Sitecore.HabitatHome.Feature.Search.Master.scproj">
       <ProjectId>{29faeec2-13d1-4955-825a-0f4d3b9a00e9}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\..\..\Foundation\DependencyInjection\tds\master\Sitecore.HabitatHome.Foundation.DependencyInjection.Master.scproj">
+      <ProjectId>{48282a82-ec89-4a6f-84f3-163e5e29a5c1}</ProjectId>
     </BundledProject>
     <BundledProject Include="..\..\..\..\Foundation\LocalDatasource\tds\master\Sitecore.HabitatHome.Foundation.LocalDatasource.Master.scproj">
       <ProjectId>{db5f92b3-9f8b-4489-b929-08ecc4f271b2}</ProjectId>
