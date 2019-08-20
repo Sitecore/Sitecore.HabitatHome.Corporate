@@ -380,6 +380,24 @@ Task("Modify-Unicorn-Source-Folder").Does(() => {
 	XmlPoke(zzzDevSettingsFile, sourceFolderXPath, directoryPath, xmlSetting);
 });
 
+Task("Turn-On-Unicorn").Does(() => {
+	// var webConfigFile = File($"{configuration.WebsiteRoot}/web.config");
+	// var xmlSetting = new XmlPokeSettings {
+	// 	Namespaces = new Dictionary<string, string> {
+	// 		{"patch", @"http://www.sitecore.net/xmlconfig/"}
+	// 	}
+	// };
+
+	// var rootXPath = "configuration/sitecore/sc.variable[@name='{0}']/@value";
+	// var directoryPath = MakeAbsolute(new DirectoryPath(configuration.SourceFolder)).FullPath;
+
+	// var sourceFolderXPath = string.Format(rootXPath, "sourceFolder");
+	// XmlPoke(zzzDevSettingsFile, sourceFolderXPath, directoryPath, xmlSetting);
+
+	// sourceFolderXPath = string.Format(rootXPath, "corporateSourceFolder");
+	// XmlPoke(zzzDevSettingsFile, sourceFolderXPath, directoryPath, xmlSetting);
+});
+
 Task("Modify-Corporate-Website-Binding").Does(() => {
 	var targetFile = File($"{configuration.WebsiteRoot}/App_config/Include/Project/HabitatHome.Corporate.Website.config");
 
@@ -418,6 +436,7 @@ Task("Modify-PublishSettings").Does(() => {
 
 Task("Sync-Unicorn")
 .WithCriteria(target != "Build-TDS")
+.IsDependentOn("Turn-On-Unicorn")
 .Does(() => {
 	var unicornUrl = configuration.InstanceUrl + "/unicorn.aspx";
 	Information("Sync Unicorn items from url: " + unicornUrl);
