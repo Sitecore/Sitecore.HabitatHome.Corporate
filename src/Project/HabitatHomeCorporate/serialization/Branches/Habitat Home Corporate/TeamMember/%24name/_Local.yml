@@ -1,0 +1,29 @@
+---
+ID: "d060b939-9486-4b62-9117-389d882bf814"
+Parent: "db3916f6-85de-4a5d-b9f5-20d8d83f2f37"
+Template: "3a5161bc-db66-4f7f-8dd0-8b5e505123c7"
+Path: /sitecore/templates/Branches/Project/Habitat Standard Sites/Habitat Home Corporate/TeamMember/$name/_Local
+DB: master
+Created: 20190822T162219Z
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190822T162219Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fea24016-228e-48e6-b835-3cc2799b72d2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190822T162219Z

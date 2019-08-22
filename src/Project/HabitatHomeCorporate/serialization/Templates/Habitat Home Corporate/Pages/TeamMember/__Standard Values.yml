@@ -4,6 +4,7 @@ Parent: "992448e3-8087-4f10-9834-cfb6145beca6"
 Template: "992448e3-8087-4f10-9834-cfb6145beca6"
 Path: /sitecore/templates/Project/Habitat Standard Sites/Habitat Home Corporate/Pages/TeamMember/__Standard Values
 DB: master
+Created: 20190819T194631Z
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
@@ -88,9 +89,32 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{3F34116B-A795-4609-B22D-983EFF6F4B31}">
-              <p:d />
-            </r>
+              uid="{456FDD4B-363E-48A7-9E81-6B2C75130649}"
+              p:before="*"
+              s:ds=""
+              s:id="{29ADD910-5E4D-4DD9-864B-92C662E5F1E6}"
+              s:par=""
+              s:ph="hh-content-main" />
+            <r
+              uid="{2B13C685-6E9D-454F-9EBA-F859DE5AE9F3}"
+              p:after="r[@uid='{456FDD4B-363E-48A7-9E81-6B2C75130649}']"
+              s:id="{F8111948-BC87-49A3-915B-ED7EE7EFD479}"
+              s:par=""
+              s:ph="hh-content-main" />
+            <r
+              uid="{C3684117-974C-4BD2-A2F5-78A634CB2A1B}"
+              p:after="r[@uid='{2B13C685-6E9D-454F-9EBA-F859DE5AE9F3}']"
+              s:ds=""
+              s:id="{7656FD7D-597E-4B63-89B1-81DE535EA89D}"
+              s:par=""
+              s:ph="hh-content-main" />
+            <r
+              uid="{B8A574C8-77EC-47EF-8BAF-A2DA63AD8346}"
+              p:after="r[@uid='{C3684117-974C-4BD2-A2F5-78A634CB2A1B}']"
+              s:ds=""
+              s:id="{4EEE0E0B-11C9-429D-B15F-C214BE96FD97}"
+              s:par=""
+              s:ph="hh-content-main" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
@@ -98,11 +122,11 @@ Languages:
       Value: 20181226T161323Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9996e9b2-cea9-4400-b097-ab3347ab35c3"
+      Value: "303199de-d8e7-432d-bc39-cdace696e228"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        extranet\Anonymous
+        sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190613T142139Z
+      Value: 20190822T164201Z
