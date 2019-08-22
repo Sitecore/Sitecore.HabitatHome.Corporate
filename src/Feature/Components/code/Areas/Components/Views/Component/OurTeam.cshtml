@@ -10,7 +10,7 @@
         {
             <div class="col-xl-3 col-md-6 mb-4">
                 <div class="card border-0 shadow">
-                    <a href="@component.TargetPage.Url">
+                    <a href="@component.Url">
                        @Html.Sitecore().Edit(component, c => c.Image, new { @class = "card-img-top", mw = "500" })
                     </a>
                     <div class="card-body text-center">
@@ -24,7 +24,7 @@
                         }
                     </div>
                     <div class="card-body text-center">
-                        <a href="@component.TargetPage.Url" class="link_arrow">
+                        <a href="@component.Url" class="link_arrow">
                             @Html.Sitecore().Dictionary("/Buttons/Read More", "Read more")
                         </a>
                     </div>
