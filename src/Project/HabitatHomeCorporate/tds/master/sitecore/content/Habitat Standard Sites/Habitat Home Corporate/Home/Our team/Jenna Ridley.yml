@@ -4,6 +4,7 @@ Parent: "b22ecab4-59b3-428a-ad6f-2119fbe393c0"
 Template: "992448e3-8087-4f10-9834-cfb6145beca6"
 Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team/Jenna Ridley
 DB: master
+Created: 20190823T193821Z
 SharedFields:
 - ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
   Hint: __Tracking
@@ -48,6 +49,18 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
+              uid="{B6AB54E5-EF46-44E8-A7A3-E2B75030DB06}">
+              <p:d />
+            </r>
+            <r
+              uid="{2368487C-7BFC-4C9B-9FF5-F0437523EC1B}">
+              <p:d />
+            </r>
+            <r
+              uid="{CF720D68-BFF9-4253-B438-71C73DB6BFF1}">
+              <p:d />
+            </r>
+            <r
               uid="{4FBAADDF-0174-48B4-AC0C-79E78C6DE951}"
               p:before="*"
               s:ds="{D747E545-32C3-4BD5-B5B9-71A62D37E0B8}"
@@ -89,20 +102,20 @@ Languages:
       Value: Jenna Ridley
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6c194a92-92bd-467b-8e7e-dd9a468609cb"
+      Value: "cf112072-2c27-4104-b0a9-da932da87e64"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
       Value: Senior Partner
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        extranet\Anonymous
+        sitecore\Admin
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
       Value: Jenna is a partner and member of the firm’s Taxation Law group. Her areas of practice include primarily financial and tax counsel for corporate businesses.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190613T142124Z
+      Value: 20190823T201050Z
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Jenna Ridley
