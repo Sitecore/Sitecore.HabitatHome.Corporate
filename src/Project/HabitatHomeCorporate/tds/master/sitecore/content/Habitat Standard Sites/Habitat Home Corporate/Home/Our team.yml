@@ -4,12 +4,11 @@ Parent: "7e2c85c4-4a2b-4f3d-a164-f4455f9098ad"
 Template: "e427e2c2-f0e1-490f-81ec-4f968837b8c5"
 Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team
 DB: master
-Created: 20190822T143525Z
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Type: TreelistEx
-  Value: "{CC798E62-4C88-432B-AC92-46706977098C}"
+  Value: "{992448E3-8087-4F10-9834-CFB6145BECA6}"
 Languages:
 - Language: en
   Versions:
@@ -49,7 +48,7 @@ Languages:
       Value: Our team
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b40438e6-a6d1-4ad3-9c5a-f12714c471fe"
+      Value: "34e90071-53f7-4701-aa3a-fcbacd2b31f6"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
       Value: We have the best and most dedicated team
@@ -62,7 +61,7 @@ Languages:
       Value: Everyone at Habitat Corporate is committed to you. Tell us your goals and we’ll help maximize your opportunities and address the issues that are getting in your way.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190823T194418Z
+      Value: 20190826T202000Z
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Our team
