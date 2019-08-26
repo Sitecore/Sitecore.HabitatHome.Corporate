@@ -381,21 +381,15 @@ Task("Modify-Unicorn-Source-Folder").Does(() => {
 });
 
 Task("Turn-On-Unicorn").Does(() => {
-	// var webConfigFile = File($"{configuration.WebsiteRoot}/web.config");
-	// var xmlSetting = new XmlPokeSettings {
-	// 	Namespaces = new Dictionary<string, string> {
-	// 		{"patch", @"http://www.sitecore.net/xmlconfig/"}
-	// 	}
-	// };
+	var webConfigFile = File($"{configuration.WebsiteRoot}/web.config");
+	var xmlSetting = new XmlPokeSettings {
+		Namespaces = new Dictionary<string, string> {
+			{"patch", @"http://www.sitecore.net/xmlconfig/"}
+		}
+	};
 
-	// var rootXPath = "configuration/sitecore/sc.variable[@name='{0}']/@value";
-	// var directoryPath = MakeAbsolute(new DirectoryPath(configuration.SourceFolder)).FullPath;
-
-	// var sourceFolderXPath = string.Format(rootXPath, "sourceFolder");
-	// XmlPoke(zzzDevSettingsFile, sourceFolderXPath, directoryPath, xmlSetting);
-
-	// sourceFolderXPath = string.Format(rootXPath, "corporateSourceFolder");
-	// XmlPoke(zzzDevSettingsFile, sourceFolderXPath, directoryPath, xmlSetting);
+	var unicornAppSettingXPath = "configuration/appSettings/add[@key='unicorn:define']/@value";
+	XmlPoke(webConfigFile, unicornAppSettingXPath, "On", xmlSetting);
 });
 
 Task("Modify-Corporate-Website-Binding").Does(() => {
