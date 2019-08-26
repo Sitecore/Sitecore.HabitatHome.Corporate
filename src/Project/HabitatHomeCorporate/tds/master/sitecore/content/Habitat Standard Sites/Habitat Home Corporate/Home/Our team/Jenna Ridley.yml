@@ -32,6 +32,10 @@ SharedFields:
           value="0" />
       </profile>
     </tracking>
+- ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
+  Hint: Image
+  Value: |
+    <image mediaid="{D022DA06-C796-42B4-BA9A-D2BE7D63D4DB}" />
 Languages:
 - Language: en
   Versions:
@@ -63,7 +67,7 @@ Languages:
             <r
               uid="{4FBAADDF-0174-48B4-AC0C-79E78C6DE951}"
               p:before="*"
-              s:ds="{D747E545-32C3-4BD5-B5B9-71A62D37E0B8}"
+              s:ds=""
               s:id="{29ADD910-5E4D-4DD9-864B-92C662E5F1E6}"
               s:par=""
               s:ph="hh-content-main" />
@@ -76,14 +80,8 @@ Languages:
             <r
               uid="{7F58C6E0-DAA3-4BF3-B167-9B7F8EC7B4F0}"
               p:after="r[@uid='{1AF61C19-B6B0-46A7-A3C9-461BC8A82B15}']"
-              s:ds="{D69AFB09-9E6F-4582-BA77-00FF2DD557F8}"
+              s:ds=""
               s:id="{7656FD7D-597E-4B63-89B1-81DE535EA89D}"
-              s:par=""
-              s:ph="hh-content-main" />
-            <r
-              uid="{4966DAC4-1345-48D7-AA4B-73606B759D42}"
-              p:after="r[@uid='{7F58C6E0-DAA3-4BF3-B167-9B7F8EC7B4F0}']"
-              s:id="{4EEE0E0B-11C9-429D-B15F-C214BE96FD97}"
               s:par=""
               s:ph="hh-content-main" />
           </d>
@@ -102,7 +100,7 @@ Languages:
       Value: Jenna Ridley
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "cf112072-2c27-4104-b0a9-da932da87e64"
+      Value: "9dacbf74-832e-4799-9125-11bafadaf66c"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
       Value: Senior Partner
@@ -110,12 +108,18 @@ Languages:
       Hint: __Updated by
       Value: |
         sitecore\Admin
+    - ID: "d3924638-ca45-4dd5-8968-f3c5471d3746"
+      Hint: Contact Body
+      Value: |
+        T:&nbsp;<a href="mailto:+1-912-555-2845">+1-912-555-2845</a><br />
+        M:&nbsp;<a href="mailto:+1-912-555-2776">+1-912-555-2776</a><br />
+        E:&nbsp;<a href="mailto:j.ridley@chaseridley.com">j.ridley@chaseridley.com</a>
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
       Value: Jenna is a partner and member of the firm’s Taxation Law group. Her areas of practice include primarily financial and tax counsel for corporate businesses.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190823T201050Z
+      Value: 20190826T194751Z
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Jenna Ridley

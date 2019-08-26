@@ -32,6 +32,10 @@ SharedFields:
           value="0" />
       </profile>
     </tracking>
+- ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
+  Hint: Image
+  Value: |
+    <image mediaid="{C722136B-32B9-46E4-B7B0-83F88B1CD629}" />
 Languages:
 - Language: en
   Versions:
@@ -83,15 +87,8 @@ Languages:
             <r
               uid="{7569CC3E-DE64-4481-937A-604FC5667B2C}"
               p:after="r[@uid='{F06950B0-A4D6-4B60-AA22-D3CF19F2ACDB}']"
-              s:ds="{010BD1C6-E443-4616-A21E-2D627FA50C8F}"
-              s:id="{7656FD7D-597E-4B63-89B1-81DE535EA89D}"
-              s:par=""
-              s:ph="hh-content-main" />
-            <r
-              uid="{371D2545-1E6E-411E-A0FB-51780AF9F705}"
-              p:after="r[@uid='{7569CC3E-DE64-4481-937A-604FC5667B2C}']"
               s:ds=""
-              s:id="{4EEE0E0B-11C9-429D-B15F-C214BE96FD97}"
+              s:id="{7656FD7D-597E-4B63-89B1-81DE535EA89D}"
               s:par=""
               s:ph="hh-content-main" />
           </d>
@@ -111,7 +108,7 @@ Languages:
       Value: Eduardo Perez
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "aafc54c2-7d62-4737-81c0-037fc33840d7"
+      Value: "5dfd7de5-b6f8-45d0-a97b-20185ffb7f18"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
       Value: Managing Partner
@@ -119,12 +116,18 @@ Languages:
       Hint: __Updated by
       Value: |
         sitecore\Admin
+    - ID: "d3924638-ca45-4dd5-8968-f3c5471d3746"
+      Hint: Contact Body
+      Value: |
+        T:&nbsp;<a href="tel:+1-923-555-4295">+1-923-555-4295</a><br />
+        M:&nbsp;<a href="tel:+1-923-555-5943">+1-923-555-5943</a><br />
+        E:&nbsp;<a href="mailto:ed.perez@chaseridley.com">ed.perez@chaseridley.com</a>
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
       Value: "Eduardo is a senior shareholder in the firm’s Corporate and Intellectual Property groups, and is a respected and top-ranked corporate litigation attorney in the region."
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190823T201035Z
+      Value: 20190826T194819Z
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Eduardo Perez

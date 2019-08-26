@@ -32,6 +32,10 @@ SharedFields:
           value="0" />
       </profile>
     </tracking>
+- ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
+  Hint: Image
+  Value: |
+    <image mediaid="{A821B865-B5EF-4478-A929-2BDC267B1E9B}" />
 Languages:
 - Language: en
   Versions:
@@ -80,15 +84,11 @@ Languages:
               s:id="{7656FD7D-597E-4B63-89B1-81DE535EA89D}"
               s:par=""
               s:ph="hh-content-main" />
-            <r
-              uid="{B8A574C8-77EC-47EF-8BAF-A2DA63AD8346}"
-              p:after="r[@uid='{C3684117-974C-4BD2-A2F5-78A634CB2A1B}']"
-              s:ds=""
-              s:id="{4EEE0E0B-11C9-429D-B15F-C214BE96FD97}"
-              s:par=""
-              s:ph="hh-content-main" />
           </d>
         </r>
+    - ID: "0754462c-2dc2-4b2c-bd0a-7ead8eddf5f7"
+      Hint: Contact Title
+      Value: Contact
     - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
       Hint: Content
       Value: |
@@ -107,7 +107,7 @@ Languages:
       Value: Dale Kent
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "8e70fd27-e7eb-4214-a21b-5fa8c93c439b"
+      Value: "920247fc-b41c-41eb-866c-3c4479f574ec"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
       Value: Shareholder
@@ -115,12 +115,18 @@ Languages:
       Hint: __Updated by
       Value: |
         sitecore\Admin
+    - ID: "d3924638-ca45-4dd5-8968-f3c5471d3746"
+      Hint: Contact Body
+      Value: |
+        T:&nbsp;<a href="tel:+1-912-555-2223">+1-912-555-2223</a><br />
+        M:&nbsp;<a href="tel:+1-912-555-5544">+1-912-555-5544</a><br />
+        E:&nbsp;<a href="mailto:d.kent@chaseridley.com">d.kent@chaseridley.com</a>
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
       Value: Dale Kent is an entertainment, intellectual property and corporate business attorney who works with companies in a variety of industries.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190823T201014Z
+      Value: 20190826T194529Z
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Dale Kent

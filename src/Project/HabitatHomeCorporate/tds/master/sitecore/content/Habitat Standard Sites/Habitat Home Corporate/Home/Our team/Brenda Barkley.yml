@@ -84,15 +84,11 @@ Languages:
               s:id="{7656FD7D-597E-4B63-89B1-81DE535EA89D}"
               s:par=""
               s:ph="hh-content-main" />
-            <r
-              uid="{1E3981D9-B22D-4BD7-84F1-ACEF71EC663C}"
-              p:after="r[@uid='{C457BD99-0645-41BB-8EAE-17409845E0B7}']"
-              s:ds=""
-              s:id="{4EEE0E0B-11C9-429D-B15F-C214BE96FD97}"
-              s:par=""
-              s:ph="hh-content-main" />
           </d>
         </r>
+    - ID: "0754462c-2dc2-4b2c-bd0a-7ead8eddf5f7"
+      Hint: Contact Title
+      Value: Contact
     - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
       Hint: Content
       Value: |
@@ -107,7 +103,7 @@ Languages:
       Value: Brender Barkley
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ef3d0191-6ff0-43e8-a002-a8196ab40e7d"
+      Value: "b61cb462-1800-4fc6-90b4-11ff33612bd2"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
       Value: Shareholder
@@ -115,12 +111,18 @@ Languages:
       Hint: __Updated by
       Value: |
         sitecore\Admin
+    - ID: "d3924638-ca45-4dd5-8968-f3c5471d3746"
+      Hint: Contact Body
+      Value: |
+        T:&nbsp;&nbsp;<a href="tel:+1-912-555-8873">+1-912-555-8873</a><br />
+        M:&nbsp;<a href="tel:+1-912-555-2287">+1-912-555-2287</a><br />
+        E:&nbsp;<a href="mailto:b.barkley@habitatlegal.com">b.barkley@habitatlegal.com</a>
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
       Value: Brenda is a shareholder in the firm’s corporate law group. Brenda represents businesses from initial formation through all stages of growth, assisting clients in many areas.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190823T200956Z
+      Value: 20190826T194424Z
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Brenda Barkley

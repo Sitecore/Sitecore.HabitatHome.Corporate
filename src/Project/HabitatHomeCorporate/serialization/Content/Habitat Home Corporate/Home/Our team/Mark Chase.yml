@@ -32,6 +32,10 @@ SharedFields:
           value="0" />
       </profile>
     </tracking>
+- ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
+  Hint: Image
+  Value: |
+    <image mediaid="{DE5FB2B7-BF31-4EAF-B559-894D164B64AD}" />
 Languages:
 - Language: en
   Versions:
@@ -63,7 +67,7 @@ Languages:
             <r
               uid="{A6625652-9763-41DB-993E-1163885CD2AB}"
               p:before="*"
-              s:ds="{7B7870C6-4BA4-4E3A-9961-48CE3B065B37}"
+              s:ds=""
               s:id="{29ADD910-5E4D-4DD9-864B-92C662E5F1E6}"
               s:par=""
               s:ph="hh-content-main" />
@@ -76,14 +80,8 @@ Languages:
             <r
               uid="{D8F1B09D-0B5D-48BB-A1E6-BB40FE89C436}"
               p:after="r[@uid='{7D91591B-B3D1-48BE-A042-8A8568741040}']"
-              s:ds="{89703898-8999-4598-9936-82392BFA66CA}"
+              s:ds=""
               s:id="{7656FD7D-597E-4B63-89B1-81DE535EA89D}"
-              s:par=""
-              s:ph="hh-content-main" />
-            <r
-              uid="{2EB7374C-AD96-4BAC-A344-FF63AB69C7B3}"
-              p:after="r[@uid='{D8F1B09D-0B5D-48BB-A1E6-BB40FE89C436}']"
-              s:id="{4EEE0E0B-11C9-429D-B15F-C214BE96FD97}"
               s:par=""
               s:ph="hh-content-main" />
           </d>
@@ -103,7 +101,7 @@ Languages:
       Value: Mark Chase
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b385cbaa-537a-4076-aac1-c7f30ef32422"
+      Value: "9fbd4d92-7813-4e24-8f13-a37d0bee8bec"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
       Value: General Counsil
@@ -111,12 +109,18 @@ Languages:
       Hint: __Updated by
       Value: |
         sitecore\Admin
+    - ID: "d3924638-ca45-4dd5-8968-f3c5471d3746"
+      Hint: Contact Body
+      Value: |
+        T:&nbsp;<a href="mailto:+1-912-555-2845">+1-912-555-2845</a><br />
+        M:&nbsp;<a href="mailto:+1-912-555-8478">+1-912-555-8478</a><br />
+        E:&nbsp;<a href="mailto:mark.chase@chaseridley.com">mark.chase@chaseridley.com</a>
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
       Value: Mark is one of the founders of the firm. He began his law career in 1960 in San Francisco, and for over 55 years his legal career has mirrored the business climate of the State.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190823T201117Z
+      Value: 20190826T194921Z
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Mark Chase
