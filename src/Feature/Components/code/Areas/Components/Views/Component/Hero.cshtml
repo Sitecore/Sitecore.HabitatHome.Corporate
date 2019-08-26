@@ -4,9 +4,8 @@
 
 @model Component
 
-@{ 
-    
-  var style = Model.ImageField.ImageUrl().ToCssUrlValue();
+@{  
+  var style = Model.Item.TemplateName != Sitecore.HabitatHome.Feature.Components.Templates.TeamMember.Name ? Model.ImageField.ImageUrl().ToCssUrlValue() : string.Empty;
 }
 <div class="jumbotron jumbotron-fluid" style="background-image:@style">
     <div class="container">

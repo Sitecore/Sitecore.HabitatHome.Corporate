@@ -13,5 +13,17 @@ namespace Sitecore.HabitatHome.Feature.Components
                 public static readonly ID NavigationTitle = new ID("{03F0061A-309D-4732-A722-2F2A1488AC60}");
             }
         }
+
+        public struct TeamMember
+        {
+            public static readonly string Name = "TeamMember";
+
+            public struct Fields
+            {
+                public static readonly string ContactTitle = "Contact Title";
+
+                public static readonly string ContactBody = "Contact Body";
+            }
+        }
     }
 }

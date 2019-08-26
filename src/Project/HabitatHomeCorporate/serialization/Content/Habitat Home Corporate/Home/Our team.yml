@@ -35,7 +35,7 @@ Languages:
             <r
               uid="{20336183-5792-4289-AB13-20DF0AEC2D72}"
               p:after="r[@uid='{B2A7A1F2-0468-4B64-9458-19E5A3306D95}']"
-              s:ds="{C10EB3C3-19BD-4228-B2BB-7A0E18EC187A}"
+              s:ds=""
               s:id="{E8D04940-9947-443E-9090-5B0515C839D4}"
               s:par=""
               s:ph="hh-content-main" />
@@ -49,7 +49,7 @@ Languages:
       Value: Our team
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "97fad4f7-9dbc-448b-9d21-8407451da233"
+      Value: "b40438e6-a6d1-4ad3-9c5a-f12714c471fe"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
       Value: We have the best and most dedicated team
@@ -62,7 +62,7 @@ Languages:
       Value: Everyone at Habitat Corporate is committed to you. Tell us your goals and we’ll help maximize your opportunities and address the issues that are getting in your way.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190822T164534Z
+      Value: 20190823T194418Z
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Our team
