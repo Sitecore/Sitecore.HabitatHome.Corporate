@@ -34,8 +34,7 @@ SharedFields:
     </tracking>
 - ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
   Hint: Image
-  Value: |
-    <image mediaid="{D022DA06-C796-42B4-BA9A-D2BE7D63D4DB}" />
+  Value: 
 Languages:
 - Language: en
   Versions:
@@ -86,40 +85,53 @@ Languages:
               s:ph="hh-content-main" />
           </d>
         </r>
+    - ID: "19ce61a4-1eb2-4145-b3f1-a1a4152f1925"
+      Hint: Contact Body
+      Value: |
+        T:&nbsp;<a href="mailto:+1-912-555-2845">+1-912-555-2845</a><br />
+        M:&nbsp;<a href="mailto:+1-912-555-2776">+1-912-555-2776</a><br />
+        E:&nbsp;<a href="mailto:j.ridley@chaseridley.com">j.ridley@chaseridley.com</a>
     - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
       Hint: Content
       Value: |
         <p>Jenna is a partner and member of the firm&rsquo;s Taxation Law group. Her areas of practice include primarily financial and tax counsel for corporate businesses as well as individual income, estate and gift tax planning, general business matters, international financial planning, and tax dispute resolution before the Internal Revenue Service, the Franchise Tax Board, and the State Board of Equalization. She regularly advises clients in connection with the acquisition and disposition of interests in business enterprises and disputes between owners within the same business.</p>
         <p>Jenna counsels trustees, including family members, as to a wide range of tax issues that arise during the administration of trust. In advising trustees, Jenna&rsquo;s expertise includes the taxation of estates and trusts. She has extensive knowledge about the many taxes that are required to be filed with federal, state, and local government.</p>
         <p>Jenna has been practicing in the Bay Area area for more than 30 years. She lectures on business and corporate tax issues to a variety of community and business groups. She is actively involved in non-profit organizations in the community. Jenna is a member of the Board of Overseers for the UCSF Benioff Medical Center, and she is a board member of UCP of the Golden Gate. She was recognized on The Best Lawyers in America 2014 and 2015.</p>
+    - ID: "2173e9d1-d5dd-425b-8c07-e3025afaab79"
+      Hint: Team Member Photo
+      Value: |
+        <image mediaid="{D022DA06-C796-42B4-BA9A-D2BE7D63D4DB}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190423T111652Z
+    - ID: "3e63267e-6160-430d-968e-48ef6d1721aa"
+      Hint: Team Member Name
+      Value: Jenna Ridley
     - ID: "60a36bf8-cb0e-40f6-8b5a-834105136988"
       Hint: MetadataTitle
       Value: Jenna Ridley
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9dacbf74-832e-4799-9125-11bafadaf66c"
+      Value: "7fc39bf6-9313-46e9-98b9-065607576f0a"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
-      Value: Senior Partner
+      Value: 
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
-    - ID: "d3924638-ca45-4dd5-8968-f3c5471d3746"
-      Hint: Contact Body
-      Value: |
-        T:&nbsp;<a href="mailto:+1-912-555-2845">+1-912-555-2845</a><br />
-        M:&nbsp;<a href="mailto:+1-912-555-2776">+1-912-555-2776</a><br />
-        E:&nbsp;<a href="mailto:j.ridley@chaseridley.com">j.ridley@chaseridley.com</a>
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
-      Value: Jenna is a partner and member of the firm’s Taxation Law group. Her areas of practice include primarily financial and tax counsel for corporate businesses.
+      Value: 
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190826T194751Z
+      Value: 20190828T203643Z
+    - ID: "dd8c4eba-986c-4321-b91f-1bbba73afb25"
+      Hint: Team Member Title
+      Value: Senior Partner
+    - ID: "ef722cc7-833e-4325-95b3-e33f4fce82d3"
+      Hint: Team Member Description
+      Value: Jenna is a partner and member of the firm’s Taxation Law group. Her areas of practice include primarily financial and tax counsel for corporate businesses.
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Jenna Ridley

@@ -34,8 +34,7 @@ SharedFields:
     </tracking>
 - ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
   Hint: Image
-  Value: |
-    <image mediaid="{C722136B-32B9-46E4-B7B0-83F88B1CD629}" />
+  Value: 
 Languages:
 - Language: en
   Versions:
@@ -93,6 +92,12 @@ Languages:
               s:ph="hh-content-main" />
           </d>
         </r>
+    - ID: "19ce61a4-1eb2-4145-b3f1-a1a4152f1925"
+      Hint: Contact Body
+      Value: |
+        T:&nbsp;<a href="tel:+1-923-555-4295">+1-923-555-4295</a><br />
+        M:&nbsp;<a href="tel:+1-923-555-5943">+1-923-555-5943</a><br />
+        E:&nbsp;<a href="mailto:ed.perez@chaseridley.com">ed.perez@chaseridley.com</a>
     - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
       Hint: Content
       Value: |
@@ -100,34 +105,41 @@ Languages:
         <p>Eduardo has authored or co-authored a number of publications regarding business law and is regularly giving webcasts and webinars to professional services teams to help them get up to speed on today&rsquo;s corporate and IP law challenges.</p>
         <p>Eduardo earned his J.D. from Columbia Law School. While a student, Eduardo served on the Columbia Business Law Review. During law school, Eduardo was an extern to the Honorable Judge Nadine Buchanan for the U.S. District Court. He also interned for the Technology Enforcement Section of the Antitrust Division at the Department of Justice.</p>
         <p>In his spare time, Taylor enjoys spending time with his two children, traveling abroad, and running marathons.</p>
+    - ID: "2173e9d1-d5dd-425b-8c07-e3025afaab79"
+      Hint: Team Member Photo
+      Value: |
+        <image mediaid="{C722136B-32B9-46E4-B7B0-83F88B1CD629}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190423T111632Z
+    - ID: "3e63267e-6160-430d-968e-48ef6d1721aa"
+      Hint: Team Member Name
+      Value: Eduardo Perez
     - ID: "60a36bf8-cb0e-40f6-8b5a-834105136988"
       Hint: MetadataTitle
       Value: Eduardo Perez
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5dfd7de5-b6f8-45d0-a97b-20185ffb7f18"
+      Value: "d9450061-4889-488d-a8a3-6799161b0812"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
-      Value: Managing Partner
+      Value: 
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
-    - ID: "d3924638-ca45-4dd5-8968-f3c5471d3746"
-      Hint: Contact Body
-      Value: |
-        T:&nbsp;<a href="tel:+1-923-555-4295">+1-923-555-4295</a><br />
-        M:&nbsp;<a href="tel:+1-923-555-5943">+1-923-555-5943</a><br />
-        E:&nbsp;<a href="mailto:ed.perez@chaseridley.com">ed.perez@chaseridley.com</a>
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
-      Value: "Eduardo is a senior shareholder in the firm’s Corporate and Intellectual Property groups, and is a respected and top-ranked corporate litigation attorney in the region."
+      Value: 
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190826T194819Z
+      Value: 20190828T203653Z
+    - ID: "dd8c4eba-986c-4321-b91f-1bbba73afb25"
+      Hint: Team Member Title
+      Value: Managing Partner
+    - ID: "ef722cc7-833e-4325-95b3-e33f4fce82d3"
+      Hint: Team Member Description
+      Value: "Eduardo is a senior shareholder in the firm’s Corporate and Intellectual Property groups, and is a respected and top-ranked corporate litigation attorney in the region."
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Eduardo Perez

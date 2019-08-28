@@ -1,0 +1,29 @@
+---
+ID: "027e2d56-bb49-4663-a5ed-7c52e4897980"
+Parent: "5845babd-869a-4f26-babe-2a0fb40ee667"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Feature/Habitat Home/Team/Team Member Hero
+DB: master
+Created: 20190828T195749Z
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: ~/Areas/Team/Views/Team/TeamMemberHero.cshtml
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190828T171716Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "59860f1c-7184-4c8e-bf3e-6599a502cc14"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190828T195800Z

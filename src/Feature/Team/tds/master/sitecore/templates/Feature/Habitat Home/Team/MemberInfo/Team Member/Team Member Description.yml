@@ -1,14 +1,17 @@
 ---
-ID: "bd037694-9740-4009-8b5d-3e9ab0a80c38"
-Parent: "cbd68ed9-8c91-43df-98e1-781000a876a3"
-Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/Habitat Home/Team/ContactInfo/Team Member
+ID: "ef722cc7-833e-4325-95b3-e33f4fce82d3"
+Parent: "178d5b6f-4445-44eb-b2be-6eace74965fc"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/Habitat Home/Team/MemberInfo/Team Member/Team Member Description
 DB: master
-Created: 20190828T141843Z
+Created: 20190828T201748Z
 SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Multi-Line Text"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 2222
+  Value: 400
 Languages:
 - Language: en
   Versions:
@@ -16,14 +19,14 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190828T141843Z
+      Value: 20190828T201748Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d0d2a7d5-9bed-4569-b6c1-e5fbdee8d34a"
+      Value: "f6ff01b5-e005-46b3-9447-509d613a96a1"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190828T201823Z
+      Value: 20190828T201748Z
