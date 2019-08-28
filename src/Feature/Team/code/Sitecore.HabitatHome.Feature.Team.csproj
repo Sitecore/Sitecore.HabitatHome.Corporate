@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A870BED9-A0B7-4E07-A44E-8E16B95D6911}</ProjectGuid>
+    <ProjectGuid>{227CAC9F-D306-4321-A3B4-5C434379C670}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sitecore.HabitatHome.Feature.Components</RootNamespace>
-    <AssemblyName>Sitecore.HabitatHome.Feature.Components</AssemblyName>
+    <RootNamespace>Sitecore.HabitatHome.Feature.Team</RootNamespace>
+    <AssemblyName>Sitecore.HabitatHome.Feature.Team</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -92,27 +92,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Metadata.cs" />
     <Compile Include="Templates.cs" />
-    <None Include="Areas\Components\Views\Web.config">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="App_Config\Include\Feature\Feature.Components.Serialization.config" />
-    <Content Include="Areas\Components\Views\Component\Navbar.cshtml" />
-    <Compile Include="Controllers\ComponentController.cs" />
-    <Content Include="Areas\Components\Views\Component\PageContent.cshtml" />
-    <Content Include="Areas\Components\Views\Component\CardContainer.cshtml" />
-    <Content Include="Areas\Components\Views\Component\Carousel.cshtml" />
-    <Content Include="Areas\Components\Views\Component\Hero.cshtml" />
-    <Content Include="Areas\Components\Views\Component\PromoImageLeft.cshtml" />
-    <Content Include="Areas\Components\Views\Component\PromoImageRight.cshtml" />
-    <Content Include="Areas\Components\Views\Component\PageTitle.cshtml" />
-    <Content Include="Areas\Components\Views\Component\CenteredHeading.cshtml" />
-    <Content Include="Areas\Components\Views\Component\OurTeam.cshtml" />
-    <Content Include="Areas\Components\Views\Component\Breadcrumb.cshtml" />
-    <Content Include="Areas\Components\Views\Component\Metadata.cshtml" />
-    <Content Include="Areas\Components\Views\Component\LeftImageCTA.cshtml" />
-    <Content Include="Areas\Components\Views\Component\RightImageCTA.cshtml" />
+    <Content Include="Areas\Team\Views\Team\ContactCard.cshtml" />
+    <Content Include="Areas\Team\Views\Team\TeamMemberHero.cshtml" />
+    <None Include="Areas\Team\Views\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -124,12 +107,6 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\BreadcrumbItem.cs" />
-    <Compile Include="Models\CarouselModel.cs" />
-    <Compile Include="Models\CarouselSlideModel.cs" />
-    <Compile Include="Models\Settings.cs" />
-    <Compile Include="Models\Site.cs" />
-    <Compile Include="Models\Component.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

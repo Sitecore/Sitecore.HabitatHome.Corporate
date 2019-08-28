@@ -14,9 +14,9 @@ namespace Sitecore.HabitatHome.Feature.Components
             }
         }
 
-        public struct TeamMember
+        public struct ContactInfo
         {
-            public static readonly string Name = "TeamMember";
+            public static readonly string Name = "ContactInfo";
 
             public struct Fields
             {

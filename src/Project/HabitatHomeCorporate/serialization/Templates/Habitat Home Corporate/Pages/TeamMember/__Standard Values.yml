@@ -4,7 +4,6 @@ Parent: "992448e3-8087-4f10-9834-cfb6145beca6"
 Template: "992448e3-8087-4f10-9834-cfb6145beca6"
 Path: /sitecore/templates/Project/Habitat Standard Sites/Habitat Home Corporate/Pages/TeamMember/__Standard Values
 DB: master
-Created: 20190819T194631Z
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
@@ -98,19 +97,19 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "0754462c-2dc2-4b2c-bd0a-7ead8eddf5f7"
-      Hint: Contact Title
-      Value: Contact
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20181226T161323Z
+    - ID: "29f23cb0-eb6c-4f3c-935a-26b1e6367438"
+      Hint: Contact Title
+      Value: Contact
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4b6f3305-56b7-408e-8536-240ffe37969c"
+      Value: "7fae1a34-252a-42d8-9daa-ca2b6f00a4bb"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190826T194559Z
+      Value: 20190828T141957Z

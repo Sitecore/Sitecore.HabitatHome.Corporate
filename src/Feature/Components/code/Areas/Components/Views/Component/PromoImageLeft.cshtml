@@ -2,34 +2,14 @@
 @using Sitecore.Demo.Foundation.SitecoreExtensions.Extensions
 @model Component
 
-@{ 
-    bool teamMemberPromo = Model.Item.TemplateName == Sitecore.HabitatHome.Feature.Components.Templates.TeamMember.Name;
-}
 <div class="container">
     <div class="row featurette">
         <div class="col-sm-6 order-sm-2">
             <h2 class="featurette-heading">
-                @if(teamMemberPromo)
-                {
-                    @Html.Sitecore().Field(Sitecore.HabitatHome.Feature.Components.Templates.TeamMember.Fields.ContactTitle, Model.Item)
-                }
-
-                @if(!teamMemberPromo)
-                {
-                    @Html.Sitecore().Edit(Model, m => m.Title)
-                }
-               
+                @Html.Sitecore().Edit(Model, m => m.Title)               
             </h2>
             <p class="lead">
-                @if(teamMemberPromo)
-                {
-                    @Html.Sitecore().Field(Sitecore.HabitatHome.Feature.Components.Templates.TeamMember.Fields.ContactBody, Model.Item)
-                }
-
-                @if(!teamMemberPromo)
-                {
-                    @Html.Sitecore().Edit(Model, m => m.Content)
-                }
+                @Html.Sitecore().Edit(Model, m => m.Content)
             </p>
         </div>
         <div class="col-sm-6 order-sm-1">

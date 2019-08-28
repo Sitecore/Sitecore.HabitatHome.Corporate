@@ -1,10 +1,9 @@
 ---
-ID: "7eaca400-79ab-45eb-aa26-2e4bb5b26551"
-Parent: "992448e3-8087-4f10-9834-cfb6145beca6"
+ID: "bd037694-9740-4009-8b5d-3e9ab0a80c38"
+Parent: "cbd68ed9-8c91-43df-98e1-781000a876a3"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Project/Habitat Standard Sites/Habitat Home Corporate/Pages/TeamMember/Team Member
+Path: /sitecore/templates/Feature/Habitat Home/Team/ContactInfo/Team Member
 DB: master
-Created: 20190826T162924Z
 Languages:
 - Language: en
   Versions:
@@ -12,14 +11,14 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190826T162924Z
+      Value: 20190828T141843Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "45bb3e6d-7315-4a42-9f89-8f7a44ccc125"
+      Value: "d4268fce-dc5c-4b3f-a3eb-e7c91901d944"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190826T162924Z
+      Value: 20190828T162206Z

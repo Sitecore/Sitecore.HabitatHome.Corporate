@@ -1,10 +1,9 @@
 ---
-ID: "0754462c-2dc2-4b2c-bd0a-7ead8eddf5f7"
-Parent: "7eaca400-79ab-45eb-aa26-2e4bb5b26551"
+ID: "29f23cb0-eb6c-4f3c-935a-26b1e6367438"
+Parent: "bd037694-9740-4009-8b5d-3e9ab0a80c38"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Project/Habitat Standard Sites/Habitat Home Corporate/Pages/TeamMember/Team Member/Contact Title
+Path: /sitecore/templates/Feature/Habitat Home/Components/Team Member/ContactInfo/Team Member/Contact Title
 DB: master
-Created: 20190826T162924Z
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
@@ -19,14 +18,14 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190826T162924Z
+      Value: 20190828T141843Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9511826d-8cfc-4450-91c4-12fc77f2a1b3"
+      Value: "88ef36a3-7b9b-4b21-a02c-d050ebefae0f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190826T162924Z
+      Value: 20190828T141900Z

@@ -1,10 +1,13 @@
-﻿@using Sitecore.HabitatHome.Feature.Components.Models
+﻿@*@using Sitecore.HabitatHome.Feature.Components.Models
 @using Sitecore.Demo.Foundation.Dictionary.Extensions
 @using Sitecore.Demo.Foundation.SitecoreExtensions.Extensions
 
 @model Component
 
-<div class="jumbotron jumbotron-fluid" style="background-image:@Model.ImageField.ImageUrl().ToCssUrlValue()">
+@{  
+  var style = Model.Item.TemplateName != Sitecore.HabitatHome.Feature.Components.Templates.TeamMember.Name ? Model.ImageField.ImageUrl().ToCssUrlValue() : string.Empty;
+}
+<div class="jumbotron jumbotron-fluid" style="background-image:@style">
     <div class="container">
         @if (Sitecore.Context.PageMode.IsExperienceEditor || !string.IsNullOrWhiteSpace(Model.Title))
         {
@@ -28,4 +31,4 @@
             <a href="@Model.TargetUrl.GetFriendlyUrl()" class="btn btn-info">@Html.Sitecore().Dictionary("/Buttons/Read More", "Read more")</a>
         }
     </div>
-</div>
+</div>*@
