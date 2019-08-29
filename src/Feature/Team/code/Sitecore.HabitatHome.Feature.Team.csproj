@@ -104,11 +104,9 @@
     <Compile Include="Templates.cs" />
     <Content Include="Areas\Team\Views\Team\ContactCard.cshtml" />
     <Content Include="Areas\Team\Views\Team\TeamMemberHero.cshtml" />
-    <Content Include="Areas\Team\Views\Shared\_Layout.cshtml" />
-    <Content Include="Content\Site.css" />
     <Content Include="Areas\Team\Views\Team\OurTeam.cshtml" />
+    <Content Include="App_Config\Include\Feature\Feature.Team.Serialization.config" />
     <None Include="Areas\Team\Views\Web.config" />
-    <Content Include="Areas\Team\Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

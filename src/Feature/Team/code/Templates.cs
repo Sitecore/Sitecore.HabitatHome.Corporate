@@ -1,6 +1,4 @@
-﻿using Sitecore.Data;
-
-namespace Sitecore.HabitatHome.Feature.Team
+﻿namespace Sitecore.HabitatHome.Feature.Team
 {
     public struct Templates
     {
