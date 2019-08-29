@@ -108,7 +108,6 @@
     <Content Include="Areas\Components\Views\Component\PromoImageRight.cshtml" />
     <Content Include="Areas\Components\Views\Component\PageTitle.cshtml" />
     <Content Include="Areas\Components\Views\Component\CenteredHeading.cshtml" />
-    <Content Include="Areas\Components\Views\Component\OurTeam.cshtml" />
     <Content Include="Areas\Components\Views\Component\Breadcrumb.cshtml" />
     <Content Include="Areas\Components\Views\Component\Metadata.cshtml" />
     <Content Include="Areas\Components\Views\Component\LeftImageCTA.cshtml" />

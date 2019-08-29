@@ -4,7 +4,11 @@
 
 @model Component
 
-<div class="jumbotron jumbotron-fluid" style="background-image:@Model.ImageField.ImageUrl().ToCssUrlValue()">
+@{ 
+    
+  var style = Model.ImageField.ImageUrl().ToCssUrlValue();
+}
+<div class="jumbotron jumbotron-fluid" style="background-image:@style">
     <div class="container">
         @if (Sitecore.Context.PageMode.IsExperienceEditor || !string.IsNullOrWhiteSpace(Model.Title))
         {

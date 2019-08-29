@@ -91,11 +91,6 @@ namespace Sitecore.HabitatHome.Feature.Components.Controllers
             return View("~/Areas/Components/Views/Component/Breadcrumb.cshtml", breadcrumbItems);
         }
 
-        public ViewResult OurTeam()
-        {
-            return View(Component);
-        }
-
         public ViewResult Hero()
         {
             return View(Component);
