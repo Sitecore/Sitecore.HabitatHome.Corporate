@@ -23,8 +23,6 @@
                 public static readonly string TeamMemberName = "Team Member Name";
 
                 public static readonly string TeamMemberTitle = "Team Member Title";
-
-                public static readonly string TeamMemberDesc = "Team Member Description";
             }
         }
     }

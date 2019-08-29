@@ -6,6 +6,9 @@ Path: /sitecore/layout/Renderings/Feature/Habitat Home/Team/Our Team
 DB: master
 Created: 20190828T195715Z
 SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: business/32x32/businessmen.png
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
   Value: ~/Areas/Team/Views/Team/OurTeam.cshtml
@@ -19,11 +22,11 @@ Languages:
       Value: 20190828T171716Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "70f58051-1bff-42a0-8d88-08aa73f11705"
+      Value: "319f1685-7eca-432a-99a6-8e1b41897342"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190828T195730Z
+      Value: 20190829T170946Z

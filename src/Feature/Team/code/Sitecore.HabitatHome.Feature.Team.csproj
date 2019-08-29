@@ -103,7 +103,6 @@
   <ItemGroup>
     <Compile Include="Templates.cs" />
     <Content Include="Areas\Team\Views\Team\ContactCard.cshtml" />
-    <Content Include="Areas\Team\Views\Team\TeamMemberHero.cshtml" />
     <Content Include="Areas\Team\Views\Team\OurTeam.cshtml" />
     <Content Include="App_Config\Include\Feature\Feature.Team.Serialization.config" />
     <None Include="Areas\Team\Views\Web.config" />
