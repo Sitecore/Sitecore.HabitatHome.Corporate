@@ -33,8 +33,7 @@ SharedFields:
     </tracking>
 - ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"
   Hint: Image
-  Value: |
-    <image mediaid="{802652BE-7D39-4810-B6B9-CFEF21F60BF4}" />
+  Value: 
 Languages:
 - Language: en
   Versions:
@@ -42,72 +41,51 @@ Languages:
     Fields:
     - ID: "03f0061a-309d-4732-a722-2f2a1488ac60"
       Hint: NavigationTitle
-      Value: Brender Barkley
-    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
-      Hint: __Final Renderings
-      Type: Layout
+      Value: Brenda Barkley
+    - ID: "19ce61a4-1eb2-4145-b3f1-a1a4152f1925"
+      Hint: Contact Body
       Value: |
-        <r xmlns:p="p" xmlns:s="s"
-          p:p="1">
-          <d
-            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-            <r
-              uid="{EDE4E520-24A5-4FE6-BB5E-6D300794D5F4}"
-              p:before="*"
-              s:ds="{EBEAE01A-7792-4A40-848F-237BDFA5842E}"
-              s:id="{29ADD910-5E4D-4DD9-864B-92C662E5F1E6}"
-              s:par=""
-              s:ph="hh-content-main" />
-            <r
-              uid="{A3C8EC16-9BCA-4E3E-9F4F-D9DF43035B51}"
-              p:after="r[@uid='{EDE4E520-24A5-4FE6-BB5E-6D300794D5F4}']"
-              s:id="{F8111948-BC87-49A3-915B-ED7EE7EFD479}"
-              s:par=""
-              s:ph="hh-content-main" />
-            <r
-              uid="{C457BD99-0645-41BB-8EAE-17409845E0B7}"
-              p:after="r[@uid='{A3C8EC16-9BCA-4E3E-9F4F-D9DF43035B51}']"
-              s:ds="{F378889E-C6A8-4B36-8B30-DF09DB235995}"
-              s:id="{7656FD7D-597E-4B63-89B1-81DE535EA89D}"
-              s:par=""
-              s:ph="hh-content-main" />
-            <r
-              uid="{1E3981D9-B22D-4BD7-84F1-ACEF71EC663C}"
-              p:after="r[@uid='{C457BD99-0645-41BB-8EAE-17409845E0B7}']"
-              s:ds=""
-              s:id="{4EEE0E0B-11C9-429D-B15F-C214BE96FD97}"
-              s:par=""
-              s:ph="hh-content-main" />
-          </d>
-        </r>
+        T:&nbsp;&nbsp;<a href="tel:+1-912-555-8873">+1-912-555-8873</a><br />
+        M:&nbsp;<a href="tel:+1-912-555-2287">+1-912-555-2287</a><br />
+        E:&nbsp;<a href="mailto:b.barkley@habitatlegal.com">b.barkley@habitatlegal.com</a>
     - ID: "1d80163d-001a-49dc-bb59-d457bab7decc"
       Hint: Content
       Value: |
         <p>Brenda is a shareholder in the firm&rsquo;s corporate law group. Brenda represents businesses from initial formation through all stages of growth, assisting clients in many areas including employment, shareholder and director-level contracts, corporate governance and other company issues. She also counsels clients with purchases and sales of businesses, with an emphasis on mergers and acquisitions and stock purchases across all business verticals. She represents all types of individuals and entities including corporations, general partnerships, limited partnerships, limited liability companies and limited liability partnerships. Brenda is a chair on the Business Law Section of the San Francisco County Bar.</p>
         <p>Brenda also has deep-level experience helping companies in financing to fund both operations and expansion. These financing options have included unsecured loans and loans secured by personal property. Brenda has taught courses and regularly gives webcasts and webinars on the Uniform Commercial Code (UCC).</p>
         <p>Brenda was named as one of the Top 100 Northern California Super Lawyers in 2012 and 2015, and was selected for inclusion in Northern California Super Lawyers for 2010, 2011, 2012, 2013, 2014, and 2015. She was also named one of the Top 25 San Francisco Super Lawyers for 2013, 2014, and 2015.</p>
+    - ID: "2173e9d1-d5dd-425b-8c07-e3025afaab79"
+      Hint: Team Member Photo
+      Value: |
+        <image mediaid="{802652BE-7D39-4810-B6B9-CFEF21F60BF4}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190423T111121Z
+    - ID: "3e63267e-6160-430d-968e-48ef6d1721aa"
+      Hint: Team Member Name
+      Value: Brenda Barkley
     - ID: "60a36bf8-cb0e-40f6-8b5a-834105136988"
       Hint: MetadataTitle
-      Value: Brender Barkley
+      Value: Brenda Barkley
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b7f75fe4-1f1a-46eb-942c-14437455c8c6"
+      Value: "14ac515c-ea5a-4331-9c29-baad1835ee26"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
-      Value: Shareholder
+      Value: 
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        extranet\Anonymous
+        sitecore\Admin
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
       Value: Brenda is a shareholder in the firm’s corporate law group. Brenda represents businesses from initial formation through all stages of growth, assisting clients in many areas.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190613T142125Z
+      Value: 20190830T143325Z
+    - ID: "dd8c4eba-986c-4321-b91f-1bbba73afb25"
+      Hint: Team Member Title
+      Value: Shareholder
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Brenda Barkley
@@ -165,20 +143,20 @@ Languages:
       Value: Brenda Barkley
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2720faab-1cfa-4cf8-ad64-93d6efc894ed"
+      Value: "e714527d-1a70-4c80-a78c-6ab59e0b2e77"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
       Value: Actionnaire
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\unicorn
+        sitecore\Admin
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
       Value: Brenda est actionnaire du groupe de droit des sociétés du cabinet. Brenda représente les entreprises de la formation initiale à toutes les étapes de la croissance et assiste les clients dans de nombreux domaines.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190613T142125Z
+      Value: 20190829T170741Z
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Brenda Barkley
