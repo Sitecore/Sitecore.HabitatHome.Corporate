@@ -94,9 +94,9 @@
   <ItemGroup>
     <Compile Include="Models\Metadata.cs" />
     <Compile Include="Templates.cs" />
-    <None Include="Areas\Components\Views\Web.config">
+    <Content Include="Areas\Components\Views\Web.config">
       <SubType>Designer</SubType>
-    </None>
+    </Content>
     <Content Include="App_Config\Include\Feature\Feature.Components.Serialization.config" />
     <Content Include="Areas\Components\Views\Component\Navbar.cshtml" />
     <Compile Include="Controllers\ComponentController.cs" />

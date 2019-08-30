@@ -4,7 +4,6 @@ Parent: "7eaca400-79ab-45eb-aa26-2e4bb5b26551"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
 Path: /sitecore/templates/Project/Habitat Standard Sites/Habitat Home Corporate/Pages/TeamMember/Team Member/Contact Body
 DB: master
-Created: 20190826T162924Z
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
