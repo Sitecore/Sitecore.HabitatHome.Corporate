@@ -45,7 +45,7 @@ Setup(context =>
 
 Task("Default")
 .WithCriteria(configuration != null)
-.IsDependentOn("CleanBuildFolders")
+.IsDependentOn("CleanAll")
 .IsDependentOn("Copy-Sitecore-Lib")
 .IsDependentOn("Modify-PublishSettings")
 .IsDependentOn("Publish-All-Projects")
@@ -203,14 +203,18 @@ Task("Publish-Core-Project").Does(() => {
 
 	// Copy other output files to destination webroot
 	var ignoredExtensions = new string[] { ".dll", ".exe", ".pdb", ".xdt" };
-	var ignoredFiles = new string[] { "web.config", "build.website.deps.json", "build.website.exe.config" };
+	var ignoredFilesPublishFolderPath = publishFolder.ToLower().Replace("\\", "/");
+	var ignoredFiles = new string[] {
+		$"{ignoredFilesPublishFolderPath}/web.config",
+		$"{ignoredFilesPublishFolderPath}/build.website.deps.json",
+		$"{ignoredFilesPublishFolderPath}/build.website.exe.config"
+	};
 
 	var contentFiles = GetFiles($"{publishFolder}\\**\\*")
 											.Where(file => !ignoredExtensions.Contains(file.GetExtension().ToLower()))
-											.Where(file => !ignoredFiles.Contains(file.Segments.LastOrDefault().ToLower()));
+											.Where(file => !ignoredFiles.Contains(file.FullPath.ToLower()));
 
 	CopyFiles(contentFiles, destination, preserveFolderStructure: true);
-
 });
 
 Task("Apply-DotnetCoreTransforms").Does(()=>{
