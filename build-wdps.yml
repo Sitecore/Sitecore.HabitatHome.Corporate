@@ -1,3 +1,9 @@
+trigger:
+  branches:
+    include:
+    - master
+    - release/*
+
 pool:
   name: DEVDEMO1US1
   demands:
@@ -23,7 +29,7 @@ steps:
   inputs:
     restoreSolution: HabitatHome.Corporate.TDS.sln
     feedsToUse: config
-    nugetConfigPath: 'nuget-sc-internal.config'
+    nugetConfigPath: 'nuget.config'
 
 - task: MSBuild@1
   displayName: 'HabitatHome.Corporate - CM'
@@ -138,4 +144,3 @@ steps:
     storage: sitecoredemopackages
     ContainerName: habitathomecorporate
     BlobPrefix: 'HabitatHome.Corporate-$(BuildVersion.Version)'
-
