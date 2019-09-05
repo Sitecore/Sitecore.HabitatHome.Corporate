@@ -4,6 +4,11 @@ Parent: "7e2c85c4-4a2b-4f3d-a164-f4455f9098ad"
 Template: "e427e2c2-f0e1-490f-81ec-4f968837b8c5"
 Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team
 DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{992448E3-8087-4F10-9834-CFB6145BECA6}"
 Languages:
 - Language: en
   Versions:
@@ -29,8 +34,8 @@ Languages:
             <r
               uid="{20336183-5792-4289-AB13-20DF0AEC2D72}"
               p:after="r[@uid='{B2A7A1F2-0468-4B64-9458-19E5A3306D95}']"
-              s:ds="{C10EB3C3-19BD-4228-B2BB-7A0E18EC187A}"
-              s:id="{E8D04940-9947-443E-9090-5B0515C839D4}"
+              s:ds=""
+              s:id="{C143047E-0FD5-443A-9207-C839C512FA46}"
               s:par=""
               s:ph="hh-content-main" />
           </d>
@@ -43,20 +48,20 @@ Languages:
       Value: Our team
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "64bb78cc-c20a-46ed-a79e-377aa37515fb"
+      Value: "1f48898b-8509-4cce-a648-c296dcba924f"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
       Value: We have the best and most dedicated team
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        extranet\Anonymous
+        sitecore\Admin
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
       Value: Everyone at Habitat Corporate is committed to you. Tell us your goals and we’ll help maximize your opportunities and address the issues that are getting in your way.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190613T142122Z
+      Value: 20190828T200031Z
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Our team
@@ -107,20 +112,20 @@ Languages:
       Value: Notre équipe
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "8eb5e5cb-2073-4ca6-ad4a-2b8a5482a360"
+      Value: "d21ecd3c-1179-44af-851f-afcaa3e94e30"
     - ID: "943718f7-e179-4f1d-954f-3c9482c3bc3d"
       Hint: Subtitle
       Value: Nous avons la meilleure équipe et la plus dévouée
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\unicorn
+        sitecore\Admin
     - ID: "d52da1c6-36b8-4770-8dab-d092b266060b"
       Hint: Lead
       Value: "Chez Habitat Corporate, tout le monde s’engage envers vous. Dites-nous vos objectifs et nous vous aiderons à maximiser vos opportunités et à résoudre les problèmes que vous rencontrez."
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190613T142122Z
+      Value: 20190822T154219Z
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: Notre équipe
@@ -140,14 +145,14 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "cbbdac98-59a2-4e2d-a07e-6a1c9e4d3248"
+      Value: "3b909339-59c6-407e-a7d0-70340ed9b58e"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\unicorn
+        sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20190613T142122Z
+      Value: 20190822T154219Z
     - ID: "f4629649-b213-4e81-8f4d-59b8de35e6f2"
       Hint: Title
       Value: 私たちのチーム
