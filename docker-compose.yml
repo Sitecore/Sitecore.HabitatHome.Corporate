@@ -1,26 +1,34 @@
 version: '2.4'
 
+networks:
+  demo:
+
 services:
 
   sql:
-    image: sitecoredemocontainers.azurecr.io/sitecore-xp-sqldev:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    image: ${REGISTRY}sitecore-xp-sqldev:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    networks:
+      demo:
     volumes:
       - .\data\sql:C:\Data
-    mem_limit: 2GB
     ports:
       - "44010:1433"
 
   solr:
-    image: sitecoredemocontainers.azurecr.io/sitecore-xp-solr:9.2.0-nanoserver-${NANOSERVER_CHANNEL}
+    image: ${REGISTRY}sitecore-xp-solr:9.2.0-nanoserver-${NANOSERVER_CHANNEL}
+    networks:
+      demo:
     volumes:
       - .\data\solr:C:\Data
-    mem_limit: 1GB
     ports:
       - "44011:8983"
 
   xconnect:
-    image: sitecoredemocontainers.azurecr.io/sitecore-xp-xconnect:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    image: ${REGISTRY}sitecore-xp-xconnect:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    networks:
+      demo:
     volumes:
+      - c:\license:c:\license
       - .\data\xconnect:C:\inetpub\xconnect\App_Data\logs
     mem_limit: 1GB
     links:
@@ -28,8 +36,11 @@ services:
       - solr
 
   xconnect-automationengine:
-    image: sitecoredemocontainers.azurecr.io/sitecore-xp-xconnect-automationengine:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    image: ${REGISTRY}sitecore-xp-xconnect-automationengine:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    networks:
+      demo:
     volumes:
+      - c:\license:c:\license
       - .\data\xconnect-automationengine:C:\AutomationEngine\App_Data\logs
     mem_limit: 500MB
     links:
@@ -37,36 +48,48 @@ services:
       - xconnect
 
   xconnect-indexworker:
-    image: sitecoredemocontainers.azurecr.io/sitecore-xp-xconnect-indexworker:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    image: ${REGISTRY}sitecore-xp-xconnect-indexworker:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    networks:
+      demo:
     volumes:
+      - c:\license:c:\license
       - .\data\xconnect-indexworker:C:\IndexWorker\App_Data\logs
     mem_limit: 500MB
     links:
       - sql
       - solr
 
-  cd:
-    image: sitecoredemocontainers.azurecr.io/sitecore-xp-cd:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
-    volumes:
-      - .\data\cd:C:\inetpub\sc\App_Data\logs
-      - .\Publish\Web:C:\src
-    ports:
-      - "44002:80"
-    links:
-      - sql
-      - solr
-      - xconnect
-    entrypoint: cmd /c "powershell C:/Sitecore/Scripts/Watch-Directory.ps1 C:/src C:\inetpub\sc -ExcludeFiles @('Web.config','ConnectionStrings.config')"
+#   cd:
+#    image: ${REGISTRY}sitecore-xp-sxa-1.9.0-cd:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+#    networks:
+#      demo:
+#    volumes:
+#      - .\data\cd:C:\inetpub\sc\App_Data\logs
+#    ports:
+#      - "44002:80"
+#    links:
+#      - sql
+#      - solr
+#      - xconnect
 
   cm:
-    image: sitecoredemocontainers.azurecr.io/sitecore-xp-standalone:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    image: ${REGISTRY}sitecore-xp-standalone:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    networks:
+      demo:
+        aliases:
+          - local-cms.demo.com
+    entrypoint: cmd /c "start /B powershell C:/Sitecore/Scripts/Watch-Directory.ps1 C:\src C:\inetpub\sc -ExcludeFiles @('ConnectionStrings.config') & cmd /c & start /B powershell C:/scripts/CopyConfigs.ps1 & C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646"
     volumes:
+      - .\scripts\Docker:C:\scripts
+      - c:\license:c:\license
+      - .\publish\web:C:\src
+      - .\items:c:\unicorn
       - .\data\cm:C:\inetpub\sc\App_Data\logs
-      - .\Publish\Web:C:\src
+      - .\data\creativeexchange:C:\inetpub\sc\App_Data\packages\CreativeExchange\FileStorage
+      - ${REMOTEDEBUGGER_PATH}:C:\remote_debugger:ro
     ports:
       - "44001:80"
     links:
       - sql
       - solr
       - xconnect
-    entrypoint: cmd /c "powershell C:/Sitecore/Scripts/Watch-Directory.ps1 C:/src C:\inetpub\sc -ExcludeFiles @('Web.config','ConnectionStrings.config')"
