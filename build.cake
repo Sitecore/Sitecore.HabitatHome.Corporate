@@ -382,17 +382,22 @@ Task("Modify-Unicorn-Source-Folder")
 .WithCriteria(() => syncUnicorn == true)
 .Does(() => {
   var zzzDevSettingsFile = File($"{configuration.WebsiteRoot}/App_config/Include/Project/z.Corporate.DevSettings.config");
-
   var rootXPath = "configuration/sitecore/sc.variable[@name='{0}']/@value";
-  var sourceFolderXPath = string.Format(rootXPath, "corporateSourceFolder");
   var directoryPath = MakeAbsolute(new DirectoryPath(configuration.UnicornSerializationFolder)).FullPath;
-
   var xmlSetting = new XmlPokeSettings {
     Namespaces = new Dictionary<string, string> {
       {"patch", @"http://www.sitecore.net/xmlconfig/"}
     }
   };
+
+// Set corporateSourceFolder
+  var corporateSourceFolderXPath = string.Format(rootXPath, "corporateSourceFolder");
+  XmlPoke(zzzDevSettingsFile, corporateSourceFolderXPath, directoryPath, xmlSetting);
+
+  // Set sourceFolder
+  var sourceFolderXPath = string.Format(rootXPath, "sourceFolder");
   XmlPoke(zzzDevSettingsFile, sourceFolderXPath, directoryPath, xmlSetting);
+
 });
 
 Task("Turn-On-Unicorn")
