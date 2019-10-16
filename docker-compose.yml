@@ -12,7 +12,7 @@ services:
     volumes:
       - .\data\sql:C:\Data
     ports:
-      - "44010:1433"
+      - "44110:1433"
 
   solr:
     image: ${REGISTRY}sitecore-xp-solr:9.2.0-nanoserver-${NANOSERVER_CHANNEL}
@@ -21,7 +21,7 @@ services:
     volumes:
       - .\data\solr:C:\Data
     ports:
-      - "44011:8983"
+      - "44111:8983"
 
   xconnect:
     image: ${REGISTRY}sitecore-xp-xconnect:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
@@ -66,7 +66,7 @@ services:
 #    volumes:
 #      - .\data\cd:C:\inetpub\sc\App_Data\logs
 #    ports:
-#      - "44002:80"
+#      - "44102:80"
 #    links:
 #      - sql
 #      - solr
@@ -88,7 +88,7 @@ services:
       - .\data\creativeexchange:C:\inetpub\sc\App_Data\packages\CreativeExchange\FileStorage
       - ${REMOTEDEBUGGER_PATH}:C:\remote_debugger:ro
     ports:
-      - "44001:80"
+      - "44101:80"
     links:
       - sql
       - solr
