@@ -318,18 +318,14 @@ Task("Generate-Dacpacs")
 });
 
 Task("Publish-Project-Projects").Does(() => {
-  var global = $"{configuration.ProjectSrcFolder}\\Global";
-  var habitatHome = $"{configuration.ProjectSrcFolder}\\HabitatHome";
-  var habitatHomeBasic = $"{configuration.ProjectSrcFolder}\\HabitatHomeBasic";
+  var habitathomeCorporate = $"{configuration.ProjectSrcFolder}\\HabitatHomeCorporate";
 
    var destination = configuration.WebsiteRoot;
   if (publishLocal) {
     destination = configuration.PublishTempFolder;
   }
 
-  PublishProjects(global, destination);
-  PublishProjects(habitatHome, destination);
-  PublishProjects(habitatHomeBasic, destination);
+  PublishProjects(habitathomeCorporate, destination);
 });
 
 Task("Publish-xConnect-Project").Does(() => {
