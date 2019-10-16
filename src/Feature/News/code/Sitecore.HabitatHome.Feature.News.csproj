@@ -71,8 +71,8 @@
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" />
     <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.4" />
     <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.4" />
-    <PackageReference Include="Sitecore.Demo.Foundation.SitecoreExtensions" Version="9.2.0.*" />
-    <PackageReference Include="Sitecore.Demo.Foundation.Dictionary" Version="9.2.0.*" />
+    <PackageReference Include="Sitecore.Demo.Foundation.SitecoreExtensions" Version="9.2.0.61" />
+    <PackageReference Include="Sitecore.Demo.Foundation.Dictionary" Version="9.2.0.61" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />

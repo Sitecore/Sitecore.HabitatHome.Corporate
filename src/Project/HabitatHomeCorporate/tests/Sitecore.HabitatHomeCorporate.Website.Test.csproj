@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Sitecore.Demo.Foundation.Test" Version="9.2.0.51" />
+    <PackageReference Include="Sitecore.Demo.Foundation.Test" Version="9.2.0.61" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
