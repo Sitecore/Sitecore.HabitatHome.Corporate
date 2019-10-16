@@ -71,7 +71,7 @@
     <SitecoreItem Include="sitecore\templates.yml"><ItemDeployment>NeverDeploy</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation\Habitat Home.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Foundation\Habitat Home\LocalDatasource.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><CodeGenData>../../serialization/Templates</CodeGenData></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Foundation\Habitat Home\LocalDatasource.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><CodeGenData>$(ProjectDir)../../../../../items/Foundation/LocalDataSource/Templates</CodeGenData></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation\Habitat Home\LocalDatasource\Local Datasource Folder.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation\Habitat Home\LocalDatasource\Local Datasource Folder\__Standard Values.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\System.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
@@ -79,7 +79,7 @@
     <SitecoreItem Include="sitecore\templates\System\Layout\Sections.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\System\Layout\Sections\Rendering Options.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\System\Layout\Sections\Rendering Options\Editor Options.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\System\Layout\Sections\Rendering Options\Editor Options\Supports Local Datasource.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization><CodeGenData>../../serialization/Templates.RenderingOptionsField</CodeGenData></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\System\Layout\Sections\Rendering Options\Editor Options\Supports Local Datasource.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization><CodeGenData>$(ProjectDir)../../../../../items/Foundation/LocalDataSource/Templates.RenderingOptionsField</CodeGenData></SitecoreItem>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\code\Sitecore.HabitatHome.Foundation.LocalDatasource.csproj">
