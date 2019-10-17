@@ -95,11 +95,13 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.HabitatHome.Corpor
 	ProjectSection(ProjectDependencies) = postProject
 		{C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61} = {C3AAE82F-C744-4F9F-B4C2-9C21AD37AA61}
 		{BAADDF30-95A5-4663-885C-9891C80AABBF} = {BAADDF30-95A5-4663-885C-9891C80AABBF}
+		{4781F071-054F-4D66-91C6-1638565927E9} = {4781F071-054F-4D66-91C6-1638565927E9}
 		{48282A82-EC89-4A6F-84F3-163E5E29A5C1} = {48282A82-EC89-4A6F-84F3-163E5E29A5C1}
 		{926F30AD-3994-4715-88DB-649CE14D7522} = {926F30AD-3994-4715-88DB-649CE14D7522}
 		{DB5F92B3-9F8B-4489-B929-08ECC4F271B2} = {DB5F92B3-9F8B-4489-B929-08ECC4F271B2}
 		{29FAEEC2-13D1-4955-825A-0F4D3B9A00E9} = {29FAEEC2-13D1-4955-825A-0F4D3B9A00E9}
 		{6B2516D4-5C82-4B1B-A802-86AD89357B7E} = {6B2516D4-5C82-4B1B-A802-86AD89357B7E}
+		{A870BED9-A0B7-4E07-A44E-8E16B95D6911} = {A870BED9-A0B7-4E07-A44E-8E16B95D6911}
 	EndProjectSection
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.HabitatHome.Feature.Components.Core", "src\Feature\Components\tds\core\Sitecore.HabitatHome.Feature.Components.Core.scproj", "{3B9399AF-DCD9-4959-A679-9D9F08E85E93}"
@@ -557,7 +559,7 @@ Global
 		{4781F071-054F-4D66-91C6-1638565927E9} = {D86318F8-6E0B-4808-942E-EE70087D5DFE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {25D35D77-3A23-45B8-BF1A-F9EB5B3B318F}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal
