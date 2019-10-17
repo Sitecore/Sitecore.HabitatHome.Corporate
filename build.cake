@@ -40,7 +40,7 @@ cakeConsole.ForegroundColor = ConsoleColor.Yellow;
   if (target.Contains("Docker")) {
       configuration.WebsiteRoot =  $"{configuration.ProjectFolder}\\Publish\\Web\\";
       configuration.XConnectRoot =  $"{configuration.ProjectFolder}\\Publish\\xConnect\\";
-      configuration.InstanceUrl = "http://127.0.0.1:44001";    // This is based on the CM container's settings (see docker-compose.yml)
+      configuration.InstanceUrl = "http://127.0.0.1:44101";    // This is based on the CM container's settings (see docker-compose.yml)
       configuration.UnicornSerializationFolder = "c:\\unicorn"; // This maps to the container's volume setting (see docker-compose.yml)
 
     if (target == "Docker-TDS"){
