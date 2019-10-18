@@ -51,6 +51,16 @@
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
     <OutputPath>bin\Package-CD\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'NoDeploy' ">
+    <DebugSymbols>true</DebugSymbols>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <OutputPath>bin\NoDeploy\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'DockerDeploy' ">
+    <DebugSymbols>true</DebugSymbols>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <OutputPath>bin\DockerDeploy\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
       <Value>$(AssemblyFileVersion)</Value>
@@ -66,7 +76,7 @@
     <SitecoreItem Include="sitecore\templates.yml"><ItemDeployment>NeverDeploy</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation\Habitat Home.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Foundation\Habitat Home\LocalDatasource.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><CodeGenData>../../serialization/Templates</CodeGenData></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Foundation\Habitat Home\LocalDatasource.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><CodeGenData>$(ProjectDir)../../../../../items/Foundation/LocalDataSource/Templates</CodeGenData></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation\Habitat Home\LocalDatasource\Local Datasource Folder.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation\Habitat Home\LocalDatasource\Local Datasource Folder\__Standard Values.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\System.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
@@ -74,7 +84,7 @@
     <SitecoreItem Include="sitecore\templates\System\Layout\Sections.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\System\Layout\Sections\Rendering Options.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\System\Layout\Sections\Rendering Options\Editor Options.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\System\Layout\Sections\Rendering Options\Editor Options\Supports Local Datasource.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization><CodeGenData>../../serialization/Templates.RenderingOptionsField</CodeGenData></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\System\Layout\Sections\Rendering Options\Editor Options\Supports Local Datasource.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization><CodeGenData>$(ProjectDir)../../../../../items/Foundation/LocalDataSource/Templates.RenderingOptionsField</CodeGenData></SitecoreItem>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\code\Sitecore.HabitatHome.Foundation.LocalDatasource.csproj">
@@ -90,9 +100,9 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.13\build\HedgehogDevelopment.TDS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.13\build\HedgehogDevelopment.TDS.targets'))" />
-    <Error Condition="!Exists('..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.51\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.51\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.61\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.61\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\..\packages\HedgehogDevelopment.TDS.6.0.0.5\build\HedgehogDevelopment.TDS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\HedgehogDevelopment.TDS.6.0.0.5\build\HedgehogDevelopment.TDS.targets'))" />
   </Target>
-  <Import Project="..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.13\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.13\build\HedgehogDevelopment.TDS.targets')" />
-  <Import Project="..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.51\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets" Condition="Exists('..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.51\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets')" />
+  <Import Project="..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.61\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets" Condition="Exists('..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.61\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets')" />
+  <Import Project="..\..\..\..\..\packages\HedgehogDevelopment.TDS.6.0.0.5\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\..\..\..\packages\HedgehogDevelopment.TDS.6.0.0.5\build\HedgehogDevelopment.TDS.targets')" />
 </Project>
