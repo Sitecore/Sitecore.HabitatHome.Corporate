@@ -51,6 +51,16 @@
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
     <OutputPath>bin\Package-CD\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'NoDeploy' ">
+    <DebugSymbols>true</DebugSymbols>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <OutputPath>bin\NoDeploy\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'DockerDeploy' ">
+    <DebugSymbols>true</DebugSymbols>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <OutputPath>bin\DockerDeploy\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
       <Value>$(AssemblyFileVersion)</Value>
@@ -67,7 +77,7 @@
     <SitecoreItem Include="sitecore\layout\Renderings.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Feature.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\News.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><CodeGenData>../../serialization/Renderings</CodeGenData></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\News.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><CodeGenData>$(ProjectDir)../../../../../items/Feature/News/Renderings</CodeGenData></SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\News\LatestNews.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\News\NewsDetailArticle.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\News\NewsDetailHeading.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
@@ -75,7 +85,7 @@
     <SitecoreItem Include="sitecore\templates.yml"><ItemDeployment>NeverDeploy</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\Habitat Home.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Feature\Habitat Home\News.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><CodeGenData>../../serialization/Templates</CodeGenData></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Feature\Habitat Home\News.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><CodeGenData>$(ProjectDir)../../../../../items/Feature/News/Templates</CodeGenData></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\Habitat Home\News\News.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\Habitat Home\News\News\__Standard Values.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Feature\Habitat Home\News\News\News.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
@@ -111,9 +121,9 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.13\build\HedgehogDevelopment.TDS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.13\build\HedgehogDevelopment.TDS.targets'))" />
-    <Error Condition="!Exists('..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.51\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.51\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.61\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.61\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\..\packages\HedgehogDevelopment.TDS.6.0.0.5\build\HedgehogDevelopment.TDS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\HedgehogDevelopment.TDS.6.0.0.5\build\HedgehogDevelopment.TDS.targets'))" />
   </Target>
-  <Import Project="..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.13\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.13\build\HedgehogDevelopment.TDS.targets')" />
-  <Import Project="..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.51\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets" Condition="Exists('..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.51\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets')" />
+  <Import Project="..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.61\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets" Condition="Exists('..\..\..\..\..\packages\Sitecore.Demo.BuildTools.CopyYmlFiles.9.2.0.61\build\Sitecore.Demo.BuildTools.CopyYmlFiles.targets')" />
+  <Import Project="..\..\..\..\..\packages\HedgehogDevelopment.TDS.6.0.0.5\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\..\..\..\packages\HedgehogDevelopment.TDS.6.0.0.5\build\HedgehogDevelopment.TDS.targets')" />
 </Project>

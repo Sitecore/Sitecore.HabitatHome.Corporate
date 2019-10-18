@@ -91,6 +91,16 @@
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'NoDeploy' ">
+    <DebugSymbols>true</DebugSymbols>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <OutputPath>bin\NoDeploy\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'DockerDeploy' ">
+    <DebugSymbols>true</DebugSymbols>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <OutputPath>bin\DockerDeploy\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
       <Value>$(AssemblyFileVersion)</Value>
@@ -110,6 +120,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundledProject Include="..\core\Build.Website.Core.scproj">
+      <ProjectId>{06f87d63-5e89-481b-b256-141b7c2735f8}</ProjectId>
+    </BundledProject>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Configy.%2a" />
+    <ExcludedAssemblies Include="Kamsar.%2a" />
+    <ExcludedAssemblies Include="MicroCHAP.dll" />
+    <ExcludedAssemblies Include="Microsoft.Owin.Security.Facebook.dll" />
+    <ExcludedAssemblies Include="Microsoft.Owin.Security.MicrosoftAccount.dll" />
+    <ExcludedAssemblies Include="Rainbow.%2a" />
+    <ExcludedAssemblies Include="Sitecore.Demo.%2a" />
+    <ExcludedAssemblies Include="Sitecore.HabitatHome.%2a" />
+    <ExcludedAssemblies Include="Unicorn.%2a" />
   </ItemGroup>
   <ItemGroup>
     <SitecoreItem Include="sitecore\content.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
@@ -148,9 +174,9 @@
     <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\Accounts\Forgot Password.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\Accounts\Login.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\Accounts\Register.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\Demo.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><DeployAlwaysFields></DeployAlwaysFields><CodeGenData>../../serialization/Renderings</CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\Demo.yml"><CodeGenData>../../serialization/Renderings</CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><DeployAlwaysFields></DeployAlwaysFields></SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\Demo\Demo Sidebar.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\Demo\DemoContent.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\Demo\DemoContent.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\Email.yml"><CodeGenData>../../serialization/Renderings</CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><DeployAlwaysFields></DeployAlwaysFields></SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\Email\Content.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\Email\Footer.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
@@ -166,9 +192,9 @@
     <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Home\Forms\FormWrapper.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
     <SitecoreItem Include="sitecore\system.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
     <SitecoreItem Include="sitecore\system\Languages.yml"><CodeGenData>../../serialization/Languages</CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization><DeployAlwaysFields></DeployAlwaysFields></SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Languages\en.yml"><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Languages\fr-CA.yml"><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Languages\ja-JP.yml"><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Languages\en.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Languages\fr-CA.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Languages\ja-JP.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Forms.yml"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Forms\Field Types.yml"><CodeGenData>../../serialization/FieldTypes</CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization><DeployAlwaysFields></DeployAlwaysFields></SitecoreItem>
@@ -338,30 +364,14 @@
     <SitecoreItem Include="sitecore\templates\Foundation\Habitat Home\Workflow\Submission Notification\Data\Message.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Foundation\Habitat Home\Workflow\Submission Notification\Data\Subject.yml"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment><DeployAlwaysFields></DeployAlwaysFields><CodeGenData></CodeGenData><CodeGenNamespace></CodeGenNamespace><CodeGenTemplate></CodeGenTemplate></SitecoreItem>
   </ItemGroup>
-  <ItemGroup>
-    <BundledProject Include="..\core\Build.Website.Core.scproj">
-      <ProjectId>{06f87d63-5e89-481b-b256-141b7c2735f8}</ProjectId>
-    </BundledProject>
-  </ItemGroup>
-  <ItemGroup>
-    <ExcludedAssemblies Include="Configy.%2a" />
-    <ExcludedAssemblies Include="Kamsar.%2a" />
-    <ExcludedAssemblies Include="MicroCHAP.dll" />
-    <ExcludedAssemblies Include="Microsoft.Owin.Security.Facebook.dll" />
-    <ExcludedAssemblies Include="Microsoft.Owin.Security.MicrosoftAccount.dll" />
-    <ExcludedAssemblies Include="Rainbow.%2a" />
-    <ExcludedAssemblies Include="Sitecore.Demo.%2a" />
-    <ExcludedAssemblies Include="Sitecore.HabitatHome.%2a" />
-    <ExcludedAssemblies Include="Unicorn.%2a" />
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.13\build\HedgehogDevelopment.TDS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.13\build\HedgehogDevelopment.TDS.targets'))" />
-    <Error Condition="!Exists('..\..\..\..\..\packages\Sitecore.Demo.BuildTools.Packaging.9.2.0.51\build\Sitecore.Demo.BuildTools.Packaging.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\Sitecore.Demo.BuildTools.Packaging.9.2.0.51\build\Sitecore.Demo.BuildTools.Packaging.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\..\packages\Sitecore.Demo.BuildTools.Packaging.9.2.0.61\build\Sitecore.Demo.BuildTools.Packaging.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\Sitecore.Demo.BuildTools.Packaging.9.2.0.61\build\Sitecore.Demo.BuildTools.Packaging.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\..\packages\HedgehogDevelopment.TDS.6.0.0.5\build\HedgehogDevelopment.TDS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\HedgehogDevelopment.TDS.6.0.0.5\build\HedgehogDevelopment.TDS.targets'))" />
   </Target>
-  <Import Project="..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.13\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\..\..\..\packages\HedgehogDevelopment.TDS.5.8.0.13\build\HedgehogDevelopment.TDS.targets')" />
-  <Import Project="..\..\..\..\..\packages\Sitecore.Demo.BuildTools.Packaging.9.2.0.51\build\Sitecore.Demo.BuildTools.Packaging.targets" Condition="Exists('..\..\..\..\..\packages\Sitecore.Demo.BuildTools.Packaging.9.2.0.51\build\Sitecore.Demo.BuildTools.Packaging.targets')" />
+  <Import Project="..\..\..\..\..\packages\Sitecore.Demo.BuildTools.Packaging.9.2.0.61\build\Sitecore.Demo.BuildTools.Packaging.targets" Condition="Exists('..\..\..\..\..\packages\Sitecore.Demo.BuildTools.Packaging.9.2.0.61\build\Sitecore.Demo.BuildTools.Packaging.targets')" />
+  <Import Project="..\..\..\..\..\packages\HedgehogDevelopment.TDS.6.0.0.5\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\..\..\..\packages\HedgehogDevelopment.TDS.6.0.0.5\build\HedgehogDevelopment.TDS.targets')" />
 </Project>
