@@ -4,7 +4,6 @@ Parent: "5845babd-869a-4f26-babe-2a0fb40ee667"
 Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
 Path: /sitecore/layout/Renderings/Feature/Habitat Home/Team/Our Team
 DB: master
-Created: 20190828T195715Z
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon

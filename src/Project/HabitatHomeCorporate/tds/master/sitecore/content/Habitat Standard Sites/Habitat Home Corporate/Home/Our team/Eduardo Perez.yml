@@ -4,7 +4,6 @@ Parent: "b22ecab4-59b3-428a-ad6f-2119fbe393c0"
 Template: "992448e3-8087-4f10-9834-cfb6145beca6"
 Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Our team/Eduardo Perez
 DB: master
-Created: 20190823T193821Z
 SharedFields:
 - ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
   Hint: __Tracking
