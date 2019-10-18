@@ -246,12 +246,17 @@ Task("Copy-to-Destination").Does(()=>{
   CopyFiles(assemblyFiles, (destination + "\\bin"), preserveFolderStructure: false);
 
   // Copy other output files to publish destination
-  var ignoredExtensions = new string[] { ".dll", ".exe", ".pdb", ".xdt", ".yml"};
-  var ignoredFiles = new string[] { "web.config", "build.website.deps.json", "build.website.exe.config" };
+	  var ignoredFilesPublishFolderPath = publishTempFolder.ToLower().Replace("\\", "/");
 
+  var ignoredExtensions = new string[] { ".dll", ".exe", ".pdb", ".xdt", ".yml"};
+  var ignoredFiles = new string[] {
+    $"{ignoredFilesPublishFolderPath}/web.config",
+    $"{ignoredFilesPublishFolderPath}/build.website.deps.json",
+    $"{ignoredFilesPublishFolderPath}/build.website.exe.config"
+  };
   var contentFiles = GetFiles($"{publishTempFolder}\\**\\*")
   .Where(file => !ignoredExtensions.Contains(file.GetExtension().ToLower()))
-  .Where(file => !ignoredFiles.Contains(file.Segments.LastOrDefault().ToLower()));
+  .Where(file => !ignoredFiles.Contains(file.FullPath.ToLower()));
 
   CopyFiles(contentFiles, destination, preserveFolderStructure: true);
 });
