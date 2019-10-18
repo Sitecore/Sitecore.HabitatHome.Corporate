@@ -30,7 +30,8 @@ services:
     volumes:
       - c:\license:c:\license
       - .\data\xconnect:C:\inetpub\xconnect\App_Data\logs
-    mem_limit: 1GB
+      - .\Publish\xConnect:c:\src
+    entrypoint: cmd /c "powershell C:/Sitecore/Scripts/Watch-Directory.ps1 C:\src C:\inetpub\xconnect -ExcludeFiles @('ConnectionStrings.config')"
     links:
       - sql
       - solr
@@ -54,7 +55,6 @@ services:
     volumes:
       - c:\license:c:\license
       - .\data\xconnect-indexworker:C:\IndexWorker\App_Data\logs
-    mem_limit: 500MB
     links:
       - sql
       - solr
