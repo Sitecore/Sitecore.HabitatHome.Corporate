@@ -4,7 +4,6 @@ Parent: "2b1221b6-05cd-4fb0-b3e6-77366f65d04f"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
 Path: /sitecore/templates/Feature/Habitat Home/Team/MemberInfo/Team Member
 DB: master
-Created: 20190828T162056Z
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
