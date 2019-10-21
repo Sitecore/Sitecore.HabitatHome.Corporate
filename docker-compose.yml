@@ -29,9 +29,9 @@ services:
       demo:
     volumes:
       - c:\license:c:\license
-      - .\data\xconnect:C:\inetpub\xconnect\App_Data\logs
+      - .\data\xconnect:C:\inetpub\wwwroot\App_Data\logs
       - .\Publish\xConnect:c:\src
-    entrypoint: cmd /c "powershell C:/Sitecore/Scripts/Watch-Directory.ps1 C:\src C:\inetpub\xconnect -ExcludeFiles @('ConnectionStrings.config')"
+    entrypoint: cmd /c "powershell c:/tools/scripts/Watch-Directory.ps1 C:\src C:\inetpub\wwwroot -ExcludeFiles @('ConnectionStrings.config')"
     links:
       - sql
       - solr
@@ -42,8 +42,7 @@ services:
       demo:
     volumes:
       - c:\license:c:\license
-      - .\data\xconnect-automationengine:C:\AutomationEngine\App_Data\logs
-    mem_limit: 500MB
+      - .\data\xconnect-automationengine:C:\inetpub\wwwroot\App_Data\logs
     links:
       - sql
       - xconnect
@@ -54,7 +53,7 @@ services:
       demo:
     volumes:
       - c:\license:c:\license
-      - .\data\xconnect-indexworker:C:\IndexWorker\App_Data\logs
+      - .\data\xconnect-indexworker:C:\inetpub\wwwroot\App_Data\logs
     links:
       - sql
       - solr
@@ -78,14 +77,14 @@ services:
       demo:
         aliases:
           - local-cms.demo.com
-    entrypoint: cmd /c "start /B powershell C:/Sitecore/Scripts/Watch-Directory.ps1 C:\src C:\inetpub\sc -ExcludeFiles @('ConnectionStrings.config') & cmd /c & start /B powershell C:/scripts/CopyConfigs.ps1 & C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646"
+    entrypoint: cmd /c "start /B powershell c:/tools/scripts/Watch-Directory.ps1 C:\src C:\inetpub\wwwroot -ExcludeFiles @('ConnectionStrings.config') & cmd /c & start /B powershell C:/scripts/CopyConfigs.ps1 & C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646"
     volumes:
       - .\scripts\Docker:C:\scripts
       - c:\license:c:\license
       - .\publish\web:C:\src
       - .\items:c:\unicorn
-      - .\data\cm:C:\inetpub\sc\App_Data\logs
-      - .\data\creativeexchange:C:\inetpub\sc\App_Data\packages\CreativeExchange\FileStorage
+      - .\data\cm:C:\inetpub\wwwroot\App_Data\logs
+      - .\data\creativeexchange:C:\inetpub\wwwroot\App_Data\packages\CreativeExchange\FileStorage
       - ${REMOTEDEBUGGER_PATH}:C:\remote_debugger:ro
     ports:
       - "44101:80"
