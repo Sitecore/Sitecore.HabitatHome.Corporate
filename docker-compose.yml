@@ -7,6 +7,8 @@ services:
 
   sql:
     image: ${REGISTRY}sitecore-xp-sqldev:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    mem_limit: 4G
+    cpus: 0
     networks:
       demo:
     volumes:
@@ -16,6 +18,8 @@ services:
 
   solr:
     image: ${REGISTRY}sitecore-xp-solr:9.2.0-nanoserver-${NANOSERVER_CHANNEL}
+    mem_limit: 2G
+    cpus: 0
     networks:
       demo:
     volumes:
@@ -25,19 +29,21 @@ services:
 
   xconnect:
     image: ${REGISTRY}sitecore-xp-xconnect:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    mem_limit: 1G
     networks:
       demo:
+    entrypoint: cmd /c "COPY C:\license\license.xml C:\inetpub\wwwroot\App_Data\license.xml & powershell Watch-Directory.ps1 C:\src C:\inetpub\wwwroot -ExcludeFiles @('ConnectionStrings.config')"
     volumes:
       - c:\license:c:\license
       - .\data\xconnect:C:\inetpub\wwwroot\App_Data\logs
-      - .\Publish\xConnect:c:\src
-    entrypoint: cmd /c "powershell c:/tools/scripts/Watch-Directory.ps1 C:\src C:\inetpub\wwwroot -ExcludeFiles @('ConnectionStrings.config')"
+      - .\publish\xconnect:C:\src
     links:
       - sql
       - solr
 
   xconnect-automationengine:
     image: ${REGISTRY}sitecore-xp-xconnect-automationengine:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    mem_limit: 1G
     networks:
       demo:
     volumes:
@@ -49,35 +55,27 @@ services:
 
   xconnect-indexworker:
     image: ${REGISTRY}sitecore-xp-xconnect-indexworker:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    mem_limit: 1G
     networks:
       demo:
+    entrypoint: cmd /c "COPY C:\license\license.xml C:\inetpub\wwwroot\App_Data\license.xml & powershell Watch-Directory.ps1 C:\src C:\inetpub\wwwroot -ExcludeFiles @('ConnectionStrings.config')"
     volumes:
       - c:\license:c:\license
       - .\data\xconnect-indexworker:C:\inetpub\wwwroot\App_Data\logs
+      - .\Publish\xConnect\App_data\jobs\continuous\IndexWorker:c:\src
     links:
       - sql
       - solr
 
-#   cd:
-#    image: ${REGISTRY}sitecore-xp-sxa-1.9.0-cd:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
-#    networks:
-#      demo:
-#    volumes:
-#      - .\data\cd:C:\inetpub\sc\App_Data\logs
-#    ports:
-#      - "44102:80"
-#    links:
-#      - sql
-#      - solr
-#      - xconnect
-
   cm:
     image: ${REGISTRY}sitecore-xp-standalone:9.2.0-windowsservercore-${WINDOWSSERVERCORE_CHANNEL}
+    mem_limit: 4G
+    cpus: 0
     networks:
       demo:
         aliases:
           - local-cms.demo.com
-    entrypoint: cmd /c "start /B powershell c:/tools/scripts/Watch-Directory.ps1 C:\src C:\inetpub\wwwroot -ExcludeFiles @('ConnectionStrings.config') & cmd /c & start /B powershell C:/scripts/CopyConfigs.ps1 & C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646"
+    entrypoint: cmd /c "start /B powershell Watch-Directory.ps1 C:\src C:\inetpub\wwwroot -ExcludeFiles @('ConnectionStrings.config') & powershell C:/scripts/CopyConfigs.ps1 & C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646"
     volumes:
       - .\scripts\Docker:C:\scripts
       - c:\license:c:\license

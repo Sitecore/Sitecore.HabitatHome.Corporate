@@ -46,10 +46,6 @@ As part of the Habitat Home Corporate installation, an IIS URL rewrite rule is a
 
       Run `.\build.ps1`
 
-    - Team Development for Sitecore Classic (TDS)
-
-      Run `.\build.ps1 -Target "Build-TDS"`
-
 ## Contribute or Issues
 
 Please **post any issues on the Slack Community #habitathome channel** or **create an issue on GitHub**.

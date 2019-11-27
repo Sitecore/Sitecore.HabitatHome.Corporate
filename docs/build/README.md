@@ -39,25 +39,3 @@
 - Review the `cake-config.json` file if you've made any changes to the endpoints or if you need to change the default settings.
 
 `.\build.ps1 -Target Docker-Unicorn`
-
-**DEPLOY with TDS**
-
-- Requires **Team Development for Sitecore**
-- Review the `TDSGlobal.config` file if you've made any changes to the endpoints otherwise the defaults are fine.
-
-`.\build.ps1 -Target Docker-TDS`
-
-## Deploying to local IIS Site using TDS
-
-### TDS Deployment Prerequisites
-
-- Requires **Team Development for Sitecore**
-- Requires a local working instance of Sitecore Experience Platform
-
-### Deploying locally using TDS
-
-- Confirm that you can access the Sitecore instance by browsing to [https://habitathomecorporate.dev.local/sitecore](https://habitathomecorporate.dev.local/sitecore)
-
-**DEPLOY!**
-
-`.\build.ps1 -Target Build-TDS`
