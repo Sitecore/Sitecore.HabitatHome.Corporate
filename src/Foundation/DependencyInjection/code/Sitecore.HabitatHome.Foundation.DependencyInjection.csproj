@@ -54,7 +54,7 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="Sitecore.Kernel" Version="9.2.0-*">
+        <PackageReference Include="Sitecore.Kernel" Version="9.3.0-*">
           <PrivateAssets>all</PrivateAssets>
         </PackageReference>
       </ItemGroup>
