@@ -2,7 +2,7 @@
 ID: "2dbdbe5f-750c-4a3d-a9e2-868566538239"
 Parent: "700f7654-bea2-4edb-b3ee-6fa2ff679a4c"
 Template: "ec4dd3f2-590d-404b-9189-2a12679749cc"
-Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Data/Dictionary/Search/SearchResults/WeFound
+Path: /sitecore/content/Demo Shared Standard Sites/Habitat Home Corporate/Data/Dictionary/Search/SearchResults/WeFound
 DB: master
 Languages:
 - Language: en

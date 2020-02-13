@@ -2,7 +2,7 @@
 ID: "a1b3e890-9b68-4839-b726-449d30788b17"
 Parent: "4843c43e-4985-455e-8779-f18f9cccc716"
 Template: "9bcd885b-8b18-4ea5-aea1-bc5f918d5b90"
-Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Data/Promotions/Habitat Fitness App Explore
+Path: /sitecore/content/Demo Shared Standard Sites/Habitat Home Corporate/Data/Promotions/Habitat Fitness App Explore
 DB: master
 SharedFields:
 - ID: "d55e08ce-f57d-4eff-997c-e9f09c982f74"

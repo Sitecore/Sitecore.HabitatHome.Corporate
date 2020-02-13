@@ -8,7 +8,7 @@ SharedFields:
 - ID: "8cbab1df-cf26-4c80-9002-62aa153d1e4c"
   Hint: Linked item
   Value: |
-    <link linktype="internal" url="/Habitat Standard Sites/Habitat Home Corporate/Home/Download our whitepaper" id="{E0384234-365D-4004-854C-BFD216D1883C}" />
+    <link linktype="internal" url="/Demo Shared Standard Sites/Habitat Home Corporate/Home/Download our whitepaper" id="{E0384234-365D-4004-854C-BFD216D1883C}" />
 Languages:
 - Language: en
   Versions:

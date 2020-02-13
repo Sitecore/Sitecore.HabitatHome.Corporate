@@ -2,7 +2,7 @@
 ID: "e0384234-365d-4004-854c-bfd216d1883c"
 Parent: "7e2c85c4-4a2b-4f3d-a164-f4455f9098ad"
 Template: "e427e2c2-f0e1-490f-81ec-4f968837b8c5"
-Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Home/Download our whitepaper
+Path: /sitecore/content/Demo Shared Standard Sites/Habitat Home Corporate/Home/Download our whitepaper
 DB: master
 SharedFields:
 - ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"

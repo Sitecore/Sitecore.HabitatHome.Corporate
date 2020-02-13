@@ -2,7 +2,7 @@
 ID: "5147db7b-dd5d-4b5e-b1e5-e75a8b73399e"
 Parent: "ebd498ba-a204-41e3-953d-94ced6cf775f"
 Template: "9b479b57-aae9-4601-abb4-e48adc72b368"
-Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Settings/News Settings
+Path: /sitecore/content/Demo Shared Standard Sites/Habitat Home Corporate/Settings/News Settings
 DB: master
 Languages:
 - Language: en

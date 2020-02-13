@@ -2,7 +2,7 @@
 ID: "23c4bfe4-cb9f-4ece-825a-6aeca86e22a8"
 Parent: "9e567f84-e16f-4399-9152-f86d79287dc6"
 Template: "9bcd885b-8b18-4ea5-aea1-bc5f918d5b90"
-Path: /sitecore/content/Habitat Standard Sites/Habitat Home Corporate/Data/Callouts/Visit Habitat Omni on Github
+Path: /sitecore/content/Demo Shared Standard Sites/Habitat Home Corporate/Data/Callouts/Visit Habitat Omni on Github
 DB: master
 SharedFields:
 - ID: "72b2b95a-730b-4333-8869-982711f41d7a"
