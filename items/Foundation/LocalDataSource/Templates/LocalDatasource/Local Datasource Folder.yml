@@ -2,7 +2,7 @@
 ID: "3a5161bc-db66-4f7f-8dd0-8b5e505123c7"
 Parent: "3a0e0c64-328f-43ba-b6ef-fb5578dae974"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Foundation/Habitat Home/LocalDatasource/Local Datasource Folder
+Path: /sitecore/templates/Foundation/Demo Shared/LocalDatasource/Local Datasource Folder
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
