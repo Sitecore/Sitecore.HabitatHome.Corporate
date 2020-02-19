@@ -1,8 +1,8 @@
----
+﻿---
 ID: "29add910-5e4d-4dd9-864b-92c662e5f1e6"
 Parent: "18434e80-2e69-429c-9d58-106f81607f67"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
-Path: /sitecore/layout/Renderings/Feature/Habitat Home/Components/Hero
+Path: /sitecore/layout/Renderings/Feature/Demo Shared/Components/Hero
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -36,13 +36,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "0435409c-0e03-4cdb-b225-30f36c9bdae2"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\unicorn
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20190613T142103Z

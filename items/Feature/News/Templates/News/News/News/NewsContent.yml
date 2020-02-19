@@ -1,8 +1,8 @@
----
+﻿---
 ID: "72cb911a-89fb-4845-bf8a-e6b844685113"
 Parent: "93564b3f-39b3-4a53-b8a3-5256b076938c"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Habitat Home/News/News/News/NewsContent
+Path: /sitecore/templates/Feature/Demo Shared/News/News/News/NewsContent
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
@@ -29,13 +29,3 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190430T062506Z
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "a445b28c-09cb-47f2-9947-3042729ff3bb"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\unicorn
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20190613T142114Z

@@ -1,8 +1,8 @@
----
+﻿---
 ID: "19332ed7-dc93-42d0-a79a-5c535d8641b4"
 Parent: "fa458bcd-a00b-487d-9f3e-be0f18466b54"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Habitat Home/Search/SearchConfigurationSettings/Search Configuration Settings/SearchPage
+Path: /sitecore/templates/Feature/Demo Shared/Search/SearchConfigurationSettings/Search Configuration Settings/SearchPage
 DB: master
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
@@ -32,13 +32,3 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190507T081255Z
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "14a47214-f915-47fa-ae76-0a4b3fc545d6"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\unicorn
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20190613T142116Z

@@ -1,8 +1,8 @@
----
+﻿---
 ID: "0dae5d30-c6d4-49a1-b3ef-5b893d57b28e"
 Parent: "0b134f8e-1d96-4449-b10a-26b3eabc1aa3"
 Template: "1ab4f9ad-b004-413c-8924-3e07143a614b"
-Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/Feature/Habitat Home/Media/Edit Video Fields
+Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/Feature/Demo Shared/Media/Edit Video Fields
 DB: core
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -36,13 +36,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "ecde3c2a-3bde-417b-98b5-f1e9d7745241"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\unicorn
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20190613T142113Z

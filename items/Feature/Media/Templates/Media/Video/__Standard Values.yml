@@ -1,8 +1,8 @@
----
+﻿---
 ID: "8a711cbf-562b-4e67-b57b-2772d7b17453"
 Parent: "2fc78d5d-ae45-46e2-bb7e-7f6d343fd181"
 Template: "2fc78d5d-ae45-46e2-bb7e-7f6d343fd181"
-Path: /sitecore/templates/Feature/Habitat Home/Media/Video/__Standard Values
+Path: /sitecore/templates/Feature/Demo Shared/Media/Video/__Standard Values
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -20,13 +20,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "5388bf92-0ac2-4868-948d-14342020e0b3"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\unicorn
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20190613T142113Z

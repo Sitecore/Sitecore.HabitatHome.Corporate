@@ -1,8 +1,8 @@
----
+﻿---
 ID: "87159879-b717-474f-b4e5-683fb09f3ded"
 Parent: "f6175f81-ca2c-4428-ac58-806065b5bcd3"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Feature/Habitat Home/Components/Metadata/MetadataBase
+Path: /sitecore/templates/Feature/Demo Shared/Components/Metadata/MetadataBase
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -23,13 +23,3 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190425T120122Z
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "56fb0135-f52e-4e69-b4ca-04b221a0fe77"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\unicorn
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20190613T142102Z

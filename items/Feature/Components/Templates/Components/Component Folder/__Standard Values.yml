@@ -1,8 +1,8 @@
----
+﻿---
 ID: "3312200a-4c64-4398-81db-7f52af209421"
 Parent: "e9937f22-dbca-436c-a37e-efe6915759ae"
 Template: "e9937f22-dbca-436c-a37e-efe6915759ae"
-Path: /sitecore/templates/Feature/Habitat Home/Components/Component Folder/__Standard Values
+Path: /sitecore/templates/Feature/Demo Shared/Components/Component Folder/__Standard Values
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -27,13 +27,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "789616ff-8df7-41db-8ead-59963c7a3f5a"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\unicorn
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20190613T142103Z

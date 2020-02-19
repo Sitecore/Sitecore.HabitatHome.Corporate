@@ -1,8 +1,8 @@
----
+﻿---
 ID: "2fc78d5d-ae45-46e2-bb7e-7f6d343fd181"
 Parent: "418c696a-be09-4fab-a9a5-52f7ab0811cd"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Feature/Habitat Home/Media/Video
+Path: /sitecore/templates/Feature/Demo Shared/Media/Video
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -23,13 +23,3 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190424T124321Z
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "f74dcccb-f2d1-4d01-9066-049c0610572a"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\unicorn
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20190613T142113Z

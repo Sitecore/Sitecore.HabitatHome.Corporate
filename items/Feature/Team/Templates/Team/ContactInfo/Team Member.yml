@@ -1,8 +1,8 @@
----
+﻿---
 ID: "bd037694-9740-4009-8b5d-3e9ab0a80c38"
 Parent: "cbd68ed9-8c91-43df-98e1-781000a876a3"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/Habitat Home/Team/ContactInfo/Team Member
+Path: /sitecore/templates/Feature/Demo Shared/Team/ContactInfo/Team Member
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
@@ -16,13 +16,3 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190828T141843Z
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "d0d2a7d5-9bed-4569-b6c1-e5fbdee8d34a"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\Admin
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20190828T201823Z

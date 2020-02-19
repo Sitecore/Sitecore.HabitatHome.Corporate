@@ -1,8 +1,8 @@
----
+﻿---
 ID: "14ac5a3b-013b-47e2-bead-24ab5c69528b"
 Parent: "474a2a52-9bd6-438d-bcda-675065d602b5"
 Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
-Path: /sitecore/layout/Renderings/Feature/Habitat Home/Media
+Path: /sitecore/layout/Renderings/Feature/Demo Shared/Media
 DB: master
 Languages:
 - Language: en
@@ -12,13 +12,3 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190424T114751Z
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "fbb09a24-cdc6-48c4-9b3a-f44e64cf50d8"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\unicorn
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20190613T142113Z

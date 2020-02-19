@@ -1,8 +1,8 @@
----
+﻿---
 ID: "1a25401d-1d46-48a4-96fd-81d9f85d3b88"
 Parent: "9239d724-1224-4042-b01b-23d400d8de54"
 Template: "1ab4f9ad-b004-413c-8924-3e07143a614b"
-Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/Feature/Habitat Home/Components/Edit Component Fields
+Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/Feature/Demo Shared/Components/Edit Component Fields
 DB: core
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -36,13 +36,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "c2a0a0ff-4d4f-4376-9610-ce30d749567f"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\unicorn
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20190613T142101Z
