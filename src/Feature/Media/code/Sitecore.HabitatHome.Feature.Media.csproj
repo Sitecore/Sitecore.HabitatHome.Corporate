@@ -67,7 +67,7 @@
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" />
     <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.4" />
     <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.4" />
-    <PackageReference Include="Sitecore.Demo.Foundation.SitecoreExtensions" Version="930.2.*" />
+    <PackageReference Include="Sitecore.Demo.Shared.Foundation.SitecoreExtensions" Version="930.2.6-*" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />

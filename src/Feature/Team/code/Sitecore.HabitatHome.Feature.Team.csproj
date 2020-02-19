@@ -88,8 +88,8 @@
     <PackageReference Include="Modernizr">
       <Version>2.8.3</Version>
     </PackageReference>
-    <PackageReference Include="Sitecore.Demo.Foundation.SitecoreExtensions" Version="9.2.0.61" />
-    <PackageReference Include="Sitecore.Demo.Foundation.Dictionary" Version="9.2.0.61" />
+    <PackageReference Include="Sitecore.Demo.Shared.Foundation.SitecoreExtensions" Version="930.2.6-*" />
+    <PackageReference Include="Sitecore.Demo.Shared.Foundation.Dictionary" Version="930.2.6-*" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
