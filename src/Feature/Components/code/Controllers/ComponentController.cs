@@ -62,8 +62,8 @@ namespace Sitecore.HabitatHome.Feature.Components.Controllers
 
             // Take the current context item ancestors, if we have a wildcard, we take the old context item ancestors
             var items = Context.Item.Axes.GetAncestors();
-            if (MainUtil.GetBool(Context.Items[Sitecore.Demo.Foundation.SitecoreExtensions.Constants.WildCardItemResolvedKey], false))
-                items = ((Item) Context.Items[Sitecore.Demo.Foundation.SitecoreExtensions.Constants.WildCardItemResolvedOldContextItemKey]).Axes.GetAncestors();
+            if (MainUtil.GetBool(Context.Items[Sitecore.Demo.Shared.Foundation.SitecoreExtensions.Constants.WildCardItemResolvedKey], false))
+                items = ((Item) Context.Items[Sitecore.Demo.Shared.Foundation.SitecoreExtensions.Constants.WildCardItemResolvedOldContextItemKey]).Axes.GetAncestors();
 
             foreach (var item in items)
             {

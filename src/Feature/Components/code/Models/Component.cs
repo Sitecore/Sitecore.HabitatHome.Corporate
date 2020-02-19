@@ -1,6 +1,6 @@
 ﻿using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
-using Sitecore.Demo.Foundation.SitecoreExtensions.Models;
+using Sitecore.Demo.Shared.Foundation.SitecoreExtensions.Models;
 using Sitecore.Links;
 
 namespace Sitecore.HabitatHome.Feature.Components.Models

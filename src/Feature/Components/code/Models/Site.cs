@@ -1,5 +1,5 @@
 ﻿using Sitecore.Data.Items;
-using Sitecore.Demo.Foundation.SitecoreExtensions.Models;
+using Sitecore.Demo.Shared.Foundation.SitecoreExtensions.Models;
 
 namespace Sitecore.HabitatHome.Feature.Components.Models
 {

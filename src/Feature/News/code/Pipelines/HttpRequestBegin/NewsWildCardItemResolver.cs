@@ -38,8 +38,8 @@ namespace Sitecore.HabitatHome.Feature.News.Pipelines.HttpRequestBegin
 
             if (newsItem != null)
             {
-                Context.Items[Sitecore.Demo.Foundation.SitecoreExtensions.Constants.WildCardItemResolvedKey] = true;
-                Context.Items[Sitecore.Demo.Foundation.SitecoreExtensions.Constants.WildCardItemResolvedOldContextItemKey] = Context.Item;
+                Context.Items[Sitecore.Demo.Shared.Foundation.SitecoreExtensions.Constants.WildCardItemResolvedKey] = true;
+                Context.Items[Sitecore.Demo.Shared.Foundation.SitecoreExtensions.Constants.WildCardItemResolvedOldContextItemKey] = Context.Item;
                 Context.Item = newsItem;
             }
             else
@@ -49,8 +49,8 @@ namespace Sitecore.HabitatHome.Feature.News.Pipelines.HttpRequestBegin
                 var newsSlugNotFoundItem = Context.Database.GetItem(new ID(newsSettingsItem[Templates.NewsSettings.Fields.NewsSlugNotFoundPage]));
                 if (newsSlugNotFoundItem != null)
                 {
-                    Context.Items[Sitecore.Demo.Foundation.SitecoreExtensions.Constants.WildCardItemResolvedKey] = true;
-                    Context.Items[Sitecore.Demo.Foundation.SitecoreExtensions.Constants.WildCardItemResolvedOldContextItemKey] = Context.Item;
+                    Context.Items[Sitecore.Demo.Shared.Foundation.SitecoreExtensions.Constants.WildCardItemResolvedKey] = true;
+                    Context.Items[Sitecore.Demo.Shared.Foundation.SitecoreExtensions.Constants.WildCardItemResolvedOldContextItemKey] = Context.Item;
                     Context.Item = newsSlugNotFoundItem;
                 }
             }

@@ -3,7 +3,7 @@ using System.Linq;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.HabitatHome.Foundation.DependencyInjection;
-using Sitecore.Demo.Foundation.SitecoreExtensions.Extensions;
+using Sitecore.Demo.Shared.Foundation.SitecoreExtensions.Extensions;
 
 namespace Sitecore.HabitatHome.Feature.Search.Services
 {
