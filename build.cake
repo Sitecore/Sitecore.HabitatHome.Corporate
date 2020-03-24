@@ -4,7 +4,7 @@
 #addin nuget:?package=Cake.Powershell&version=0.4.8
 #addin nuget:?package=Cake.XdtTransform&version=0.16.0
 #addin nuget:?package=Newtonsoft.Json&version=11.0.2
-#addin nuget:?package=Cake.SitecoreDemo&version=930.2.3
+#addin nuget:?package=Cake.SitecoreDemo&version=930.2.10
 
 var target = Argument<string>("Target", "Default");
 var deploymentTarget = Argument<string>("DeploymentTarget", "IIS"); // Possible values are 'IIS', 'Docker' and 'DockerBuild'
@@ -40,6 +40,7 @@ Setup(context =>
 
   if (deploymentTarget == "DockerBuild")  {
     configuration.PublishWebFolder = $"{configuration.ProjectFolder}\\docker\\images\\windows\\demo-xp-standalone\\Data";
+    configuration.PublishWebFolderCD = $"{configuration.ProjectFolder}\\docker\\images\\windows\\demo-xp-cd\\Data";
     configuration.PublishDataFolder = $"{configuration.ProjectFolder}\\docker\\images\\windows\\demo-xp-sqldev\\Data";
     configuration.PublishxConnectFolder = $"{configuration.ProjectFolder}\\docker\\images\\windows\\demo-xp-xconnect\\Data";
     configuration.PublishxConnectIndexWorkerFolder = $"{configuration.ProjectFolder}\\docker\\images\\windows\\demo-xp-xconnect-indexworker\\Data";
@@ -111,7 +112,9 @@ Task("CleanBuildFolders").Does(() => {
 
 Task("CleanPublishFolders").Does(() => {
   CleanDirectories(configuration.PublishWebFolder);
+  CleanDirectories(configuration.PublishWebFolderCD);
   CleanDirectories(configuration.PublishxConnectFolder);
+  CleanDirectories(configuration.PublishxConnectIndexWorkerFolder);
   CleanDirectories(configuration.PublishDataFolder);
   CleanDirectories(configuration.PublishTempFolder);
 });
@@ -254,7 +257,7 @@ Task("Deploy-Marketing-Definitions")
 .Does(() => {
   DeployMarketingDefinitions(configuration);
 });
-		
+
 Task("Rebuild-Indexes")
 .WithCriteria(() => !publishLocal).Does(() => {
   var indexes = new string[] {

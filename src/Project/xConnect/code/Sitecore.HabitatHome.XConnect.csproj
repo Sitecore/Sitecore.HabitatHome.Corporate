@@ -63,7 +63,8 @@
   <ItemGroup>
     <Content Include="App_data\config\sitecore\SearchIndexer\sc.Xdb.Collection.IndexerSettings.xml" />
     <Content Include="App_data\jobs\continuous\IndexWorker\App_data\Config\Sitecore\SearchIndexer\sc.Xdb.Collection.IndexerSettings.xml" />
-    <Content Include="App_data\Models\Sitecore.Demo.Shared.Foundation.Accounts.Models.AccountCollectionModel, 1.0.json" />
+    <Content Include="App_data\jobs\continuous\IndexWorker\App_data\Models\Sitecore.DataExchange.Tools.DynamicsConnect.Models.DynamicsConnectCollectionModel, 1.0.json" />
+    <Content Include="App_data\Models\Sitecore.DataExchange.Tools.DynamicsConnect.Models.DynamicsConnectCollectionModel, 1.0.json" />
     <Content Include="App_data\jobs\continuous\IndexWorker\App_data\Models\Sitecore.Demo.Shared.Foundation.Accounts.Models.AccountCollectionModel, 1.0.json" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.Debug.config">
@@ -105,11 +106,13 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Package-CD|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'NoDeploy|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -120,7 +123,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>

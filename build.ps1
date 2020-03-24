@@ -92,7 +92,7 @@ function MD5HashFile([string] $filePath)
     }
     finally
     {
-        if ($file -ne $null)
+        if ($null -ne $file)
         {
             $file.Dispose()
         }
@@ -244,8 +244,6 @@ if (Test-Path $MODULES_PACKAGES_CONFIG) {
 if (!(Test-Path $CAKE_EXE)) {
     Throw "Could not find Cake.exe at $CAKE_EXE"
 }
-
-
 
 # Build Cake arguments
 $cakeArguments = @("$Script");
