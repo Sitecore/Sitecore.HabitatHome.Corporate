@@ -83,7 +83,7 @@ services:
     networks:
       - demo
 
-   xconnect-indexworker:
+  xconnect-indexworker:
     image: ${REGISTRY}habitathomecorporate-indexworker:${DEMO_VERSION}
     isolation: hyperv
     build:
@@ -107,7 +107,7 @@ services:
     networks:
       - demo
 
-   xconnect-automationengine:
+  xconnect-automationengine:
     image: ${REGISTRY}habitathomecorporate-automationengine:${DEMO_VERSION}
     isolation: hyperv
     build:
