@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1" xdt:Transform="Insert">
+      <dependentAssembly>
+        <assemblyIdentity name="Polly" publicKeyToken="c8a3ffc3f8f825cc" />
+        <codeBase version="6.0.0.0" href="bin\cmp\Polly.dll" />
+        <codeBase version="6.0.1.0" href="bin\cmp\Polly.dll" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>
