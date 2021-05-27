@@ -28,11 +28,9 @@ The code, samples and/or solutions provided in this repository are for example p
 
 #### Sitecore Experience Platform
 
-The latest Habitat Home Corporate site is built to support the following version of the Sitecore Experience Platform: ***Sitecore Experience Platform 9.2 Initial release***
+The latest Habitat Home Corporate site is built to support the following version of the Sitecore Experience Platform: ***Sitecore Experience Platform 9.3 Initial release***
 
-In order to install the latest version of Sitecore that works with the Habitat Home Corporate site, **[you need to head over to the Sitecore.HabitatHome.Utilities repository](https://github.com/Sitecore/Sitecore.HabitatHome.Utilities)** and follow the instructions there. The Sitecore.HabitatHome.Utilities repository is a collection of useful utilities and script examples to help in the context of the Habitat Home demos, of which one is this Habitat Home Corporate site.
-
-**Note:** You should skip the `.\install-modules` step in the Utilities repository. Habitat Home Corporate does not require the Sitecore Powershell Extensions or Sitecore Experience Accelerator modules.
+To install this latest version of Sitecore that works with the Habitat Home Corporate site, go to [Sitecore_Experience_Platform_93_Initial_Release](https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/93/Sitecore_Experience_Platform_93_Initial_Release.aspx) to find the applicable install and installation instructions.
 
 #### URL Rewrite module
 
