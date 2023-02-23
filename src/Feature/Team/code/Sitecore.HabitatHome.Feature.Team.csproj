@@ -77,7 +77,7 @@
   </Choose>
   <ItemGroup>
     <PackageReference Include="bootstrap">
-      <Version>3.3.7</Version>
+      <Version>3.4.1</Version>
     </PackageReference>
     <PackageReference Include="jQuery">
       <Version>3.3.1</Version>
